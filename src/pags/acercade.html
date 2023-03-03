@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca De</title>
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+
+    <section id="acerca-de">
+        <h2>Acerca de Maque Cerámica</h2>
+        <p>Maque cercamica surge en Guadalajara, México, como una marca de objetos de ceramica inspirada por las
+            virtudes de la misma materia prima: versatilidad y durabilidad; que mediante un trabajo manual artesanal
+            produce piezas organicas y duraderas.
+        </p>
+        <br>
+        <p>
+            Productos útiles elaborados en torno y horneados a altas temperaturas que se se presentan como una dualidad
+            por su aspecto brillante en el esmalte y el acabado poroso y mate de su forma original.
+        </p>
+    </section>
+    <br>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+   
+<!--Explicación:
+
+La sección de contacto se encuentra dentro de un elemento section con el identificador contacto.
+La etiqueta h2 se utiliza para indicar el título de la sección.
+El formulario utiliza el método POST y se envía a una página llamada enviar.php. Puedes cambiar el nombre de esta página por la que vayas a utilizar.
+Los campos del formulario se agrupan mediante las etiquetas label y input. El atributo for de la etiqueta label debe coincidir con el atributo id del campo correspondiente para que se asocie correctamente.
+El campo nombre es obligatorio (required).
+El campo correo es de tipo email y también es obligatorio (required).
+El campo telefono es de tipo tel, pero no es obligatorio.
+El campo mensaje es un área de texto que también es obligatorio (required).
+El botón de enviar se crea con la etiqueta button y se especifica el tipo de botón como submit. Esto hace que, al pulsar el botón, se envíe el formulario.-->
+
+
+<script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
