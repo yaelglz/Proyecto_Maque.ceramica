@@ -12,92 +12,122 @@
 </head>
 
 <body>
+
     <header>
         <!-- NAVBAR -->
-        <!--<nav class="navbar" style="background-color: #e3f2fd;"></nav> -->
-          <!-- Navbar content -->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PRODUCTOS
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="acercade.html">ACERCA DE</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">MI CUENTA</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">NOTICIAS</a>
-                    </li>
-                  </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
+            <div class="container-fluid col-lg-12">
+                <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
+                        src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos1.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MI CUENTA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NOTICIAS</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </nav>
-          <!-- </nav> -->
-    
-    
-          </header>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+
+
+    </header>
+
     <section id="acerca-de">
+        <div class="row">
+            <div class="col-md-12 well"></div>
+        </div>
         <h2>Acerca de Maque Cerámica</h2>
-        <p>Maque cercamica surge en Guadalajara, México, como una marca de objetos de ceramica inspirada por las
-            virtudes de la misma materia prima: versatilidad y durabilidad; que mediante un trabajo manual artesanal
-            produce piezas organicas y duraderas.
-        </p>
-        <br>
-        <p>
-            Productos útiles elaborados en torno y horneados a altas temperaturas que se se presentan como una dualidad
-            por su aspecto brillante en el esmalte y el acabado poroso y mate de su forma original.
-        </p>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 text-center">
+                <img src="../img/tazas-multicolor.jpg" class="img-fluid col-md-8" alt="Imagen 1">
+                <br>
+                <p>Maque cercamica surge en Guadalajara, México, como una marca de objetos de ceramica inspirada por las
+                    virtudes de la misma materia prima: versatilidad y durabilidad; que mediante un trabajo manual
+                    artesanal produce piezas organicas y duraderas.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 text-center">
+                <img src="../img/torno.jpg" class="img-fluid col-md-8" alt="Imagen 2">
+                <br>
+                <p>Productos útiles elaborados en torno y horneados a altas temperaturas que se se presentan como una
+                    dualidad por su aspecto brillante en el esmalte y el acabado poroso y mate de su forma original.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
     </section>
+
+
     <br>
+
+    </section>
     <section id="contacto">
         <h2>Contacto</h2>
-        <form action="enviar.php" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+        <div class="row">
+            <div class="col-sm-6">
+                <form action="enviar.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control">
+                    </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
     </section>
+    <br>
+    <footer>
+        <div class="row">
+            <div class="col-md-12 well"></div>
+            <div class="col-md-12 text-center">
+                <p>© 2021 Maque Cerámica. Todos los derechos reservados.</p>
+            </div>
+        </div>
 
-   
-<!--Explicación:
-
-La sección de contacto se encuentra dentro de un elemento section con el identificador contacto.
-La etiqueta h2 se utiliza para indicar el título de la sección.
-El formulario utiliza el método POST y se envía a una página llamada enviar.php. Puedes cambiar el nombre de esta página por la que vayas a utilizar.
-Los campos del formulario se agrupan mediante las etiquetas label y input. El atributo for de la etiqueta label debe coincidir con el atributo id del campo correspondiente para que se asocie correctamente.
-El campo nombre es obligatorio (required).
-El campo correo es de tipo email y también es obligatorio (required).
-El campo telefono es de tipo tel, pero no es obligatorio.
-El campo mensaje es un área de texto que también es obligatorio (required).
-El botón de enviar se crea con la etiqueta button y se especifica el tipo de botón como submit. Esto hace que, al pulsar el botón, se envíe el formulario.-->
-
-
-<script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+        <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
