@@ -1,0 +1,21 @@
+#carritoBold{
+    font-weight:600
+}
+/*Caja Con Los Productos del Carrito*/
+#cont-de-productos{
+    background-color: #EFECEA;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+#desc-de-compra{
+    background-color: #FFFFFF; border: #FFFFFF;
+}
+
+
+/*Productos del Carrito*/
+.imgProdCarrito{
+    width: 100px;
+}
