@@ -1,0 +1,80 @@
+
+#container{
+    padding: 1em;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+#container-account{
+    padding: 0em;
+}
+
+#col-login{
+    background-color: #D9CCC1;
+    padding: 5%;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#col-create{
+    background-color: #D9CCC1;
+    text-align: center;
+    padding: 5%;
+    margin-left: 50px;
+}
+
+#title{
+    color: black;
+    font-size: large;
+}
+
+#exampleInputEmail1{
+    color: #ffffff;
+}
+
+#btn-login{
+
+    color: #ffffff;
+    border: none;
+    background-color: #7A6852;
+    height: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 5em;
+}
+
+#btn-create{
+
+    color: #ffffff;
+    border: none;
+    background-color: #7A6852;
+    height: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 5em;
+}
+
+#col-account{
+    background-color: #D9CCC1;
+    text-align:center;
+    padding: 2em;
+}
+
+#col-account-box{
+    background-color: #D9CCC1;
+    text-align:left;
+    border: 1px solid;
+    border-style:inset;
+    padding: 1em;
+    margin: 2em;
+}
+
+#account-data{
+    color: black;
+    font-size: large;
+}
+
+#table-main{
+    padding: 3em;
+    margin: 3em;
+}
