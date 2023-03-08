@@ -1,0 +1,23 @@
+#Logo-navbar {
+    width: 200px;
+}
+
+.navbar-custom {
+ background-color: #ae9e8f !important;
+}
+
+.nav-font {
+ font-style: normal;
+ color: #FFFFFF !important;
+}
+
+.form-custom {
+    border-end-end-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+
+.btn-custom{
+    border-end-end-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
