@@ -45,6 +45,7 @@ btnToggle.forEach(function (button) {
     });
 });
 
+//Navegar entre las páginas
 var btn1 = document.getElementById("btn-1");
 var btn2 = document.getElementById("btn-2");
 var btn3 = document.getElementById("btn-3");
@@ -130,3 +131,7 @@ nextBtn.addEventListener("click", function () {
     updateButtons();
 });
 
+//Ocultar y mostrar el sidebar
+if (window.innerWidth <= 4) {
+    document.querySelector('.sidebar').classList.add('oculto');
+}
