@@ -1,0 +1,94 @@
+/* Estilos de la sección Acerca De */
+#acerca-de {
+    background-color: #F2F2F2;
+    font-family: 'IMB Plex Sans', sans-serif;
+  }
+  
+  #acerca-de h2 {
+    color: #736151;
+  }
+  
+  #acerca-de p {
+    color: #8C7E72;
+  }
+  
+  #acerca-de img {
+    border: 0px solid #BFB0A3;
+    border-radius: 0px;
+  }
+  
+  /* Estilos de la sección Contacto */
+  #contacto {
+    background-color: #D9CCC1;
+    font-family: 'IMB Plex Sans', sans-serif;
+  }
+  
+  #contacto h2 {
+    color: #736151;
+  }
+  
+  #contacto label {
+    color: #8C7E72;
+  }
+  
+  #contacto input[type="text"],
+  #contacto input[type="email"],
+  #contacto input[type="tel"],
+  #contacto textarea {
+    border: none;
+    background-color: #BFB0A3;
+    border-radius: 0px;
+    padding: 10px;
+    color: #736151;
+    margin-bottom: 10px;
+  }
+  
+  #contacto button[type="submit"] {
+    background-color: #736151;
+    color: #F2F2F2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+  }
+  
+  form {
+    border-radius: 0;
+  }
+  
+  button {
+    border-radius: 0;
+  }
+  
+
+  /* Estilos del navbar */
+  .navbar {
+    background-color: #8C7E72;
+    font-family: 'IMB Plex Sans', sans-serif;
+  }
+  
+  .nav-link {
+    color: #997878 !important;
+  }
+  
+  .dropdown-menu {
+    background-color: #BFB0A3;
+  }
+  
+  .dropdown-item {
+    color: #736151;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #8C7E72;
+    color: #ae8888;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'IMB Plex Sans', sans-serif;
+  }
+  
+  .bg-body-tertiary {
+    background-color: #D9CCC1;
+  }
+
