@@ -108,17 +108,23 @@
     flex-direction: column;
     justify-content: center;
 }
+
+
+
+
+
+
 #bg-parrafo1 {
-    color: rgb(90, 76, 60) !important;
+    color: rgb(60, 49, 37) !important;
     font-size: 20px;
     padding: 30px;
-    background-color: rgba(194, 185, 185, 0.528);
+    background-color: rgba(194, 185, 185, 0.457);
 }
 
 #bg-parrafo2 {
-    color: rgb(90, 76, 60) !important;
+    color: rgb(60, 49, 37) !important;
     font-size: 20px;
     padding: 30px;
-    background-color: rgba(194, 185, 185, 0.528);
+    background-color: rgba(194, 185, 185, 0.457);
 }
 
