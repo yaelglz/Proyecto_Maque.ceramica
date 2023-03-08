@@ -6,55 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylehomogeneo.css">
 
 </head>
+
+<!-- INICIA HEADER -->
+<header>
+    <!-- NAVBAR -->
+    <!--<nav class="navbar" style="background-color: #e3f2fd;"></nav> -->
+      <!-- Navbar content -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TAZAS</a></li>
+                    <li><a class="dropdown-item" href="#">PLATOS</a></li>
+                    <li><a class="dropdown-item" href="#">VAJILLAS</a></li>
+                    <li><a class="dropdown-item" href="#">FLOREROS</a></li>
+                    <li><a class="dropdown-item" href="#">COCINA</a></li>
+                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-font">
+                  <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MI CUENTA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NOTICIAS</a>
+                </li>
+              </ul>
+<!--Buscador de la Navbar -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      <!-- </nav> -->
+      </header>
 
 
     <body>
 
-        <div class="container" id="form">
+        <!-- Contenedor para todo el documento -->  
+        <div class="container" id="account">
             <div class="row">
                 <div class="col">
+                    <h1>Iniciar Sesión</h1>
+                    <!-- Inicio formulario login-->
                     <form>
+                        <!-- Div email -->
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
+                        </div> 
+                        <!-- Cierre Div email -->
+                        <!-- Div contraseña -->
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
+                        </div> 
+                        <!-- Cierre Div contraseña-->
+                        <!-- Div checkbox -->
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div> 
+                        <!-- Cierre Div checkbox -->
+                        <!-- Botón login -->
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
                     </form>
+                    <!-- Cierre formulario login-->
                 </div>
 
                 <div class="col">
+                    <h1>Crear Cuenta</h1>
+                    <!-- Inicio formulario con validación crear cuenta-->
                     <form class="row g-3 needs-validation" novalidate>
+                        <!-- Div nombre -->
                         <div class="col-md-6">
                             <label for="validationCustom01" class="form-label">
                                 Nombre
                             </label>
                             <input type="text" class="form-control" id="validationCustom01">
+                            <!-- Div alerta nombre -->
                             <div class="valid-feedback">
                                 Nombre válido
                             </div>
+                            <!-- Cierre Div alerta nombre -->
                         </div>
+                        <!-- Cierre Div nombre -->
+                        <!-- Div apellido -->
                         <div class="col-md-6">
                             <label for="validationCustom02" class="form-label">
                                 Apellido
                             </label>
                             <input type="text" class="form-control" id="validationCustom01">
+                            <!-- Div alerta apellido -->
                             <div class="valid-feedback">
                                 Apellido válido
                             </div>
+                            <!-- Cierre Div alerta apellido -->
                         </div>
+                        <!-- Cierre Div apellido -->
+                        <!-- Div ciudad -->
                         <div class="col-md-6">
                             <label for="validationCustom03" class="form-label">
                                 Ciudad
@@ -64,6 +134,8 @@
                                 Proporciona una ciudad válida.
                             </div>
                         </div>
+                        <!-- Cierre Div ciudad -->
+                        <!-- Div estado -->
                         <div class="col-md-3">
                             <label for="validationCustom04" class="form-label">
                                 Estado
@@ -78,6 +150,8 @@
                                 Selecciona un estado válido.
                             </div>
                         </div>
+                        <!-- Cierre Div estado -->
+                        <!-- Div CP -->
                         <div class="col-md-3">
                             <label for="validationCustom05" class="form-label">
                                 Código postal
@@ -87,7 +161,8 @@
                                 Proporciona un código postal válido.
                             </div>
                         </div>
-            
+                        <!-- Cierre Div CP -->
+                        <!-- Div checkbox terminos -->
                         <div class="col-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -99,16 +174,21 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Cierre Div checkbox terminos -->
+                        <!-- Div botón crear cuenta -->
                         <div class="col-6 mx-auto">
                             <button class="btn btn-primary" type="submit">Crear cuenta</button>
                         </div>
+                        <!-- Cierre Div botón crear cuenta -->
                     </form>
-                </div>
-            </div>
-        </div>
+                    <!-- Cierre formulario -->
+                </div> <!-- Cierre div col crear cuenta -->
+            </div> <!-- Cierre div row página -->
+        </div> <!-- Cierre div container -->
         
         <script src="..//assets/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 
