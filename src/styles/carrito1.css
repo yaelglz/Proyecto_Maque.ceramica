@@ -1,8 +1,10 @@
+
 #carritoBold{
     font-weight:600
 }
 /*Caja Con Los Productos del Carrito*/
-#cont-de-productos{
+/*
+#product-container{
     background-color: #EFECEA;
     padding-left: 30px;
     padding-right: 30px;
@@ -14,8 +16,122 @@
     background-color: #FFFFFF; border: #FFFFFF;
 }
 
+.imgProdCarrito{
+display: flexbox;
+    max-width: 100px;
+
+}
+*/
+
+
 
 /*Productos del Carrito*/
-.imgProdCarrito{
-    width: 100px;
+#product-container{
+    background-color: #EFECEA;
+    padding-left: 35px;
+    padding-right: 35px;
 }
+.cart-page{
+    
+    margin: auto;
+    
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+    color: #030303;
+    font-weight: bold;
+}
+
+td{
+    
+    padding: 25px;
+
+   
+}
+
+.product-content{
+    border-bottom: 3px solid #EFECEA;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 4px;
+}
+
+td a{
+    color: rgb(117, 81, 57);
+    font-size: small;
+}
+td img{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+#total-price-separation{
+    padding: 5px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+   
+    width: 100%;
+    max-width: 380px;
+    
+}
+
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+#proceder-pago{
+
+    color: #ffffff;
+    border: none;
+    background-color: #7A6852;
+    height: 40px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/*---Media query styles---*/
+@media only screen and (min-width: 600px) {
+    .row{
+        text-align: center;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
+
+
+
+/***********************************/
