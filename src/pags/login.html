@@ -4,36 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
     <title>Login</title>
-    
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/login.css">
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS Bootstrap Local -->
     <link rel="stylesheet" href="../../styles/styles.css">
+    <!-- CSS Estándar -->
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
 
 </head>
 
-<!-- INICIA HEADER -->
-
     <body>
 
-        <header>
-            <!-- NAVBAR -->
-            <!--<nav class="navbar" style="background-color: #e3f2fd;"></nav> -->
-            <!-- Navbar content -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PRODUCTOS
-                            </a>
-                            <ul class="dropdown-menu">
+    <!-- Inicio Header -->
+    <header>
+        <!-- Inicio Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <div class="container-fluid">
+            <!-- Logo Navbar -->
+            <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">    
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Dropdown Navbar -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">TAZAS</a></li>
                             <li><a class="dropdown-item" href="#">PLATOS</a></li>
                             <li><a class="dropdown-item" href="#">VAJILLAS</a></li>
@@ -41,27 +45,30 @@
                             <li><a class="dropdown-item" href="#">COCINA</a></li>
                             <li><a class="dropdown-item" href="#">OTROS</a></li>
                         </ul>
-                        </li>
-                        <li class="nav-item nav-font">
+                    </li>
+                    <!-- Enlaces Navbar -->
+                    <li class="nav-item nav-font">
                         <a class="nav-link" href="acercade.html">ACERCA DE</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">MI CUENTA</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">NOTICIAS</a>
-                        </li>
-                    </ul>
-                    <!--Buscador de la Navbar -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
-                    </form>
-                    </div>
-                </div>
-                </nav>
-                <!-- </nav> -->
-            </header>
+                    </li>
+                </ul>
+                <!-- Buscador Navbar -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+        </nav>
+
+    </header>
+
+    <section>
 
         <div class="container" id="container">
             <div class="container" id="container-account">
@@ -81,19 +88,19 @@
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div> 
+                            </div>
                             <!-- Cierre Div email -->
                             <!-- Div contraseña -->
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div> 
+                            </div>
                             <!-- Cierre Div contraseña-->
                             <!-- Div checkbox -->
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                            </div> 
+                            </div>
                             <button type="submit" class="btn btn-primary" id="btn-login">Ingresar</button>
                             <!-- Cierre Div checkbox -->
                         </form>
@@ -178,137 +185,66 @@
                                         Debe estar de acuerdo antes de enviar.
                                     </div>
                                 </div>
-                            </div>
                             <!-- Cierre Div checkbox terminos -->
+                            </div>
+                        <!-- Cierre formulario -->
                         </form>
                         <button type="submit" class="btn btn-primary" id="btn-create">Crear Cuenta</button>
-                        <!-- Cierre formulario -->
-                    </div> <!-- Cierre div col crear cuenta -->
+                    <!-- Cierre div col crear cuenta -->
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
-                <!-- Contenedor para todo el documento -->  
-                <div class="container" id="account">
+    </section>
+
+    <!-- Inicio footer -->
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2">
+                    <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
+                            src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%;" /></a>
+                </div>
+                <div class="col-sm-12 col-md-5 texto-img">
                     <div class="row">
-                        <div class="col">
-                            <h1 id="title">Iniciar Sesión</h1>
-                            <!-- Inicio formulario login-->
-                            <form>
-                                <!-- Div email -->
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div> 
-                                <!-- Cierre Div email -->
-                                <!-- Div contraseña -->
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div> 
-                                <!-- Cierre Div contraseña-->
-                                <!-- Div checkbox -->
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                                </div> 
-                                <!-- Cierre Div checkbox -->
-                            </form>
-                            <!-- Cierre formulario login-->
+                        <div class="col-sm-6 col-md-5"><a href="./Inicio.html">Inicio</a></div>
+                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5"><a href="./productos2.html">Catalogo</a></div>
+                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Piezas Personalizadas</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 texto-img">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
+                        <div class="col-sm-6 col-md-5">Siguenos</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5"><a href="">Términos y Condiciones</a></div>
+                        <div class="col-sm-6 col-md-5 social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
+                                    src="../icons/face blanco 1.png" alt=""></a>
+                            <a href="https://www.instagram.com/maque.ceramica/" target="_blank"><img
+                                    src="../icons/instagram blanco.png" alt=""></a>
+                            <a href="https://www.tiktok.com/@maque.ceramica" target="_blank"><img
+                                    src="../icons/tiktok blanco.png" alt=""></a>
+                            <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0"
+                                target="_blank"><img src="../icons/whatsapp blanco.png" alt=""></a>
                         </div>
-        
-                        <div class="col">
-                            <h1 id="title">Crear Cuenta</h1>
-                            <!-- Inicio formulario con validación crear cuenta-->
-                            <form class="row g-3 needs-validation" novalidate>
-                                <!-- Div nombre -->
-                                <div class="col-md-6">
-                                    <label for="validationCustom01" class="form-label">
-                                        Nombre
-                                    </label>
-                                    <input type="text" class="form-control" id="validationCustom01">
-                                    <!-- Div alerta nombre -->
-                                    <div class="valid-feedback">
-                                        Nombre válido
-                                    </div>
-                                    <!-- Cierre Div alerta nombre -->
-                                </div>
-                                <!-- Cierre Div nombre -->
-                                <!-- Div apellido -->
-                                <div class="col-md-6">
-                                    <label for="validationCustom02" class="form-label">
-                                        Apellido
-                                    </label>
-                                    <input type="text" class="form-control" id="validationCustom01">
-                                    <!-- Div alerta apellido -->
-                                    <div class="valid-feedback">
-                                        Apellido válido
-                                    </div>
-                                    <!-- Cierre Div alerta apellido -->
-                                </div>
-                                <!-- Cierre Div apellido -->
-                                <!-- Div ciudad -->
-                                <div class="col-md-6">
-                                    <label for="validationCustom03" class="form-label">
-                                        Ciudad
-                                    </label>
-                                    <input type="text" class="form-control" id="validationCustom03" required>
-                                    <div class="invalid-feedback">
-                                        Proporciona una ciudad válida.
-                                    </div>
-                                </div>
-                                <!-- Cierre Div ciudad -->
-                                <!-- Div estado -->
-                                <div class="col-md-3">
-                                    <label for="validationCustom04" class="form-label">
-                                        Estado
-                                    </label>
-                                    <select class="form-select" id="validationCustom04" required>
-                                        <option selected disabled value="">
-                                            Elige...
-                                        </option>
-                                        <option>Aguascalientes</option><option>Baja California</option><option>Baja California Sur</option><option>Campeche</option><option>Chiapas</option><option>Chihuahua</option><option>Coahuila</option><option>Colima</option><option>CDMX</option><option>Durango</option><option>Estado de México</option><option>Guanajuato</option><option>Guerrero</option><option>Hidalgo</option><option>Jalisco</option><option>Michoacán</option><option>Morelos</option><option>Nayarit</option><option>Nuevo León</option><option>Oaxaca</option><option>Puebla</option><option>Querétaro</option><option>Quintana Roo</option><option>San Luis Potosí</option><option>Sinaloa</option><option>Sonora</option><option>Tabasco</option><option>Tamaulipas</option><option>Tlaxcala</option><option>Veracruz</option><option>Yucatán</option><option>Zacatecas</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                        Selecciona un estado válido.
-                                    </div>
-                                </div>
-                                <!-- Cierre Div estado -->
-                                <!-- Div CP -->
-                                <div class="col-md-3">
-                                    <label for="validationCustom05" class="form-label">
-                                        Código postal
-                                    </label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
-                                    <div class="invalid-feedback">
-                                        Proporciona un código postal válido.
-                                    </div>
-                                </div>
-                                <!-- Cierre Div CP -->
-                                <!-- Div checkbox terminos -->
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                            Acepta los términos y condiciones
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            Debe estar de acuerdo antes de enviar.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Cierre Div checkbox terminos -->
-                            </form>
-                            <!-- Cierre formulario -->
-                        </div> <!-- Cierre div col crear cuenta -->
-                    </div> <!-- Cierre div row página -->
-                    <!-- Div botones -->
-                </div> <!-- Cierre div container -->
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Cierre footer -->
+    </footer>
 
-
+    <!-- Link JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Link JS Bootstrap local -->
+    <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
 </html>
