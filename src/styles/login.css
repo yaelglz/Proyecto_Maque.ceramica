@@ -1,0 +1,76 @@
+
+#container{
+    padding: 1em;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+#container-account{
+    padding: 0em;
+}
+
+#col-login{
+    background-color: #d9ccc198;
+    padding: 5em;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#col-create{
+    background-color: #d9ccc198;
+    text-align: center;
+    padding: 5em;
+    margin-left: 50px;
+}
+
+#title{
+    color: black;
+    font-size: large;
+}
+
+#btn-login{
+
+    color: #ffffff;
+    border: none;
+    background-color: #7A6852;
+    height: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 5em;
+}
+
+#btn-create{
+
+    color: #ffffff;
+    border: none;
+    background-color: #7A6852;
+    height: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 5em;
+}
+
+#col-account{
+    background-color: #d9ccc198;
+    text-align:center;
+    padding: 2em;
+}
+
+#col-account-box{
+    background-color:rgb(230, 230, 230);
+    text-align:left;
+    border: 1px solid;
+    border-style:inset;
+    padding: 1em;
+    margin: 2em;
+}
+
+#account-data{
+    color: black;
+    font-size: large;
+}
+
+#table-main{
+    padding: 2em;
+    margin: 2em;
+}
