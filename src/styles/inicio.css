@@ -1,9 +1,9 @@
-p {
+/*p {
     background-color: #b9c5bb !important;
     text-align: justify;
     padding-left: 15px;
     font-family: 'IMB Plex Sans', sans-serif;
-}
+}*/
 
 #pbot-acerca-custom{
     color: #ffffff !important;
@@ -21,10 +21,12 @@ h2{
     font-family: 'IMB Plex Sans', sans-serif;
     font-size: medium;
     text-transform: uppercase;
+    color: #ffffff;
+    
 }
 
 .custom-containers2 {
-    background-color: #bebebe;
+    background-color: #d6d6d6;
 }
 
 .custom-containers3 {
@@ -32,5 +34,5 @@ h2{
 }
 
 .custom-card{
-    background-color: #bebebe;
+    background-color: #d6d6d6;
 }
