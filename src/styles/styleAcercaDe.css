@@ -11,6 +11,7 @@
   #acerca-de img {
     border: 0px solid #BFB0A3;
     border-radius: 0px;
+    border-image-width: auto;
   }
   
   /* Estilos de la sección Contacto */
