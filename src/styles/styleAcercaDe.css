@@ -8,10 +8,6 @@
     color: #736151;
   }
   
-  #acerca-de p {
-    color: #8C7E72;
-  }
-  
   #acerca-de img {
     border: 0px solid #BFB0A3;
     border-radius: 0px;
@@ -50,6 +46,17 @@
     padding: 10px 20px;
     border-radius: 0px;
   }
+
+  .form-select {
+    font-family: 'IMB Plex Sans', sans-serif;
+    border: opx solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    background-color: #736151;
+    -ms-text-size-adjust: auto;
+  }
+  
+
+
   
   form {
     border-radius: 0;
@@ -60,29 +67,8 @@
   }
   
 
-  /* Estilos del navbar */
-  .navbar {
-    background-color: #8C7E72;
-    font-family: 'IMB Plex Sans', sans-serif;
-  }
-  
-  .nav-link {
-    color: #997878 !important;
-  }
-  
-  .dropdown-menu {
-    background-color: #BFB0A3;
-  }
-  
-  .dropdown-item {
-    color: #736151;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #8C7E72;
-    color: #ae8888;
-  }
-  
+
+
   /* Estilos generales */
   body {
     font-family: 'IMB Plex Sans', sans-serif;
@@ -91,4 +77,29 @@
   .bg-body-tertiary {
     background-color: #D9CCC1;
   }
+
+
+ .img-text {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#bg-parrafo1 {
+    color: rgb(60, 49, 37) !important;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(194, 185, 185, 0.457);
+}
+
+#bg-parrafo2 {
+    color: rgb(60, 49, 37) !important;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(194, 185, 185, 0.457);
+}
 
