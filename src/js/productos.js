@@ -17,33 +17,78 @@ menu.style.color = "#333";
 menu.style.fontFamily = "Arial, sans-serif";
 menu.style.fontSize = "16px";
 
-//Ordenamiendo de Cards
-var btnToggle = document.querySelectorAll('.btn-toggle');
-var products = document.querySelector('.products');
+// Ocultar contenido al cargar la página
+const toggleButtons = document.querySelectorAll('.btn-toggle, .btn-toggle-content-row');
+const contentRows = document.querySelectorAll('.content-row');
+const contentCards = document.querySelectorAll('.content-card');
+const cardsDiv = document.querySelector('#cards');
 
-btnToggle.forEach(function (button) {
+cardsDiv.classList.add('hidden');
+
+toggleButtons.forEach(button => {
     button.addEventListener('click', function () {
-        var mode = this.dataset.mode;
-        var iconCards = '<i class="fas fa-th-large"></i>';
-        var iconRows = '<i class="fas fa-th-list"></i>';
+        // Obtener el modo actual
+        const currentMode = document.querySelector('.btn-toggle.active').dataset.mode;
 
-        if (mode === 'cards') {
-            this.classList.add('active');
-            this.nextElementSibling.classList.remove('active');
-            products.classList.remove('rows');
-            products.classList.add('cards');
-            this.innerHTML = iconCards;
-            this.nextElementSibling.innerHTML = iconRows;
-        } else if (mode === 'rows') {
-            this.classList.add('active');
-            this.previousElementSibling.classList.remove('active');
-            products.classList.remove('cards');
-            products.classList.add('rows');
-            this.innerHTML = iconRows;
-            this.previousElementSibling.innerHTML = iconCards;
+        // Quitar la clase 'active' del botón actual
+        document.querySelector('.btn-toggle.active').classList.remove('active');
+
+        // Agregar la clase 'active' al botón seleccionado
+        this.classList.add('active');
+
+        // Mostrar contenido de acuerdo al modo seleccionado
+        if (currentMode === 'rows') {
+            // Ocultar contenido en modo 'rows'
+            contentRows.forEach(row => row.style.display = 'none');
+
+            // Mostrar contenido en modo 'cards'
+            contentCards.forEach(card => card.style.display = 'block');
+
+            // Mostrar el contenido cuando se haga clic en el botón 'content-card'
+            cardsDiv.classList.remove('hidden');
+        } else {
+            // Ocultar contenido en modo 'cards'
+            contentCards.forEach(card => card.style.display = 'none');
+
+            // Mostrar contenido en modo 'rows'
+            contentRows.forEach(row => row.style.display = 'block');
+
+            // Ocultar el contenido cuando se cambie de modo
+            cardsDiv.classList.add('hidden');
         }
     });
 });
+// Ocultar el contenedor al cargar la página
+document.querySelector('#cards').classList.add('hidden');
+
+
+//Filtrar por categorías
+const categories = document.querySelectorAll('.category');
+
+categories.forEach(category => {
+    const subcategories = category.querySelectorAll('.subcategory');
+
+    subcategories.forEach(subcategory => {
+        subcategory.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const filter = subcategory.textContent.trim().toLowerCase();
+            const products = document.querySelectorAll('.producto');
+
+            products.forEach(product => {
+                const productCategory = product.querySelector('.category').textContent.trim().toLowerCase();
+                const productSubcategory = product.querySelector('.subcategory').textContent.trim().toLowerCase();
+
+                if (productCategory === filter || productSubcategory === filter) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
 
 //Navegar entre las páginas
 var btn1 = document.getElementById("btn-1");
@@ -135,3 +180,14 @@ nextBtn.addEventListener("click", function () {
 if (window.innerWidth <= 4) {
     document.querySelector('.sidebar').classList.add('oculto');
 }
+
+// Obtener el botón de "Agregar al carrito" por su id
+const addToCartButton = document.getElementById('add-to-cart');
+
+// Agregar un evento de clic al botón
+addToCartButton.addEventListener('click', () => {
+    // Mostrar una alerta cuando se hace clic en el botón
+    alert('¡Producto agregado al carrito!');
+});
+
+document.getElementById("cards").style.display = "block";

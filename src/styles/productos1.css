@@ -373,3 +373,57 @@ select {
     display: flex;
     align-items: center;
 }
+
+
+.hidden {
+    display: none;
+}
+
+.style-card {
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    border-radius: 0%
+}
+
+.style-card {
+    height: 90%;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 50%;
+}
+
+.card-img-top {
+    height: 100%;
+    border-radius: 0%;
+}
+
+.carrito-card {
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    text-align: right;
+}
+
+.fotter-card {
+    /*Centrar sus elementos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Tamaño*/
+    height: 10%;
+}
+
+.producto p {
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.producto h5 {
+    margin-top: 50px;
+}
