@@ -1,3 +1,7 @@
+body {
+    font-family: 'IMB Plex Sans', sans-serif;
+}
+
 .barra-categorias {
     background-color: #D9CDC1;
     padding: 10px 20px;
@@ -56,7 +60,6 @@
     /* Agregar una transición suave al color de fondo */
 }
 
-
 .barra-categorias {
     overflow: hidden;
     /* Ocultar cualquier contenido que se desborde de la barra */
@@ -93,7 +96,7 @@
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 767px) {
+@media (max-width: 950px) {
     .barra-categorias {
         margin: 20px 20px;
         /* Reducir el margen a izquierda y derecha a 20px */
@@ -105,14 +108,15 @@
     }
 
     .barra-categorias ul li {
-        width: 100%;
+        width: 80%;
         /* Hacer que los elementos de la lista ocupen todo el ancho de la barra */
         margin-bottom: 10px;
         /* Agregar un margen inferior de 10px para separar las filas */
+        margin: 0%;
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 950px) {
 
     .barra-categorias ul {
         display: none;
@@ -145,7 +149,7 @@
     }
 }
 
-@media (min-width: 810px) {
+@media (min-width: 950px) {
     .barra-categorias .menu-hamburguesa {
         display: none;
     }
@@ -160,9 +164,9 @@
     color: black;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     .barra-categorias {
-        padding: 35px;
+        padding: 10px;
     }
 
     .barra-categorias .icono-menu {
@@ -172,6 +176,7 @@
     .barra-categorias .categoria-productos {
         display: none;
     }
+
 }
 
 /* Mostrar la lista de categorías cuando se hace clic en el botón de hamburguesa */
@@ -179,7 +184,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 select {
     margin: 0 20px;
@@ -327,20 +334,96 @@ select {
     font-size: 20px;
 }
 
-/*footer*/
+@media (max-width: 950px) {
+    .menu-hamburguesa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
 
-footer {
-    background-color: #8C7E73;
-    color: #fff;
-    padding: 3px 0;
+    .menu-hamburguesa i {
+        order: 2;
+        float: right;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-hamburguesa span {
+        order: 1;
+        text-align: right;
+    }
+
+    span {
+        font-size: 29px;
+        font-weight: bolder;
+    }
+
 }
 
-footer .col-sm-2 a.navbar-brand img#Logo-navbar {
+.menu-lista {
+    text-align: center;
+}
+
+.menu-lista li {
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
-.nav-colors{
-    background-color: #8C7E73 !important;
+.menu-hamburguesa {
+    display: flex;
+    align-items: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.style-card {
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    border-radius: 0%
+}
+
+.style-card {
+    height: 90%;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 50%;
+}
+
+.card-img-top {
+    height: 100%;
+    border-radius: 0%;
+}
+
+.carrito-card {
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    text-align: right;
+}
+
+.fotter-card {
+    /*Centrar sus elementos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Tamaño*/
+    height: 10%;
+}
+
+.producto p {
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.producto h5 {
+    margin-top: 50px;
 }

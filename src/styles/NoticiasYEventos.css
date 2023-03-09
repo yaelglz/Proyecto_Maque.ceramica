@@ -1,0 +1,59 @@
+#Noticias-y-eventos {
+  background-color: #F2F2F2;
+  font-family: 'IMB Plex Sans', sans-serif;
+}
+
+#Noticias-y-eventos h2 {
+  color: #736151;
+}
+
+#Noticias-y-eventos img {
+  border: 0px solid #BFB0A3;
+  border-radius: 0px;
+  border-image-width: auto;
+}
+
+#Noticias-y-eventos p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#Noticias-y-eventos ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#Noticias-y-eventos li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#Noticias-y-eventos .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#Noticias-y-eventos .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#Noticias-y-eventos .col-sm-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#Noticias-y-eventos .col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#Noticias-y-eventos img.d-block {
+  width: 100%;
+  height: auto;
+}

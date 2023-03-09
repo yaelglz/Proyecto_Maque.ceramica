@@ -2,132 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca De</title>
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca De</title>
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/styleAcercaDe.css">
+  <link rel="stylesheet" href="../styles/stylehomogeneo.css">
 
 </head>
 
 <body>
 
-    <header>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
-            <div class="container-fluid col-lg-12">
-                <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                        src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="productos1.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                PRODUCTOS
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acercade.html">ACERCA DE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MI CUENTA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NOTICIAS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- NAVBAR -->
-
-
-    </header>
-
-    <section id="acerca-de">
-        <div class="row">
-            <div class="col-md-12 well"></div>
+  <header>
+    <!-- NAVBAR -->
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
+            src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TAZAS</a></li>
+                <li><a class="dropdown-item" href="#">PLATOS</a></li>
+                <li><a class="dropdown-item" href="#">VAJILLAS</a></li>
+                <li><a class="dropdown-item" href="#">FLOREROS</a></li>
+                <li><a class="dropdown-item" href="#">COCINA</a></li>
+                <li><a class="dropdown-item" href="#">OTROS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-font">
+              <a class="nav-link" href="acercade.html">ACERCA DE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MI CUENTA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NOTICIAS</a>
+            </li>
+          </ul>
+          <!--Buscador de la Navbar -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
+          </form>
         </div>
-        <h2>Acerca de Maque Cerámica</h2>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 text-center">
-                <img src="../img/tazas-multicolor.jpg" class="img-fluid col-md-8" alt="Imagen 1">
-                <br>
-                <p>Maque cercamica surge en Guadalajara, México, como una marca de objetos de ceramica inspirada por las
-                    virtudes de la misma materia prima: versatilidad y durabilidad; que mediante un trabajo manual
-                    artesanal produce piezas organicas y duraderas.</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 text-center">
-                <img src="../img/torno.jpg" class="img-fluid col-md-8" alt="Imagen 2">
-                <br>
-                <p>Productos útiles elaborados en torno y horneados a altas temperaturas que se se presentan como una
-                    dualidad por su aspecto brillante en el esmalte y el acabado poroso y mate de su forma original.</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </section>
+      </div>
+    </nav>
+    <!-- </nav> -->
 
 
+  </header>
+
+  <section id="acerca-de">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 well"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="img-text" style="background-image: url('../img/Instagram/abril40-01.png')">
+            <p id="bg-parrafo1">Maque cercamica surge en Guadalajara, México, como una marca de objetos de
+              ceramica inspirada por las virtudes de la misma materia prima: versatilidad y durabilidad;
+              que mediante un trabajo manual artesanal produce piezas organicas y duraderas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="img-text" style="background-image: url('../img/torno.jpg')">
+            <p id="bg-parrafo2">Productos útiles elaborados en torno y horneados a altas temperaturas que se
+              se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su forma original.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section id="contacto">
+    <div class="container">
+      <br>
+      <h2>Contacto</h2>
+      <p id="bg-parrafo3">Nuestra oferta incluye una gran variedad de artículos para tu hogar, organizamos talleres de vino y ceramica y algunos otros eventos. Si deseas obtener mayores informes sobre algún atículo, cotizaciones de pedidos, acceso a algun taller / evento, o simplemente tienes dudas, escribenos y nosotros nos pondremos en contacto contigo. ¡Gracias por estar aquí!</p>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <form action="enviar.php" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" class="form-control">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-6">
+          <br>
+          <select class="form-select" aria-label="Motivo de Contacto">
+            <option selected>Seleccione el motivo de contacto</option>
+            <option value="1">Cotizaciones</option>
+            <option value="2">Pedidos</option>
+            <option value="3">Talleres y eventos</option>
+            <option value="3">Dudas</option>
+          </select>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <br>
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-2">
+          <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"
+              style="width: 100%;" /></a>
+        </div>
+        <div class="col-sm-12 col-md-5 texto-img">
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./Inicio.html">Inicio</a></div>
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./productos2.html">Catalogo</a></div>
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Piezas Personalizadas</a></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 texto-img">
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
+            <div class="col-sm-6 col-md-5">Siguenos</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="">Términos y Condiciones</a></div>
+            <div class="col-sm-6 col-md-5 social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
+                  src="../icons/face blanco 1.png" alt=""></a>
+              <a href="https://www.instagram.com/maque.ceramica/" target="_blank"><img
+                  src="../icons/instagram blanco.png" alt=""></a>
+              <a href="https://www.tiktok.com/@maque.ceramica" target="_blank"><img src="../icons/tiktok blanco.png"
+                  alt=""></a>
+              <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0" target="_blank"><img
+                  src="../icons/whatsapp blanco.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
-
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <form action="enviar.php" method="POST">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" class="form-control">
-                    </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <p class="text-center">© 2023 Maque Cerámica. Todos los derechos reservados.</p>
         </div>
+      </div>
+    </div>
+  </footer>
 
-
-    </section>
-    <br>
-    <footer>
-        <div class="row">
-            <div class="col-md-12 well"></div>
-            <div class="col-md-12 text-center">
-                <p>© 2021 Maque Cerámica. Todos los derechos reservados.</p>
-            </div>
-        </div>
-
-        <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <!-- Link JS -->
+  <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+p {
+    background-color: #b9c5bb !important;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#pbot-acerca-custom{
+    color: #ffffff !important;
+    border: none !important;
+    background-color: #7A6852 !important;
+    height: 40px !important;
+    width: 50% !important;
+    max-width: 350px !important;
+}

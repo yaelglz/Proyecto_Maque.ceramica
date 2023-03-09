@@ -3,12 +3,12 @@
 }
 
 .navbar-custom {
- background-color: #ae9e8f !important;
+    background-color: #ae9e8f !important;
 }
 
 .nav-font {
- font-style: normal;
- color: #FFFFFF !important;
+    font-style: normal;
+    color: #FFFFFF !important;
 }
 
 .form-custom {
@@ -17,7 +17,86 @@
 }
 
 
-.btn-custom{
+.btn-custom {
     border-end-end-radius: 0 !important;
     border-top-left-radius: 0 !important;
+}
+
+/*footer*/
+
+footer {
+    background-color: #8C7E73;
+    color: #fff;
+    padding: 3px;
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: 10px;
+}
+
+footer .container-fluid {
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+footer .col-sm-2 a.navbar-brand img#Logo-navbar {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* @media (max-width: 768px) {
+    footer .row {
+        margin-bottom: 10px;
+    }
+
+    footer .col-sm-6 {
+        font-size: 14px;
+    }
+} */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.texto-img {
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Ocultar elementos con la clase .hide-on-mobile en la vista móvil */
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 5px;
+    }
 }
