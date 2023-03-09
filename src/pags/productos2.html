@@ -88,8 +88,10 @@
         <div class="row justify-content-between align-items-center mobile-center ">
             <div class="col-6">
                 <div class="view-mode">
-                    <button class="btn-toggle active" data-mode="rows"><i class="fas fa-th-list"></i></button>
-                    <button class="btn-toggle" data-mode="cards"><i class="fas fa-th-large"></i></button>
+                    <button class="btn-toggle btn-toggle-content-row active" data-mode="rows"><i
+                            class="fas fa-th-list"></i></button>
+                    <button class="btn-toggle btn-toggle-content-row" data-mode="cards"><i
+                            class="fas fa-th-large"></i></button>
                 </div>
             </div>
             <div class="col-6">
@@ -106,6 +108,7 @@
     <!-- TERMINA Ordenamiento -->
     <!-- INICIA Tipos - Productos -->
     <div class="container">
+
         <div class="row">
             <div class="col-12 col-md-3">
                 <div class="card sidebar custom-card">
@@ -134,13 +137,12 @@
             </div>
             <!-- TERMINA Tipos - Productos -->
             <!-- INICIA Productos -->
-            <!-- INICIA Productos -->
-            <div class="col-12 col-md-8">
-                <div class="row"> <!-- Agregamos un div contenedor con la clase row -->
-                    <div class="col-12 mb-3 mt-3 producto">
+            <div class="col-12 col-md-8 products" id="productos">
+                <div class="row content-row"> <!-- Agregamos un div contenedor con la clase row -->
+                    <div class="col-12 mb-3 mt-3 producto content-row">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="ruta-de-la-imagen" class="card-img" alt="imagen-producto">
+                                <img src="../img/Instagram/3-01.png" class="card-img" alt="imagen-producto">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body d-flex flex-column justify-content-between h-100">
@@ -167,11 +169,11 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mb-3 mt-3 producto">
+                    <div class="col-12 mb-3 mt-3 producto content-row">
                         <!-- Agregamos la clase col-12 para que ocupe todo el ancho -->
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="ruta-de-la-imagen" class="card-img" alt="imagen-producto">
+                                <img src="../img/Instagram/_MG_4357.jpg" class="card-img" alt="imagen-producto">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body d-flex flex-column justify-content-between h-100">
@@ -198,11 +200,11 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mb-3 mt-3 producto">
+                    <div class="col-12 mb-3 mt-3 producto content-row">
                         <!-- Agregamos la clase col-12 para que ocupe todo el ancho -->
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="ruta-de-la-imagen" class="card-img" alt="imagen-producto">
+                                <img src="../img/Instagram/abril18-01.png" class="card-img" alt="imagen-producto">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body d-flex flex-column justify-content-between h-100">
@@ -229,11 +231,11 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mb-3 mt-3 producto">
+                    <div class="col-12 mb-3 mt-3 producto content-row">
                         <!-- Agregamos la clase col-12 para que ocupe todo el ancho -->
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="ruta-de-la-imagen" class="card-img" alt="imagen-producto">
+                                <img src="../img/Instagram/15-01.png" class="card-img" alt="imagen-producto">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body d-flex flex-column justify-content-between h-100">
@@ -260,9 +262,181 @@
                         </div>
                     </div>
                 </div>
+                <!--Cards-->
+                <div id="cards">
+                    <div class="row">
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/3-01.png"" alt=" Imagen 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/_MG_4357.jpg" alt="Imagen 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/abril18-01.png" alt="Imagen 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/15-01.png" alt="Imagen 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/_MG_4349.jpg" alt="Imagen 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/6-01.png" alt="Imagen 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top" src="../img/Instagram/17-01.png" alt="Imagen 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top img-fluid" src="../img/Instagram/_MG_4363.jpg" alt="Imagen 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 content-card">
+                            <div class="card style-card">
+                                <img class="card-img-top img-fluid" src="../img/Instagram/_MG_4379.jpg" alt="Imagen 9">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <div class="row fotter-card">
+                                        <div class="col-6"> <br>
+                                            <p>Precio</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="add-to-cart carrito-card">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- TERMINA Productos -->
+    <!--Cards-->
+    </div>
+
     <!-- TERMINA Productos -->
     <!--INICIA Toolbar-->
     <div id="toolbar">
@@ -278,11 +452,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-2">
+                <div class="col-sm-12 col-md-2 hide-on-mobile">
                     <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
                             src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%;" /></a>
                 </div>
-                <div class="col-sm-12 col-md-5 texto-img">
+                <div class="col-sm-12 col-md-5 texto-img hide-on-mobile">
                     <div class="row">
                         <div class="col-sm-6 col-md-5"><a href="./Inicio.html">Inicio</a></div>
                         <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
@@ -295,10 +469,10 @@
                 <div class="col-sm-12 col-md-5 texto-img">
                     <div class="row">
                         <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
-                        <div class="col-sm-6 col-md-5">Siguenos</div>
+                        <div class="col-sm-6 col-md-5 hide-on-mobile">Siguenos</div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-5"><a href="">Términos y Condiciones</a></div>
+                        <div class="col-sm-6 col-md-5 hide-on-mobile"><a href="">Términos y Condiciones</a></div>
                         <div class="col-sm-6 col-md-5 social-icons">
                             <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
                                     src="../icons/face blanco 1.png" alt=""></a>
@@ -310,6 +484,14 @@
                                 target="_blank"><img src="../icons/whatsapp blanco.png" alt=""></a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <p class="text-center">© 2023 Maque Cerámica. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
