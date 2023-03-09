@@ -10,26 +10,22 @@
 }
 
 #col-login{
-    background-color: #D9CCC1;
-    padding: 5%;
+    background-color: #d9ccc198;
+    padding: 5em;
     text-align: center;
     margin-right: 50px;
 }
 
 #col-create{
-    background-color: #D9CCC1;
+    background-color: #d9ccc198;
     text-align: center;
-    padding: 5%;
+    padding: 5em;
     margin-left: 50px;
 }
 
 #title{
     color: black;
     font-size: large;
-}
-
-#exampleInputEmail1{
-    color: #ffffff;
 }
 
 #btn-login{
@@ -55,13 +51,13 @@
 }
 
 #col-account{
-    background-color: #D9CCC1;
+    background-color: #d9ccc198;
     text-align:center;
     padding: 2em;
 }
 
 #col-account-box{
-    background-color: #D9CCC1;
+    background-color:rgb(230, 230, 230);
     text-align:left;
     border: 1px solid;
     border-style:inset;
@@ -75,6 +71,6 @@
 }
 
 #table-main{
-    padding: 3em;
-    margin: 3em;
+    padding: 2em;
+    margin: 2em;
 }
