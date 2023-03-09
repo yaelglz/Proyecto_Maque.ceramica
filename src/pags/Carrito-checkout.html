@@ -8,6 +8,7 @@
   <!--link css-->
   <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/stylehomogeneo.css"> 
   <!--Link css carrito-->
   <link rel="stylesheet" href="../styles/carrito1.css">
 
@@ -20,95 +21,133 @@
   <header>
     <!-- NAVBAR -->
     <!--<nav class="navbar" style="background-color: #e3f2fd;"></nav> -->
-    <!-- Navbar content -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-            src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                PRODUCTOS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <!-- Navbar content -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TAZAS</a></li>
+                    <li><a class="dropdown-item" href="#">PLATOS</a></li>
+                    <li><a class="dropdown-item" href="#">VAJILLAS</a></li>
+                    <li><a class="dropdown-item" href="#">FLOREROS</a></li>
+                    <li><a class="dropdown-item" href="#">COCINA</a></li>
+                    <li><a class="dropdown-item" href="#">OTROS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-font">
+                  <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MI CUENTA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NOTICIAS</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="acercade.html">ACERCA DE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MI CUENTA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NOTICIAS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- FIN NAVBAR -->
-
-  </header>
+<!--Buscador de la Navbar -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      <!-- </nav> -->
+      </header>
 
 
   <!--Carrito > Pagar > Pedidos-->
+  <section id="carrito-pagar-link">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          <br>
+          <p> <span id="carritoBold">Carrito ></span> <span>Pagar > </span> <span>Pedidos</span> </p><br>
+
+        </div>
+      </div>
+  </section>
+
+  
+
 
   <div id="product-container" class="container card-page">
     <table>
+      <!--Table tr Header Producto Cantidad Subtotal-->
       <tr>
-        <th>Product </th>
+        <th>Productos </th>
         <th>Cantidad </th>
         <th>Subtotal </th>
       </tr>
+<!--tr Producto 1 img, product name, input quantity, subtotal-->
       <tr class="product-content">
         <td>
           <div class="cart-info">
             <img src="../img/img-pruebacarrito/prueba1.jpg" alt="" style="max-block-size: 100px;">
             <div>
               <p> Product Name asdafdf asdfasd aasd f</p>
-              <small>Price: 50</small>
+              <small>Precio: $200.00</small>
               <br>
-              <a href="">Remove</a>
+              <a href="">Remover</a>
             </div>
 
           </div>
         </td>
         <td><input type="number" value="1"></td>
-        <td>$200</td>
+        <td>$200.00</td>
       </tr>
+
+      <!--tr Producto 2 img, product name, input quantity, subtotal-->
       <tr class="product-content" >
         <td>
           <div class="cart-info">
-            <img src="../img/img-pruebacarrito/prueba1.jpg" alt="">
+            <img src="../img/img-pruebacarrito/prueba3.png" alt="">
             <div>
-              <p> Product Name</p>
-              <small>Price: 50</small>
+              <p> Product Name Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <small>Precio: $200.00</small>
               <br>
-              <a href="">Remove</a>
+              <a href="">Remover</a>
             </div>
 
           </div>
         </td>
         <td><input type="number" value="1"></td>
-        <td>$200</td>
+        <td>$200.00</td>
       </tr>
+      <!--tr Producto 3 img, product name, input quantity, subtotal-->
+      <tr class="product-content" >
+        <td>
+          <div class="cart-info">
+            <img src="../img/img-pruebacarrito/prueba2.jpg" alt="">
+            <div>
+              <p> Product Name</p>
+              <small>Precio: $200.00</small>
+              <br>
+              <a href="">Remover</a>
+            </div>
 
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$200.00</td>
+      </tr>
     </table>
-<!--Tabla Total y subtotal-->
+
+<!--Tabla Subtotal, Envio Total -->
     <div class="total-price">
       <table>
         <tr>
           <td id="total-price-separation" style="font-weight: bold;">Subtotal</td>
-          <td id="total-price-separation">$400.00</td>
+          <td id="total-price-separation">$600.00</td>
         </tr>
         <tr>
           <td id="total-price-separation" style="font-weight: bold;">Envio</td>
@@ -116,14 +155,14 @@
         </tr>
         <tr>
           <td id="total-price-separation" style="font-weight: bold;">Total</td>
-          <td id="total-price-separation">$450.00</td>
+          <td id="total-price-separation">$650.00</td>
         </tr>
-
       </table>
-      
     </div>
-    <div class="total-price">
 
+      
+    <!--Tabla con boton proceder al pago -->
+    <div class="total-price">
       <table>
         <tr>
           <td>
@@ -131,10 +170,10 @@
           </td>
         </tr>
       </table>
-
     </div>
-
   </div>
+
+
 
 
 
@@ -148,7 +187,7 @@
 
   <!-- Link JS -->
 
-  <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
