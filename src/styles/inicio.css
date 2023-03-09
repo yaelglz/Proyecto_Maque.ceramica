@@ -1,7 +1,8 @@
 p {
     background-color: #b9c5bb !important;
-    text-align: left;
+    text-align: justify;
     padding-left: 15px;
+    font-family: 'IMB Plex Sans', sans-serif;
 }
 
 #pbot-acerca-custom{
@@ -11,4 +12,25 @@ p {
     height: 40px !important;
     width: 50% !important;
     max-width: 350px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+h2{
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.custom-containers2 {
+    background-color: #bebebe;
+}
+
+.custom-containers3 {
+    background-color: #D9CCC1;
+}
+
+.custom-card{
+    background-color: #bebebe;
 }

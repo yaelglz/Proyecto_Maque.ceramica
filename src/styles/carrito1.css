@@ -1,32 +1,16 @@
+p{
+    font-family: 'IMB Plex Sans', sans-serif;
+}
 
 #carritoBold{
+    
     font-weight:600
 }
-/*Caja Con Los Productos del Carrito*/
-/*
-#product-container{
-    background-color: #EFECEA;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-}
-#desc-de-compra{
-    background-color: #FFFFFF; border: #FFFFFF;
-}
-
-.imgProdCarrito{
-display: flexbox;
-    max-width: 100px;
-
-}
-*/
-
 
 
 /*Productos del Carrito*/
 #product-container{
+    font-family: 'IMB Plex Sans', sans-serif;
     background-color: #EFECEA;
     padding-left: 35px;
     padding-right: 35px;
@@ -94,6 +78,7 @@ td img{
 }
 
 .total-price{
+    font-family: 'IMB Plex Sans', sans-serif;
     display: flex;
     justify-content: flex-end;
 }
@@ -123,14 +108,12 @@ th:last-child{
 }
 
 /*---Media query styles---*/
-@media only screen and (min-width: 600px) {
-    .row{
-        text-align: center;
-    }
-    .cart-info p{
+@media only screen and (max-width: 600px) {
+     .cart-info p{
         display: none;
     }
 }
+
 
 
 

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link css-->
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../styles/stylehomogeneo.css">
+    <!--Link css pagar-->
+    <link rel="stylesheet" href="../styles/pagar.css">
+
+    <title>Document</title>
+</head>
+</
+<body>
+    <!--Carrito > Pagar > Pedidos-->
+    <section id="carrito-pagar-link">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col">
+                    <br>
+                    <p> <span id="carritoBold">Carrito ></span> <span>Pagar > </span> <span>Pedidos</span> </p><br>
+
+                </div>
+            </div>
+    </section>
+
+    <!--Fromulario de informacion-->
+     <div class="container">
+        <div class="row">
+            <div class="col-8" style="background-color: rgb(157, 255, 0);">
+                <h4>Información de contacto</h4>
+                <form>
+                    <!--linea 1-->
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="" for="Nombre">Nombre</label>
+                            <input type="text" id="nombre-pago" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label class="" for="Apellidos">Apellidos</label>
+                            <input type="text" id="apellido-pago" class="form-control">
+                        </div>
+                        <!--linea 2-->
+                        <div class="col-12">
+                            <label class="form-label" for="username">Username</label>
+                            <div class="input-grup">
+
+                                <input type="text" class="form-control" id="username-pago">
+                            </div>
+
+                        </div>
+                        <!--linea 3-->
+                        <div class="col-12">
+                            <label class="" for="email">Correo electrónico</label>
+                            <input type="text" id="email-pago" class="form-control">
+                        </div>
+                        <!--linea 4-->
+                        <div class="col-12">
+                            <label class="" for="direccion">Dirección</label>
+                            <input type="text" id="direccion-pago" class="form-control">
+                        </div>
+                        <!--linea 5-->
+                        <div class="col-5">
+                            <label class="form-label" for="estado">Estado</label>
+                            <select class="form-select" name="estados-pago" id="estado">
+                                <option>Guadalajara</option>
+                                <option>CDMX</option>
+                                <option>Monterrey</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="pais">Estado</label>
+                            <select class="form-select" name="estados" id="estados-pago">
+                                <option>Guadalajara</option>
+                                <option>CDMX</option>
+                                <option>Monterrey</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="cp-pago">CP</label>
+                            <input type="text" id="cp-pago" class="form-control">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <!--como pagar-->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="">aqui puede ir un check box</label>
+                    </div>
+                    <hr>
+                    <h4>Pago</h4>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="tarjeta">Tarjeta de débito/crédito</label>
+                    </div>
+                    <!--info de tarjeta-->
+                    <div class="col-12">
+                        <label class="" for="num-tarjeta">Número de la tarjeta</label>
+                        <input type="text" id="num-tarjeta" class="form-control">
+                        <small class="text-muted">texto pequeño</small>
+                    </div>
+                    <div class="col-12">
+                        <label class="" for="nombre-tarjeta">Nombre dek tarjetahabiente</label>
+                        <input type="text" id="nombre-tarjeta" class="form-control">
+                        <small class="text-muted">texto pequeño</small>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="mes">Més</label>
+                            <select class="form-select" name="mes" id="estados-pago">
+                                <option>Elige una opción</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-label" for="mes">Año</label>
+                            <select class="form-select" name="mes" id="estados-pago">
+                                <option>Elige una opción</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                                <option>2030</option>
+
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="cvc-pago">CVC</label>
+                            <input type="text" id="cvc-pago" class="form-control" maxlength="3">
+                        </div>
+                    </div>
+                    <hr>
+                    <!--bOTON PAGAR-->
+                    <button type="submit" id="proceder-pago">PAGAR</button>
+                </form>
+            </div>
+           
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+    <div class="w-100 d-inline d-md-block"></div>
+
+            <!--Resumen de carrito-->
+            <div class="col-4" style="background-color: aqua;">
+                <h4 class="d-flex justify-content-between aling-item-center">
+                    <span class="text-muted">Tu Carrito</span>
+                    <span class="text-muted">3</span>
+
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h4>Producto1</h4>
+                            <span>descripcion</span>
+                        </div>
+                        <span>$200.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h4>Producto2</h4>
+                            <span>descripcion</span>
+                        </div>
+                        <span>$200.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h4>Producto3</h4>
+                            <span>descripcion</span>
+                        </div>
+                        <span>$200.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h4>envio</h4>
+                            <span>descripcion</span>
+                        </div>
+                        <span>$50.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h4>Total</h4>
+                        </div>
+                        <span>$650.00</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div> 
+<br>
+<br>
+
+<!--------------------------------------->
+
+<h2>Checkout</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <h3>Información de envío</h3>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nombre completo</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Tu nombre completo">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="address">Dirección</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="address" name="address" placeholder="Tu dirección completa">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="city">Ciudad</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Tu ciudad">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="state">Estado</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="state" name="state" placeholder="Tu estado">
+      </div>
+    </div>
+
+
+
+<!--Formulario de pago-->
+
+    <h2>Formulario de Pago</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="cname">Nombre en la Tarjeta</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="cname" name="cardname" placeholder="Nombre en la Tarjeta">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="ccnum">Número de Tarjeta</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ccnum" name="cardnumber" placeholder="Número de Tarjeta">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="expmonth">Mes de Expiración</label>
+      </div>
+      <div class="col-75">
+        <select id="expmonth" name="expmonth">
+          <option value="01">Enero</option>
+          <option value="02">Febrero</option>
+          <option value="03">Marzo</option>
+          <option value="04">Abril</option>
+          <option value="05">Mayo</option>
+          <option value="06">Junio</option>
+          <option value="07">Julio</option>
+          <option value="08">Agosto</option>
+
+
+    <!-- Link JS -->
+    <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
