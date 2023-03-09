@@ -32,6 +32,11 @@ footer {
     font-size: 10px;
 }
 
+footer .container-fluid {
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: 15px;
+}
+
 
 footer .col-sm-2 a.navbar-brand img#Logo-navbar {
     display: block;
