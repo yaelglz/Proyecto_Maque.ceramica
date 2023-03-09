@@ -27,8 +27,11 @@
 footer {
     background-color: #8C7E73;
     color: #fff;
-    padding: 3px 0;
+    padding: 3px;
+    font-family: 'IMB Plex Sans', sans-serif;
+    font-size: 10px;
 }
+
 
 footer .col-sm-2 a.navbar-brand img#Logo-navbar {
     display: block;

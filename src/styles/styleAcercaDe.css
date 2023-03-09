@@ -67,29 +67,8 @@
   }
   
 
-  /* Estilos del navbar */
-  .navbar {
-    background-color: #8C7E72;
-    font-family: 'IMB Plex Sans', sans-serif;
-  }
-  
-  .nav-link {
-    color: #997878 !important;
-  }
-  
-  .dropdown-menu {
-    background-color: #BFB0A3;
-  }
-  
-  .dropdown-item {
-    color: #736151;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #8C7E72;
-    color: #ae8888;
-  }
-  
+
+
   /* Estilos generales */
   body {
     font-family: 'IMB Plex Sans', sans-serif;
@@ -108,10 +87,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
-
-
-
 
 
 #bg-parrafo1 {
