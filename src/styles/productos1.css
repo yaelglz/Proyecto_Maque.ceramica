@@ -8,7 +8,6 @@
     margin: 20px 154px;
     position: relative;
     z-index: 1;
-    /* Para que la barra de categorías se muestre por encima del resto de elementos */
 }
 
 .barra-categorias:before,
@@ -391,10 +390,7 @@ select {
 .style-card {
     background-color: #f2f2f2;
     margin-top: 30px;
-    border-radius: 0%
-}
-
-.style-card {
+    border-radius: 0%;
     height: 90%;
     object-fit: cover;
 }
@@ -413,6 +409,7 @@ select {
     width: 2em;
     height: 2em;
     text-align: right;
+    z-index: 1;
 }
 
 .fotter-card {
