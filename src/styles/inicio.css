@@ -1,9 +1,3 @@
-p {
-    background-color: #b9c5bb !important;
-    text-align: justify;
-    padding-left: 15px;
-    font-family: 'IMB Plex Sans', sans-serif;
-}
 
 #pbot-acerca-custom{
     color: #ffffff !important;
@@ -21,10 +15,12 @@ h2{
     font-family: 'IMB Plex Sans', sans-serif;
     font-size: medium;
     text-transform: uppercase;
+    color: #ffffff;
+    
 }
 
 .custom-containers2 {
-    background-color: #bebebe;
+    background-color: #d6d6d6;
 }
 
 .custom-containers3 {
@@ -32,5 +28,67 @@ h2{
 }
 
 .custom-card{
-    background-color: #bebebe;
+    background-color: #d6d6d6;
 }
+
+
+.image-h{
+    position: relative;
+    width: 200%;
+}
+
+
+
+.image--img{
+ display: block;
+ width: 50%;
+ box-shadow: 0px 5px 15px rgba(50, 50, 50, 0.6);
+}
+
+
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(186, 185, 185, 0.6);
+    color: #ffffff;
+    font-family: 'IMB Plex Sans', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image-overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image-overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+.image-overlay:hover > *{
+    transform: translateY(0);
+}
+
+.image--title{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+
+@media (max-width: 576px) {
+    .image-overlay {
+      font-size: 0.3rem;
+    }
+  }

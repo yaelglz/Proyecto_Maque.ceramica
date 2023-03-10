@@ -1,6 +1,6 @@
-body {
+/*body {
     font-family: 'IMB Plex Sans', sans-serif;
-}
+}*/
 
 .barra-categorias {
     background-color: #D9CDC1;
@@ -8,7 +8,6 @@ body {
     margin: 20px 154px;
     position: relative;
     z-index: 1;
-    /* Para que la barra de categorías se muestre por encima del resto de elementos */
 }
 
 .barra-categorias:before,
@@ -228,6 +227,12 @@ select {
     justify-content: flex-end;
 }
 
+@media (max-width: 767px) {
+    .view-mode {
+        display: none;
+    }
+}
+
 .custom-margin-right {
     margin-right: 200px;
 }
@@ -244,12 +249,15 @@ select {
     border-radius: 0%;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 992px) {
     .sidebar {
         display: none;
     }
 }
 
+.card-title-cate {
+    font-size: 2vw;
+}
 
 .categories {
     list-style: none;
@@ -382,10 +390,7 @@ select {
 .style-card {
     background-color: #f2f2f2;
     margin-top: 30px;
-    border-radius: 0%
-}
-
-.style-card {
+    border-radius: 0%;
     height: 90%;
     object-fit: cover;
 }
@@ -404,6 +409,7 @@ select {
     width: 2em;
     height: 2em;
     text-align: right;
+    z-index: 1;
 }
 
 .fotter-card {

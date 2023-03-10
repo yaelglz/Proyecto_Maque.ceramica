@@ -58,13 +58,13 @@ toggleButtons.forEach(button => {
         }
     });
 });
+
 // Ocultar el contenedor al cargar la página
 document.querySelector('#cards').classList.add('hidden');
 
 
 //Filtrar por categorías
 const categories = document.querySelectorAll('.category');
-
 categories.forEach(category => {
     const subcategories = category.querySelectorAll('.subcategory');
 
@@ -181,13 +181,22 @@ if (window.innerWidth <= 4) {
     document.querySelector('.sidebar').classList.add('oculto');
 }
 
-// Obtener el botón de "Agregar al carrito" por su id
-const addToCartButton = document.getElementById('add-to-cart');
+// seleccionar todas las cards con la clase "content-card"
+var cards = document.querySelectorAll(".content-card");
+// iterar sobre todas las cards y ocultarlas
+for (var i = 0; i < cards.length; i++) {
+    cards[i].style.display = "none";
+}
 
-// Agregar un evento de clic al botón
-addToCartButton.addEventListener('click', () => {
-    // Mostrar una alerta cuando se hace clic en el botón
-    alert('¡Producto agregado al carrito!');
+// Obtener todos los elementos de botón de carrito
+var addToCartButtons = document.querySelectorAll('.add-to-cart');
+// Recorrer todos los botones y agregar un evento clic
+addToCartButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        // Obtener el contador actual
+        var currentCount = parseInt(document.getElementById('cart-count').textContent);
+
+        // Actualizar el contador
+        document.getElementById('cart-count').textContent = currentCount + 1;
+    });
 });
-
-document.getElementById("cards").style.display = "block";
