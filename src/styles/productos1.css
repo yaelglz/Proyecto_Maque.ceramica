@@ -228,6 +228,12 @@ select {
     justify-content: flex-end;
 }
 
+@media (max-width: 767px) {
+    .view-mode {
+        display: none;
+    }
+}
+
 .custom-margin-right {
     margin-right: 200px;
 }
@@ -244,12 +250,15 @@ select {
     border-radius: 0%;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 992px) {
     .sidebar {
         display: none;
     }
 }
 
+.card-title-cate {
+    font-size: 2vw;
+}
 
 .categories {
     list-style: none;
