@@ -104,3 +104,26 @@ footer p {
 .cart-icon {
     position: relative;
 }
+
+#cart-count {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+    font-size: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    z-index: 999;
+}
