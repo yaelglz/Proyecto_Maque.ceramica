@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yaelglz/Proyecto_Maque.ceramica/issues"
   },
-  "homepage": "https://github.com/yaelglz/Proyecto_Maque.ceramica#readme"
+  "homepage": "https://github.com/yaelglz/Proyecto_Maque.ceramica#readme",
+  "dependencies": {
+    "jquery": "^3.6.4"
+  }
 }
