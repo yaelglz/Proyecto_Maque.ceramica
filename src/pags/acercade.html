@@ -55,7 +55,7 @@
           <a class="navbar-brand " href="Carrito-checkout.html">
             <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="30" height="30">
           </a>
-      
+
           <!--Buscador de la Navbar -->
           <form class="d-flex" role="search">
             <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
@@ -88,7 +88,8 @@
         <div class="col-md-12 text-center">
           <div class="img-text" style="background-image: url('../img/torno.jpg')">
             <p id="bg-parrafo2">Productos útiles elaborados en torno y horneados a altas temperaturas que se
-              se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su forma original.</p>
+              se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su
+              forma original.</p>
           </div>
         </div>
       </div>
@@ -97,19 +98,23 @@
   </section>
 
 
-
+  <!-- SECCION DE CONTACTO-->
   <section id="contacto">
     <div class="container">
       <br>
       <h2>Contacto</h2>
-      <p id="bg-parrafo3">Nuestra oferta incluye una gran variedad de artículos para tu hogar, organizamos talleres de vino y ceramica y algunos otros eventos. Si deseas obtener mayores informes sobre algún atículo, cotizaciones de pedidos, acceso a algun taller / evento, o simplemente tienes dudas, escribenos y nosotros nos pondremos en contacto contigo. ¡Gracias por estar aquí!</p>
+      <p id="bg-parrafo3">Nuestra oferta incluye una gran variedad de artículos para tu hogar, organizamos talleres de
+        vino y cerámica y algunos otros eventos. Si deseas obtener mayores informes sobre algún artículo, cotizaciones
+        de pedidos, acceso a algún taller / evento, o simplemente tienes dudas, escríbenos y nosotros nos pondremos en
+        contacto contigo. ¡Gracias por estar aquí!</p>
 
       <div class="row">
         <div class="col-sm-6">
-          <form action="enviar.php" method="POST">
+          <form action="enviar.php" method="POST" onsubmit="return validarFormulario()">
             <div class="form-group">
               <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" class="form-control" required>
+              <input type="text" id="nombre" name="nombre" class="form-control" required
+                pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
             </div>
             <div class="form-group">
               <label for="correo">Correo electrónico:</label>
@@ -117,7 +122,7 @@
             </div>
             <div class="form-group">
               <label for="telefono">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" class="form-control">
+              <input type="tel" id="telefono" name="telefono" class="form-control" pattern="[0-9]+">
             </div>
             <br>
         </div>
@@ -140,59 +145,94 @@
         <br>
       </div>
     </div>
-
   </section>
 
+  <!--VALIDACIÓN DEL FORMULARIO-->
+  <script>
+    function validarFormulario() {
+      let nombre = document.getElementById("nombre").value;
+      let correo = document.getElementById("correo").value;
+      let telefono = document.getElementById("telefono").value;
+      let mensaje = document.getElementById("mensaje").value;
 
-<!--INICIA Footer-->
-<footer>
+      // Validar que los campos no estén vacíos
+      if (nombre === "" || correo === "" || mensaje === "") {
+        alert("Por favor, completa todos los campos requeridos.");
+        return false;
+      }
+
+      // Validar formato de correo electrónico
+      let formatoCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (!formatoCorreo.test(correo)) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return false;
+      }
+
+      // Validar formato de número de teléfono
+      let formatoTelefono = /^\d+$/;
+      if (telefono !== "" && !formatoTelefono.test(telefono)) {
+        alert("Por favor, ingresa un número de teléfono válido.");
+        return false;
+      }
+
+      // Si todos los campos son válidos, enviar formulario
+      return true;
+    }
+  </script>
+
+  <!--FIN DE VALIDACIÓN DEL FORMULARIO-->
+  <!-----FIN DE SECCION DE CONTACTO----->
+
+
+  <!--INICIA Footer-->
+  <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-2 hide-on-mobile">
-                <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                        src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%;" /></a>
-            </div>
-            <div class="col-sm-12 col-md-5 texto-img hide-on-mobile">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5"><a href="./Inicio.html">Inicio</a></div>
-                    <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-5"><a href="./productos2.html">Catalogo</a></div>
-                    <div class="col-sm-6 col-md-5"><a href="./acercade.html">Piezas Personalizadas</a></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-5 texto-img">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
-                    <div class="col-sm-6 col-md-5 hide-on-mobile">Siguenos</div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-5 hide-on-mobile"><a href="">Términos y Condiciones</a></div>
-                    <div class="col-sm-6 col-md-5 social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
-                                src="../icons/face blanco 1.png" alt=""></a>
-                        <a href="https://www.instagram.com/maque.ceramica/" target="_blank"><img
-                                src="../icons/instagram blanco.png" alt=""></a>
-                        <a href="https://www.tiktok.com/@maque.ceramica" target="_blank"><img
-                                src="../icons/tiktok blanco.png" alt=""></a>
-                        <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0"
-                            target="_blank"><img src="../icons/whatsapp blanco.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-2 hide-on-mobile">
+          <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"
+              style="width: 100%;" /></a>
         </div>
+        <div class="col-sm-12 col-md-5 texto-img hide-on-mobile">
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./Inicio.html">Inicio</a></div>
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./productos2.html">Catalogo</a></div>
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Piezas Personalizadas</a></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 texto-img">
+          <div class="row">
+            <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
+            <div class="col-sm-6 col-md-5 hide-on-mobile">Siguenos</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-5 hide-on-mobile"><a href="">Términos y Condiciones</a></div>
+            <div class="col-sm-6 col-md-5 social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
+                  src="../icons/face blanco 1.png" alt=""></a>
+              <a href="https://www.instagram.com/maque.ceramica/" target="_blank"><img
+                  src="../icons/instagram blanco.png" alt=""></a>
+              <a href="https://www.tiktok.com/@maque.ceramica" target="_blank"><img src="../icons/tiktok blanco.png"
+                  alt=""></a>
+              <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0" target="_blank"><img
+                  src="../icons/whatsapp blanco.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <br>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p class="text-center">© 2023 Maque Cerámica. Todos los derechos reservados.</p>
-            </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <p class="text-center">© 2023 Maque Cerámica. Todos los derechos reservados.</p>
         </div>
+      </div>
     </div>
-</footer>
-<!--TERMINA Footer-->
+  </footer>
+  <!--TERMINA Footer-->
 
   <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
   <!-- Link JS -->
