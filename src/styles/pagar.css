@@ -1,132 +1,40 @@
-/* Estilos para hacer el formulario responsivo */
- /* Estilos para hacer el formulario responsivo */
- * {
-  box-sizing: border-box;
+#carritoBold{
+    
+  font-weight:600
 }
 
-input[type=text], select, textarea, input[type=number], input[type=date], input[type=email], input[type=password] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+.container{
+  font-family: 'IMB Plex Sans', sans-serif;
+
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+#estado{
+  border-radius: 0%;
+}
+#estados-pago{
+  border-radius: 0%;
+}
+#resumen-carrito{
+  border-radius: 0%;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
+
+
+.form-control{
+  border-radius: 0%;
+}
+
+#proceder-pago{
+
+  color: #ffffff;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Cambiar el tamaño del formulario para pantallas pequeñas */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-/********************************/
-
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
+  background-color: #7A6852;
+  height: 40px;
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+  max-width: 350px;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Cambiar el tamaño del formulario para pantallas pequeñas */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+#cont-resumen{
+  background-color: #EFECEA;
+  padding: 30px;
 }
