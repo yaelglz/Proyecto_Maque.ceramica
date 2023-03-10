@@ -74,3 +74,24 @@
     padding: 2em;
     margin: 2em;
 }
+
+/* Estilos para validación */
+
+.form-valid{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form-invalid{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form-login-error{
+    display: none;
+    font-size: small;
+}
+
+.form-login-error-activo{
+    display:block;
+}
