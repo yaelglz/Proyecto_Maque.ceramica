@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../styles/styles.css">
     <!-- CSS Estándar -->
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
+    <link rel="stylesheet" href="../styles/inicio.css">
 
 </head>
 
@@ -83,28 +84,30 @@
                 <div class="row">
                     <div class="col" id="col-login">
                         <!-- Inicio formulario login-->
-                        <form>
+                        <form id="form-login">
                             <!-- Div email -->
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div class="mb-3" id="form-email-login">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email-login">
+                                <p class="form-login-error">Correo inválido</p>
                             </div>
                             <!-- Cierre Div email -->
                             <!-- Div contraseña -->
-                            <div class="mb-3">
+                            <div class="mb-3" id="form-password-login">
                                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" class="form-control" id="password-login">
+                                <p class="form-login-error">La contraseña debe incluir mínimo 4 y máximo 12 dígitos</p>
                             </div>
                             <!-- Cierre Div contraseña-->
                             <!-- Div checkbox -->
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <div class="mb-3 form-check" id="form-checkbox-recordar">
+                                <input type="checkbox" class="form-check-input" id="checkbox-recordar">
                                 <label class="form-check-label" for="exampleCheck1">Recordar</label>
                             <!-- Cierre Div checkbox -->
                             </div>
                             <!-- Div checkbox noticias -->
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <div class="mb-3 form-check" id="form-noticias-login">
+                                <input type="checkbox" class="form-check-input" id="noticias-login">
                                 <label class="form-check-label" for="exampleCheck1">Quiero recibir noticias, novedades y promociones de Maque Cerámica</label>
                             <!-- Cierre Div checkbox  noticias-->
                             </div>
@@ -115,95 +118,79 @@
 
                     <div class="col" id="col-create">
                         <!-- Inicio formulario con validación crear cuenta-->
-                        <form class="row g-3 needs-validation" novalidate>
-                            <!-- Div nombre -->
-                            <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">
-                                    Nombre
-                                </label>
-                                <input type="text" class="form-control" id="validationCustom01">
-                                <!-- Div alerta nombre -->
-                                <div class="valid-feedback">
-                                    Nombre válido
-                                </div>
-                                <!-- Cierre Div alerta nombre -->
+                        <form class="row g-3" id="form-login">
+                            <div class="col-md-4" id="form-nombre-create">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre-create" required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                Ingresa un nombre válido
+                                </p>
                             </div>
-                            <!-- Cierre Div nombre -->
-                            <!-- Div apellido -->
-                            <div class="col-md-6">
-                                <label for="validationCustom02" class="form-label">
-                                    Apellido
-                                </label>
-                                <input type="text" class="form-control" id="validationCustom01">
-                                <!-- Div alerta apellido -->
-                                <div class="valid-feedback">
-                                    Apellido válido
-                                </div>
-                                <!-- Cierre Div alerta apellido -->
+                            <div class="col-md-4" id="form-apellido-create">
+                                <label class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido-create"required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                Apellido Válido
+                                </p>
                             </div>
-                            <!-- Cierre Div apellido -->
-                            <!-- Div ciudad -->
-                            <div class="col-md-6">
-                                <label for="validationCustom03" class="form-label">
-                                    Ciudad
-                                </label>
-                                <input type="text" class="form-control" id="validationCustom03" required>
-                                <div class="invalid-feedback">
-                                    Proporciona una ciudad válida.
-                                </div>
+                            <div class="col-md-4" id="form-username-create">
+                                <label class="form-label">Nombre de usuario</label>
+                                <div class="input-group">
+                                <input type="text" class="form-control" id="username-create" aria-describedby="inputGroupPrepend" required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                    Por favor, ingresa un nombre de usuario válido (4 a 16 caracteres. Letras, numeros, - y _)
+                                </p>
                             </div>
-                            <!-- Cierre Div ciudad -->
-                            <!-- Div estado -->
-                            <div class="col-md-3">
-                                <label for="validationCustom04" class="form-label">
-                                    Estado
-                                </label>
-                                <select class="form-select" id="validationCustom04" required>
-                                    <option selected disabled value="">
-                                        Elige...
-                                    </option>
-                                    <option>Aguascalientes</option><option>Baja California</option><option>Baja California Sur</option><option>Campeche</option><option>Chiapas</option><option>Chihuahua</option><option>Coahuila</option><option>Colima</option><option>CDMX</option><option>Durango</option><option>Estado de México</option><option>Guanajuato</option><option>Guerrero</option><option>Hidalgo</option><option>Jalisco</option><option>Michoacán</option><option>Morelos</option><option>Nayarit</option><option>Nuevo León</option><option>Oaxaca</option><option>Puebla</option><option>Querétaro</option><option>Quintana Roo</option><option>San Luis Potosí</option><option>Sinaloa</option><option>Sonora</option><option>Tabasco</option><option>Tamaulipas</option><option>Tlaxcala</option><option>Veracruz</option><option>Yucatán</option><option>Zacatecas</option>
+                            </div>
+                            <div class="col-md-6" id="form-ciudad-create">
+                                <label class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad-create" required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                Proporciona una ciudad válida.
+                                </p>
+                            </div>
+                            <div class="col-md-3" id="form-estado-create">
+                                <label class="form-label">Estado</label>
+                                <select class="form-select" id="estado-create" required>
+                                    <option selected disabled value="">Elige...</option>
+                                    <option>...</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Selecciona un estado válido.
-                                </div>
                             </div>
-                            <!-- Cierre Div estado -->
-                            <!-- Div CP -->
-                            <div class="col-md-3">
-                                <label for="validationCustom05" class="form-label">
-                                    Código postal
-                                </label>
-                                <input type="text" class="form-control" id="validationCustom05" required>
-                                <div class="invalid-feedback">
-                                    Proporciona un código postal válido.
-                                </div>
+                            <div class="col-md-3"id="form-cp-create">
+                                <label class="form-label">Código postal</label>
+                                <input type="text" class="form-control" id="cp-create" required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                Proporciona un código postal válido.
+                                </p>
                             </div>
-                            <!-- Cierre Div CP -->
-                            <!-- Div checkbox terminos -->
-                            <div class="col-12">
+                            <div class="col-md-6" id="form-password-create">
+                                <label class="form-label">Elige una contraseña</label>
+                                <input type="text" class="form-control" id="password-create" required>
+                                <p class="form-login-error">La contraseña debe incluir mínimo 4 y máximo 12 dígitos</p>
+                                </p>
+                            </div>
+                            <div class="col-md-6" id="form-password-match-create">
+                                <label class="form-label">Repite la contraseña</label>
+                                <input type="text" class="form-control" id="password-match-create"required>
+                                <p class="form-login-error" id="mensaje-valido">
+                                La contraseña no coincide
+                                </p>
+                            </div>
+                            <div class="col-12" id="form-checkbox-terminos">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                        Acepta los términos y condiciones
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Debe estar de acuerdo antes de enviar.
-                                    </div>
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-terminos" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepta los términos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debe estar de acuerdo antes de enviar.
                                 </div>
-                            <!-- Cierre Div checkbox terminos -->
-                            </div>
-                            <!-- Div checkbox noticias -->
-                            <div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Quiero recibir noticias, novedades y promociones de Maque Cerámica</label>
-                            <!-- Cierre Div checkbox  noticias-->
                             </div>
                             </div>
-                        <!-- Cierre formulario -->
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit" id="btn-create">Crear Cuenta</button>
+                            </div>
                         </form>
-                        <a href="./micuenta.html" type="submit" class="btn btn-primary" id="btn-create">Crear Cuenta</a>
                     <!-- Cierre div col crear cuenta -->
                     </div>
                 </div>
@@ -264,9 +251,9 @@
     <!--TERMINA Footer-->
 
     <!-- Link JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <!-- Link JS Bootstrap local -->
     <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/login.js"></script>
     
 </body>
 </html>
