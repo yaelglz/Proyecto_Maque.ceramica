@@ -1,6 +1,6 @@
 #Noticias-y-eventos {
   background-color: #F2F2F2;
-  font-family: 'IMB Plex Sans', sans-serif;
+  font-family: maqueFont;
 }
 
 #Noticias-y-eventos h2 {
@@ -32,8 +32,8 @@
 }
 
 #Noticias-y-eventos .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #Noticias-y-eventos .row {

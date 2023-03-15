@@ -1,7 +1,7 @@
 /* Estilos de la sección Acerca De */
 #acerca-de {
     background-color: #F2F2F2;
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     
   }
   
@@ -18,7 +18,7 @@
   /* Estilos de la sección Contacto */
   #contacto {
     background-color: #D9CCC1;
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     font-size: 15px;
     color: rgb(77, 59, 59) !important;
   }
@@ -52,7 +52,7 @@
   }
 
   .form-select {
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     border: opx solid rgba(255, 255, 255, 0);
     border-radius: 0px;
     background-color: #736151;
