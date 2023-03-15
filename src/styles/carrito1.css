@@ -1,5 +1,5 @@
 p{
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
 }
 
 #carritoBold{
@@ -10,7 +10,7 @@ p{
 
 /*Productos del Carrito*/
 #product-container{
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     background-color: #EFECEA;
     padding-left: 35px;
     padding-right: 35px;

@@ -4,7 +4,7 @@
 }
 
 .container{
-  font-family: 'IMB Plex Sans', sans-serif;
+  font-family: maqueFont;
 
 }
 
@@ -23,8 +23,16 @@
 .form-control{
   border-radius: 0%;
 }
+.boton{
 
-#proceder-pago{
+  color: #ffffff;
+  border: none;
+  background-color: #7A6852;
+  height: 40px;
+  width: 100%;
+  max-width: 350px;
+}
+.boton{
 
   color: #ffffff;
   border: none;
@@ -38,3 +46,4 @@
   background-color: #EFECEA;
   padding: 30px;
 }
+
