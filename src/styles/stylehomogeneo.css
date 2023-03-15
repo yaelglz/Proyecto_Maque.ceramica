@@ -115,11 +115,9 @@ footer p {
     background-color: white;
     color: black;
     position: absolute;
-    bottom: -15px;
-    right: -10px;
+    top: -10px;
+    left: 18px;
     font-size: 12px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 20px;
     height: 20px;
     border-radius: 50%;

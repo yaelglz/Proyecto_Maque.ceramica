@@ -8,6 +8,8 @@
     margin: 20px 154px;
     position: relative;
     z-index: 1;
+    border-radius: 0 15px 0 15px;
+    overflow: hidden;
 }
 
 .barra-categorias:before,
@@ -38,21 +40,19 @@
 }
 
 .barra-categorias ul li a {
-    color: #000;
+    color: #4e3a2d;
     /* Para hacer el texto negro */
-    font-weight: bold;
+    font-weight: 500;
     font-size: 25px;
     text-decoration: none;
 }
 
-.barra-categorias ul li:first-child a {
+/* .barra-categorias ul li:first-child a {
     font-size: 40px;
-    font-weight: bold;
-}
+    font-weight: 600;
+} */
 
 .barra-categorias ul li a {
-    color: #000;
-    text-decoration: none;
     padding: 10px 20px;
     /* Relleno interno de cada elemento de la lista */
     transition: background-color 0.3s ease;
@@ -75,10 +75,10 @@
     /* Margen a izquierda y derecha */
 }
 
-.barra-categorias ul li:first-child a {
+/* .barra-categorias ul li:first-child a {
     font-size: 20px;
-    font-weight: bold;
-}
+    font-weight: 600;
+} */
 
 .barra-categorias .categoria-productos ul li a {
     color: #000;
@@ -158,9 +158,9 @@
 .barra-categorias .categoria-productos a {
     font-size: 29px;
     /* Cambiar el valor del tamaño de fuente según sea necesario */
-    font-weight: bold;
+    font-weight: 501;
     text-decoration: none;
-    color: black;
+    color: #4e3a2d;
 }
 
 @media only screen and (max-width: 950px) {
@@ -175,7 +175,6 @@
     .barra-categorias .categoria-productos {
         display: none;
     }
-
 }
 
 /* Mostrar la lista de categorías cuando se hace clic en el botón de hamburguesa */
@@ -183,12 +182,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 }
 
-
 select {
-    margin: 0 20px;
+    /* margin: 0 20px; */
     background-color: #f2f2f2;
 }
 
@@ -203,7 +201,6 @@ select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
 }
 
 .btn-toggle.active {
@@ -247,7 +244,28 @@ select {
 .sidebar {
     background-color: #f2f2f2;
     border-radius: 0%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.09);
 }
+
+.categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+}
+
+.subcategory {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+
 
 @media (max-width: 992px) {
     .sidebar {
@@ -305,15 +323,15 @@ select {
 .add-to-cart {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: #000;
+    /* border-radius: 50%; */
+    /* background-color: #7a6852; */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 25px;
+    /* color: #fff; */
+    /* font-size: 25px; */
     cursor: pointer;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     position: relative;
 }
 

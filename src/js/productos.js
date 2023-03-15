@@ -6,7 +6,6 @@ var listaCategorias = document.querySelector('.barra-categorias ul');
 botonHamburguesa.addEventListener('click', function () {
     listaCategorias.classList.toggle('mostrar');
 });
-
 var menu = document.getElementById("menu");
 menu.style.padding = "1px";
 menu.style.border = "none";
