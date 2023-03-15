@@ -1,3 +1,8 @@
+@font-face{
+    font-family: maqueFont;
+    src:url(../assets/fonts/Gotham_Book_Font.otf)
+}
+
 #Logo-navbar {
     width: 200px;
 }
@@ -9,17 +14,30 @@
 .nav-font {
     font-style: normal;
     color: #FFFFFF !important;
+    font-family: maqueFont;
+}
+
+.dropdown-item-custom{
+    font-style: normal;
+    color: #463f3a !important;
+    font-family: maqueFont;
+    border-end-end-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 100 !important;
+    background-color: rgba(174, 158, 143, 0.5);
 }
 
 .form-custom {
     border-end-end-radius: 0 !important;
     border-top-left-radius: 0 !important;
+    font-family: maqueFont;
 }
 
 
 .btn-custom {
     border-end-end-radius: 0 !important;
     border-top-left-radius: 0 !important;
+    font-family: maqueFont;
 }
 
 /*footer*/
@@ -28,12 +46,12 @@ footer {
     background-color: #8C7E73;
     color: #fff;
     padding: 3px;
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     font-size: 10px;
 }
 
 footer .container-fluid {
-    font-family: 'IMB Plex Sans', sans-serif;
+    font-family: maqueFont;
     font-size: 15px;
 }
 
