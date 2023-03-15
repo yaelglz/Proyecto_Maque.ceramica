@@ -19,8 +19,14 @@ h2{
     
 }
 
+.custom-containers1 {
+    padding-right: 0%;
+    padding-left: 0;
+
+}
+
 .custom-containers2 {
-    background-color: #d6d6d6;
+    background-color: #ebebeb;
 }
 
 .custom-containers3 {
@@ -28,7 +34,8 @@ h2{
 }
 
 .custom-card{
-    background-color: #d6d6d6;
+    background-color: #ebebeb;
+    font-family: maqueFont;
 }
 
 
