@@ -2,6 +2,11 @@
     font-family: 'IMB Plex Sans', sans-serif;
 }*/
 
+p {
+    font-family: maqueFont !important;
+}
+
+
 .barra-categorias {
     background-color: #D9CDC1;
     padding: 10px 20px;
@@ -10,6 +15,7 @@
     z-index: 1;
     border-radius: 0 15px 0 15px;
     overflow: hidden;
+    font-family: maqueFont;
 }
 
 .barra-categorias:before,
@@ -98,6 +104,7 @@
 @media (max-width: 950px) {
     .barra-categorias {
         margin: 20px 20px;
+        font-family: maqueFont;
         /* Reducir el margen a izquierda y derecha a 20px */
     }
 
@@ -244,7 +251,8 @@ select {
 .sidebar {
     background-color: #f2f2f2;
     border-radius: 0%;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.09);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+    font-family: maqueFont;
 }
 
 .categories {
@@ -305,6 +313,7 @@ select {
 .custom-card {
     margin-left: 57px;
     width: 77%;
+    font-family: maqueFont;
 }
 
 .card-img {
@@ -317,6 +326,7 @@ select {
 
 .producto {
     background-color: #f2f2f2;
+    font-family: maqueFont;
 }
 
 /*Boton Carrito*/
@@ -411,6 +421,7 @@ select {
     border-radius: 0%;
     height: 90%;
     object-fit: cover;
+    font-family: maqueFont;
 }
 
 .card-body {
@@ -450,4 +461,12 @@ select {
 
 .producto h5 {
     margin-top: 50px;
+}
+
+.producto h6 {
+    margin-top: 10px;
+}
+
+.navbar {
+    font-family: maqueFont;
 }
