@@ -1,5 +1,5 @@
 #Noticias-y-eventos {
-  background-color: #F2F2F2;
+  background-color: #d9ccc198;
   font-family: maqueFont;
 }
 
@@ -11,6 +11,11 @@
   border: 0px solid #BFB0A3;
   border-radius: 0px;
   border-image-width: auto;
+  
+}
+
+#carrousel-noticias {
+  background-color: #d9ccc198;
 }
 
 #Noticias-y-eventos p {
@@ -34,6 +39,7 @@
 #Noticias-y-eventos .container {
   padding-top: 0px;
   padding-bottom: 0px;
+  
 }
 
 #Noticias-y-eventos .row {
@@ -44,6 +50,7 @@
 #Noticias-y-eventos .col-sm-6 {
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 #Noticias-y-eventos .col-md-12 {
@@ -51,6 +58,7 @@
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+
 }
 
 #Noticias-y-eventos img.d-block {
