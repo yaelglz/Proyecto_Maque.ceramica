@@ -1,6 +1,6 @@
 /* Estilos de la sección Acerca De */
 #acerca-de {
-    background-color: #F2F2F2;
+    background-color: #d9ccc198;
     font-family: maqueFont;
     
   }
@@ -17,10 +17,10 @@
   
   /* Estilos de la sección Contacto */
   #contacto {
-    background-color: #D9CCC1;
+    background-color: #d9ccc198;
     font-family: maqueFont;
     font-size: 15px;
-    color: rgb(77, 59, 59) !important;
+    color: rgb(40, 39, 39) !important;
   }
   
   #contacto h2 {
@@ -36,7 +36,7 @@
   #contacto input[type="tel"],
   #contacto textarea {
     border: none;
-    background-color: #BFB0A3;
+    background-color: #ffffff;
     border-radius: 0px;
     padding: 10px;
     color: #736151;
@@ -44,18 +44,20 @@
   }
   
   #contacto button[type="submit"] {
-    background-color: #736151;
+    background-color: #95826f;
     color: #F2F2F2;
     border: none;
     padding: 10px 20px;
-    border-radius: 0px;
+    border-end-end-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+
   }
 
   .form-select {
     font-family: maqueFont;
     border: opx solid rgba(255, 255, 255, 0);
     border-radius: 0px;
-    background-color: #736151;
+    background-color: #95826f;
     -ms-text-size-adjust: auto;
   }
   
