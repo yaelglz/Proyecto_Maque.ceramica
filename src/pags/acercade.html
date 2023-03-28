@@ -73,33 +73,53 @@
 
   </header>
 
-  <section id="acerca-de">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 well"></div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="img-text" style="background-image: url('../img/Instagram/abril40-01.png')">
-            <p id="bg-parrafo1">Maque cercamica surge en Guadalajara, México, como una marca de objetos de
-              ceramica inspirada por las virtudes de la misma materia prima: versatilidad y durabilidad;
-              que mediante un trabajo manual artesanal produce piezas organicas y duraderas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="img-text" style="background-image: url('../img/torno.jpg')">
-            <p id="bg-parrafo2">Productos útiles elaborados en torno y horneados a altas temperaturas que se
-              se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su
-              forma original.</p>
-          </div>
-        </div>
+
+  
+ <section id="acerca-de">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="img-text" style="background-image: url('../img/Instagram/abril40-01.png')">
       </div>
     </div>
+    <div class="col-md-4">
+      <p id="bg-parrafo1">Maque cercamica surge en Guadalajara, México, como una marca de objetos de
+        ceramica inspirada por las virtudes de la misma materia prima: versatilidad y durabilidad;
+        que mediante un trabajo manual artesanal produce piezas organicas y duraderas.
+        Productos útiles elaborados en torno y horneados a altas temperaturas que se
+        se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su
+        forma original.</p>
     </div>
-  </section>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <p id="bg-parrafo2">Productos útiles elaborados en torno y horneados a altas temperaturas que se
+        se presentan como una dualidad por su aspecto brillante del esmaltado o el acabado mate y poroso de de su
+        forma original.</p>
+    </div>
+    <div class="col-md-8">
+      <div class="img-text" style="background-image: url('../img/torno.jpg')">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <!-- SECCION DE CONTACTO-->
@@ -150,43 +170,7 @@
       </div>
     </div>
   </section>
-
-  <!--VALIDACIÓN DEL FORMULARIO-->
-  <script>
-    function validarFormulario() {
-      let nombre = document.getElementById("nombre").value;
-      let correo = document.getElementById("correo").value;
-      let telefono = document.getElementById("telefono").value;
-      let mensaje = document.getElementById("mensaje").value;
-
-      // Validar que los campos no estén vacíos
-      if (nombre === "" || correo === "" || mensaje === "") {
-        alert("Por favor, completa todos los campos requeridos.");
-        return false;
-      }
-
-      // Validar formato de correo electrónico
-      let formatoCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      if (!formatoCorreo.test(correo)) {
-        alert("Por favor, ingresa un correo electrónico válido.");
-        return false;
-      }
-
-      // Validar formato de número de teléfono
-      let formatoTelefono = /^\d+$/;
-      if (telefono !== "" && !formatoTelefono.test(telefono)) {
-        alert("Por favor, ingresa un número de teléfono válido.");
-        return false;
-      }
-
-      // Si todos los campos son válidos, enviar formulario
-      return true;
-    }
-  </script>
-
-  <!--FIN DE VALIDACIÓN DEL FORMULARIO-->
-  <!-----FIN DE SECCION DE CONTACTO----->
-
+ 
 
   <!--INICIA Footer-->
   <footer>
@@ -241,6 +225,7 @@
   <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
   <!-- Link JS -->
   <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/contacto.js"></script>
 </body>
 
 </html>
