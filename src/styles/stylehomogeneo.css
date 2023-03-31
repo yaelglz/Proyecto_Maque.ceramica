@@ -52,7 +52,7 @@ body {
     border-end-end-radius: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 100;
-    background-color: rgba(174, 158, 143, 0.5);
+    background-color: rgba(174, 158, 143, 0.9);
 }
 
 .my-dropdown-toggle::after {
