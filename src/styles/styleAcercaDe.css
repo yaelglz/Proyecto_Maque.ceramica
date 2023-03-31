@@ -21,6 +21,7 @@
     font-family: maqueFont;
     font-size: 15px;
     color: rgb(77, 59, 59) !important;
+  
   }
   
   #contacto h2 {
@@ -79,7 +80,7 @@
   } */
   
   .bg-body-tertiary {
-    background-color: #D9CCC1;
+    background-color: #faf9f9; /*Cambio stephy*/
   }
 
 

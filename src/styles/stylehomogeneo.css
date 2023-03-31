@@ -1,8 +1,15 @@
+/*Integraciónn de fuente personalizada*/
 @font-face{
     font-family: maqueFont;
     src:url(../assets/fonts/Gotham_Book_Font.otf)
 }
 
+/*Body*/
+body {
+    background-color: #F9F7F6;
+}
+
+/*Navbar*/
 #Logo-navbar {
     width: 200px;
 }
@@ -12,36 +19,90 @@
 }
 
 .nav-font {
-    font-style: normal;
-    color: #FFFFFF !important;
+    position: relative;
+    text-decoration: none; 
     font-family: maqueFont;
+    color: #2F261D;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    /* padding: 0 5px;      */
 }
+
+.nav-font:after {
+    content: "";
+    position: absolute;
+    background-color: #2F261D;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.nav-font:hover:after {
+    width: 100%;
+}
+
 
 .dropdown-item-custom{
     font-style: normal;
-    color: #463f3a !important;
+    color: #463f3a;
     font-family: maqueFont;
-    border-end-end-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 100 !important;
+    border-end-end-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 100;
     background-color: rgba(174, 158, 143, 0.5);
 }
 
+.my-dropdown-toggle::after {
+    content: none;
+}
+
 .form-custom {
-    border-end-end-radius: 0 !important;
-    border-top-left-radius: 0 !important;
+    border-radius: 0px 15px 0px 15px;
     font-family: maqueFont;
 }
 
-
-.btn-custom {
-    border-end-end-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    font-family: maqueFont;
+.btn-search{
+    background: #2F261D; 
+    border-width: 0;   
+    border-radius: 15px;    
+    align-items: center; 
 }
 
-/*footer*/
+.nav-profile{
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
+.cart-icon {
+    position: relative;
+}
+
+#cart-count {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #2F261D;
+    position: absolute;
+    top: -10px;
+    left: 18px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    z-index: 999;
+}
+
+
+/*Footer*/
 footer {
     background-color: #8C7E73;
     color: #fff;
@@ -101,7 +162,6 @@ footer p {
 }
 
 @media only screen and (max-width: 767px) {
-
     /* Ocultar elementos con la clase .hide-on-mobile en la vista móvil */
     .hide-on-mobile {
         display: none;
@@ -117,29 +177,4 @@ footer p {
         justify-content: center;
         margin-top: 5px;
     }
-}
-
-.cart-icon {
-    position: relative;
-}
-
-#cart-count {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-    position: absolute;
-    top: -10px;
-    left: 18px;
-    font-size: 12px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 20px;
-    z-index: 999;
 }

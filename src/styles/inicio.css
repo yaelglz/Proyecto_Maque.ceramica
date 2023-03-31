@@ -1,3 +1,16 @@
+.btn-car-custom{
+    border-radius: 15px 15px 15px 15px;
+    font-family: maqueFont;
+    background: #2F261D;
+    color: #F9F7F6;
+    border-width: 0;
+}
+
+
+.btn-custom {
+    border-radius: 0px 15px 0px 15px;
+    font-family: maqueFont;
+}
 
 #pbot-acerca-custom{
     color: #ffffff !important;
@@ -20,38 +33,40 @@ h2{
 }
 
 .custom-containers1 {
-    padding-right: 0%;
+    padding-right: 0;
     padding-left: 0;
 
 }
 
 .custom-containers2 {
-    background-color: #ebebeb;
+    background-color: #EDDEE0;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .custom-containers3 {
-    background-color: #D9CCC1;
+    background-color: #e9dfd6;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .custom-card{
-    background-color: #ebebeb;
+    background-color: #EDDEE0;
     font-family: maqueFont;
 }
 
+.img-custom{
+    border-radius: 0px 15px 0px 15px;
+}
 
 .image-h{
     position: relative;
     width: 200%;
 }
 
-
-
 .image--img{
  display: block;
  width: 50%;
  box-shadow: 0px 5px 15px rgba(50, 50, 50, 0.6);
 }
-
 
 
 .image-overlay{
@@ -84,6 +99,7 @@ h2{
     opacity: 1;
     transition: opacity 0.25s;
 }
+
 .image-overlay:hover > *{
     transform: translateY(0);
 }
@@ -99,3 +115,4 @@ h2{
       font-size: 0.3rem;
     }
   }
+
