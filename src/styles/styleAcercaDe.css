@@ -8,8 +8,6 @@
   color: #736151;
 }
 
-
-
 /* Estilos de la sección Contacto */
 #contacto {
   background-color: #cfd2c6;
@@ -21,6 +19,7 @@
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-width: 0px;
+
 
 }
 
@@ -66,9 +65,6 @@
   border-top-left-radius: 0 !important;
 }
 
-
-
-
 form {
   border-radius: 0;
 
@@ -77,7 +73,6 @@ form {
 button {
   border-radius: 0;
 }
-
 
 .bg-body-tertiary {
   background-color: #D9CCC1;
@@ -113,6 +108,7 @@ button {
 .form-select,
 .btn {
   border-radius: 10px;
+
 }
 
 #bg-parrafo3,
@@ -188,4 +184,3 @@ option,
     border-width: 0px;
   }
 }
-
