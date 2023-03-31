@@ -1,111 +1,188 @@
 /* Estilos de la sección Acerca De */
 #acerca-de {
-    background-color: #F2F2F2;
-    font-family: maqueFont;
-    
-  }
-  
-  #acerca-de h2 {
-    color: #736151;
-  }
-  
-  #acerca-de img {
-    border: 0px solid #BFB0A3;
-    border-radius: 0px;
-    border-image-width: auto;
-  }
-  
-  /* Estilos de la sección Contacto */
-  #contacto {
-    background-color: #D9CCC1;
-    font-family: maqueFont;
-    font-size: 15px;
-    color: rgb(77, 59, 59) !important;
-  
-  }
-  
-  #contacto h2 {
-    color: #736151;
-  }
-  
-  #contacto label {
-    color: #8C7E72;
-  }
-  
-  #contacto input[type="text"],
-  #contacto input[type="email"],
-  #contacto input[type="tel"],
-  #contacto textarea {
-    border: none;
-    background-color: #BFB0A3;
-    border-radius: 0px;
-    padding: 10px;
-    color: #736151;
-    margin-bottom: 10px;
-  }
-  
-  #contacto button[type="submit"] {
-    background-color: #736151;
-    color: #F2F2F2;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 0px;
-  }
+  background-color: #ffffff98;
+  font-family: maqueFont;
+}
 
-  .form-select {
-    font-family: maqueFont;
-    border: opx solid rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    background-color: #736151;
-    -ms-text-size-adjust: auto;
-  }
-  
+#acerca-de h2 {
+  color: #736151;
+}
 
+/* Estilos de la sección Contacto */
+#contacto {
+  background-color: #cfd2c6;
+  font-family: maqueFont;
+  font-size: 15px;
+  color: rgb(40, 39, 39) !important;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 0px;
 
-  
-  form {
-    border-radius: 0;
-  }
-  
-  button {
-    border-radius: 0;
-  }
-  
+}
+
+#contacto h2 {
+  color: #736151;
+}
+
+#contacto label {
+  color: #8C7E72;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto textarea {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 0px;
+  padding: 10px;
+  color: #736151;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+#contacto button[type="submit"] {
+  background-color: #95826f;
+  color: #F2F2F2;
+  border: none;
+  padding: 10px 20px;
+  border-end-end-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+
+}
+
+.form-select {
+  font-family: maqueFont;
+  border: opx solid rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  background-color: #ffffff;
+  -ms-text-size-adjust: auto;
+  border-end-end-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
 
 
 
-  /* Estilos generales 
-  body {
-    font-family: 'IMB Plex Sans', sans-serif;
-  } */
-  
-  .bg-body-tertiary {
-    background-color: #faf9f9; /*Cambio stephy*/
-  }
+
+form {
+  border-radius: 0;
+
+}
+
+button {
+  border-radius: 0;
+}
 
 
- .img-text {
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bg-body-tertiary {
+  background-color: #D9CCC1;
+}
+
+
+.img-text {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 #bg-parrafo1 {
-    color: rgb(60, 49, 37) !important;
-    font-size: 20px;
-    padding: 30px;
-    background-color: rgba(194, 185, 185, 0.457);
+  color: rgb(60, 49, 37) !important;
+  font-size: 20px;
+  padding: 30px;
+  background-color: rgba(194, 185, 185, 0.457);
 }
 
 #bg-parrafo2 {
-    color: rgb(60, 49, 37) !important;
-    font-size: 20px;
-    padding: 30px;
-    background-color: rgba(194, 185, 185, 0.457);
+  color: rgb(60, 49, 37) !important;
+  font-size: 20px;
+  padding: 30px;
+  background-color: rgba(194, 185, 185, 0.457);
 }
 
+.container,
+.form-control,
+.form-select,
+.btn {
+  border-radius: 10px;
+}
 
+#bg-parrafo3,
+h2,
+label,
+option,
+.btn {
+  font-family: "maqueFont";
+}
+
+.foto1 {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.foto2 {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nosotros {
+  background-color: #cfd2c6;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 0px;
+}
+
+.nuestra-historia {
+  background-color: #eddee0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-width: 0px;
+}
+
+@media (max-width: 770px) {
+  .foto1 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .foto2 {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .nosotros {
+    background-color: #cfd2c6;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: 0px;
+  }
+  
+  .nuestra-historia {
+    background-color: #eddee0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-width: 0px;
+  }
+}
