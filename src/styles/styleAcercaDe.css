@@ -20,6 +20,7 @@
   border-bottom-right-radius: 0px;
   border-width: 0px;
 
+
 }
 
 #contacto h2 {
@@ -64,9 +65,6 @@
   border-top-left-radius: 0 !important;
 }
 
-
-
-
 form {
   border-radius: 0;
 
@@ -75,7 +73,6 @@ form {
 button {
   border-radius: 0;
 }
-
 
 .bg-body-tertiary {
   background-color: #D9CCC1;
@@ -111,6 +108,7 @@ button {
 .form-select,
 .btn {
   border-radius: 10px;
+
 }
 
 #bg-parrafo3,

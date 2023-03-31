@@ -99,6 +99,7 @@ body {
     text-align: center;
     line-height: 20px;
     z-index: 999;
+    font-family: maqueFont;
 }
 
 
@@ -178,3 +179,4 @@ footer p {
         margin-top: 5px;
     }
 }
+

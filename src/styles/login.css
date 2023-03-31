@@ -1,19 +1,57 @@
-/*
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+@font-face{
+    font-family: maqueFont;
+    src:url(../assets/fonts/Gotham_Book_Font.otf)
+}
+
+@media only screen and (min-device-width: 768px) {
 
 * {
     box-sizing: border-box;
 }
 
-body {
+#navbar {
+    height: 85px;
+    margin-bottom: 5em;
+}
+
+#footer {
+    height: 85px;
+    margin-top: 5em;
+}
+
+
+.container-body {
     display: flex;
-    background-color: #f6f5f7;
+    background-color: #d9ccc198;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    font-family: maqueFont;
+    height: 1em;
+    width: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.container {
+    background-color: #7A6852;
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
     overflow: hidden;
-    height: 100vh;
+    width: 80em;
+    min-height: 500px;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
 }
 
 h1 {
@@ -24,37 +62,38 @@ h1 {
 }
 
 h1.title {
-    font-size: 45px;
+    font-size: 25px;
     line-height: 45px;
     margin: 0;
-    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+    text-shadow: 0 0 10px #7A6852
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 0.5px;
     margin: 20px 0 30px;
-    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+    text-shadow: 0 0 10px #7A6852
 }
 
 span {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 25px;
 }
 
 a {
     color: #333;
-    font-size: 14px;
+    font-size: 10px;
     text-decoration: none;
     margin: 15px 0;
     transition: 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #4bb6b7;
+    color: #7A6852;
 }
+
 .content {
     display: flex;
     width: 100%;
@@ -69,23 +108,23 @@ a:hover {
     justify-content: center;
 }
 
-.content-input {
+.content input {
     accent-color: #333;
     width: 12px;
     height: 12px;
 }
 
-.content-label {
-    font-size: 14px;
+.content label {
+    font-size: 15px;
     user-select: none;
     padding-left: 5px;
 }
 
 button {
     position: relative;
-    border-radius: 20px;
-    border: 1px solid #4bb6b7;
-    background-color: #4bb6b7;
+    border-radius: 1px;
+    border: 1px solid #fff;
+    background-color: #7A6852;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
@@ -103,69 +142,47 @@ button:hover {
 button:active {
     transform: scale(0.95);
 }
+
 button:focus {
     outline: none;
 }
 
 button.ghost {
-    background-color: rgba(225, 225, 225, 0.2);
-    border: 2px solid #fff;
-    color: #fff;
+    background-color: #7A6852;
+    border: 1px solid #333;
+    color: #eee;
 }
 
-button.ghost i {
+button.ghost i{
     position: absolute;
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
 
-button.ghost i.register {
+button.ghost i.register{
     right: 70px;
 }
 
-button.ghost i.login {
+button.ghost i.login{
     left: 70px;
 }
 
-button.ghost:hover i.register {
+button.ghost:hover i.register{
     right: 40px;
     opacity: 1;
 }
 
-button.ghost:hover i.login {
+button.ghost:hover i.login{
     left: 40px;
     opacity: 1;
 }
 
-form {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 199%;
-    text-align: center;
-}
-
 input {
     background-color: #eee;
-    border-radius: 10px;
     border: none;
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position:relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 500px;
 }
 
 .form-container {
@@ -202,15 +219,15 @@ input {
 @keyframes show {
     0%,
     49.99% {
-        opacity: 0;
-        z-index: 1;
-    }
+    opacity: 0;
+    z-index: 1;  
+}
 
-    50%,
-    100% {
-        opacity: 1;
-        z-index: 5;
-    }
+50%,
+100% {
+    opacity: 1;
+    z-index: 5;
+}
 }
 
 .overlay-container {
@@ -229,7 +246,6 @@ input {
 }
 
 .overlay {
-    background-image:url(../img/logos/LOGO\ MAQUE\ BLANCO\ PNG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -250,14 +266,14 @@ input {
     top: 0;
     bottom: 0;
     background: linear-gradient(
-        to top,
-        rgba(46,94,109,0.4) 40%,
-        rgba(46,94,109,0)
+    to top,
+    #d9ccc198 1%,
+    #7A6852
     );
 }
 
 .container.right-panel-active .overlay {
-    transform:translate(50%)
+    transform: translateX(50%);
 }
 
 .overlay-panel {
@@ -297,8 +313,8 @@ input {
 }
 
 .social-container a {
-    border: 1px solid #dddddd;
-    border: 50%;
+    border: 2px solid #333;
+    border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -307,11 +323,142 @@ input {
     width: 40px;
     transition: 0.3s ease-in-out;
 }
+
 .social-container a:hover {
-    border: 1px solid #4bb6b7;
+    border: 1px solid #d9ccc198;
 }
 
-*/
+.label{
+    font-size: 10px !important
+}
+
+#logo{
+    height: 100px; 
+    width: 400px;
+}
+
+}
+
+@media only screen and (max-device-width: 767px) {
+
+.container {
+    background-color: #d9ccc198;
+    font-family: maqueFont;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: auto;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin: 1em;
+}
+
+input {
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+h1.title {
+    font-size: 25px;
+    text-shadow: 0 0 10px #7A6852;
+    margin: 1em;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px #7A6852;
+    margin: 1em;
+}
+
+span {
+    font-size: 15px;
+}
+
+a {
+    color: #333;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 1em;
+}
+
+button {
+    border-radius: 1px;
+    border: 1px solid #fff;
+    background-color: #7A6852;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 1em;
+    width: 200px;
+}
+
+.content {
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.content .checkbox {
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.content input {
+    accent-color: #333;
+    margin: 1em;
+}
+
+.content label {
+    font-size: 15px;
+    user-select: none;
+    margin: 1em;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    margin: 1em;
+}
+
+.social-container a {
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#r-password {
+    font-size: 15px;
+    font-weight:bolder;
+}
+
+.overlay-container {
+    display: none;
+}
+
+}
+
+/*
 
 #container{
     padding: 1em;
@@ -390,7 +537,7 @@ input {
     margin: 2em;
 }
 
-/* Estilos para validación */
+
 
 .form-valid{
     color: #1ed12d;
@@ -410,3 +557,5 @@ input {
 .form-login-error-activo{
     display:block;
 }
+
+*/
