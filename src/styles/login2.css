@@ -1,0 +1,75 @@
+
+footer .hover a:hover {
+    border: 1px solid #000000;
+}
+
+footer a:hover{
+
+}
+
+.container-body{
+    font-family: maqueFont;;
+    margin-top: 50px;
+    padding: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login{
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(
+        to top,
+        #d9ccc198 1%,
+        #7A6852
+        );
+}
+
+label{
+    font-size: 18px;
+}
+
+.input{
+    background-color: #dddddd !important;
+}
+
+.a{
+    color: black;
+}
+
+.a:hover {
+    border: 1px solid #7A6852;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 3px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-container a:hover {
+    border: 4px solid #7A6852;
+}
+
+.btn-custom {
+    font-size: 18px;
+    border-radius: 0px 15px 0px 15px;
+    background-color: #d9ccc198;
+    height: 40px;
+    width: 250px !important;
+    max-width: 350px;
+}
+
+.btn-custom:hover {
+    border: 4px solid #7A6852;
+}
