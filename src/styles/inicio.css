@@ -46,6 +46,11 @@ h2{
 .custom-containers3 {
     background-color: #e9dfd6;
     border-radius: 0px 20px 0px 20px;
+    padding-bottom: 10px;
+}
+
+.padding{
+    padding-bottom: 10px;
 }
 
 .custom-card{
@@ -65,7 +70,7 @@ h2{
 .image--img{
  display: block;
  width: 50%;
- box-shadow: 0px 5px 15px rgba(50, 50, 50, 0.6);
+ box-shadow: 0px 5px 15px rgba(50, 50, 50, 0.6); 
 }
 
 
