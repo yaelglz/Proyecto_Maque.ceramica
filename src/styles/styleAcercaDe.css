@@ -1,6 +1,6 @@
 /* Estilos de la sección Acerca De */
 #acerca-de {
-  background-color: #ffffff98;
+  
   font-family: maqueFont;
 }
 
@@ -36,7 +36,7 @@
 #contacto input[type="tel"],
 #contacto textarea {
   border: none;
-  background-color: #ffffff;
+  
   border-radius: 0px;
   padding: 10px;
   color: #736151;
@@ -44,6 +44,8 @@
   border-bottom-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
 }
+
+
 
 #contacto button[type="submit"] {
   background-color: #95826f;
@@ -184,3 +186,4 @@ option,
     border-width: 0px;
   }
 }
+

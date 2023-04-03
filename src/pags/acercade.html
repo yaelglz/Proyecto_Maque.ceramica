@@ -18,10 +18,10 @@
   <header>
     <!-- NAVBAR -->
     <!-- Navbar content -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-            src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+            src="../img/logos/LOGO MAQUE BLANCO PNG.png" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,53 +29,77 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown nav-font">
-              <a class="nav-link dropdown-toggle" href="productos2.html" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 PRODUCTOS
               </a>
               <ul class="dropdown-menu dropdown-item-custom">
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a></li>
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a></li>
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajilas</a></li>
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a></li>
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a></li>
-                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a></li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
+                </li>
+                <li>
+                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item nav-font">
-              <a class="nav-link" href="acercade.html">ACERCA DE</a>
+            <!--Apartado Acerca de -->
+            <li class="nav-item">
+              <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
             </li>
-            <li class="nav-item nav-font">
-              <a class="nav-link" href="login.html">MI CUENTA</a>
-            </li>
-            <li class="nav-item nav-font">
-              <a class="nav-link" href="Noticias_eventos.html">NOTICIAS</a>
+            <!--Apartado Noticias -->
+            <li class="nav-item">
+              <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
             </li>
           </ul>
-          <a class="navbar-brand" href="Carrito-checkout.html">
-            <div class="cart-icon">
-              <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="30" height="30">
-              <span id="cart-count" class="badge badge-danger">0</span>
+          <!--Apartado Carrito -->
+          <ul class="navbar-nav pull-right">
+            <a class="navbar-brand" href="Carrito-checkout.html">
+              <div class="cart-icon align-content-end">
+                <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
+                <span id="cart-count" class="badge badge-danger">0</span>
+              </div>
+            </a>
+            <!--Buscador de la Navbar -->
+            <form class="d-flex pull-right" role="search">
+              <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar" />
+              <button class="btn btn-outline-light btn-search" type="submit">
+                <span><img src="../icons/search.png" width="22" height="22" /></span>
+              </button>
+            </form>
+            <!--Apartado Mi cuenta -->
+            <div class="nav-profile">
+              <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
             </div>
-          </a>
-          <!--Buscador de la Navbar -->
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
-          </form>
+          </ul>
         </div>
       </div>
     </nav>
-    <!-- </nav> -->
-
-
   </header>
-
+  <!-- TERMINA HEADER -->
+  <BR></BR>
   <br>
+  <BR></BR>
+  <!--SECCION ACERCA DE -->
   <section id="acerca-de">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
+          <!-- Card Nosotros-->
           <div class="card mb-3 nosotros" style="width: auto;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -96,6 +120,8 @@
               </div>
             </div>
           </div>
+          <!--Termina Card Nosotros-->
+          <!--Card Nuestra Historia-->
           <div class="card mb-3 nuestra-historia" style="width: auto;">
             <div class="row g-0">
               <div class="col-md-8">
@@ -118,71 +144,71 @@
               </div>
             </div>
           </div>
+          <!--Termina Card Nuestra Historia-->
         </div>
       </div>
     </div>
   </section>
-
+  <!--TERMINA ACERCA DE -->
 
 
 
   <!-- SECCION DE CONTACTO-->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <section id="contacto">
-          <div class="row">
-            <div class="col-md-10 offset-md-1" style="width: auto;">
-              <br>
-              <h2>Contacto</h2>
-            </div>
-            <div class="col-md-10 offset-md-1">
-              <p id="bg-parrafo3">Nuestra oferta incluye una gran variedad de artículos para tu hogar, organizamos
-                talleres de vino y cerámica y algunos otros eventos. Si deseas obtener mayores informes sobre algún
-                artículo, cotizaciones de pedidos, acceso a algun taller o simplemente tienes dudas, escríbenos y nos
-                pondremos en contacto contigo. ¡Gracias por estar aquí!</p>
-            </div>
-            <div class="col-lg-5 mx-auto">
-              <form action="enviar.php" method="POST" onsubmit="return validarFormulario()">
-                <div class="form-group">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" class="form-control" required
-                    pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
-                </div>
-                <div class="form-group">
-                  <label for="correo">Correo electrónico:</label>
-                  <input type="email" id="correo" name="correo" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="telefono">Teléfono:</label>
-                  <input type="tel" id="telefono" name="telefono" class="form-control" pattern="[0-9]+">
-                </div>
-            </div>
-            <div class="col-lg-5 mx-auto">
-              <select class="form-select" aria-label="Motivo de Contacto">
-                <option selected>Seleccione el motivo de contacto</option>
-                <option value="1">Cotizaciones</option>
-                <option value="2">Pedidos</option>
-                <option value="3">Talleres y eventos</option>
-                <option value="3">Dudas</option>
-              </select>
-              <br>
-              <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <section id="contacto">
+            <div class="row">
+              <div class="col-md-10 offset-md-1" style="width: auto;">
+                <br>
+                <h2>Contacto</h2>
               </div>
-              <button type="submit" class="btn btn-primary float-end">Enviar</button>
-              </form>
+              <div class="col-md-10 offset-md-1">
+                <p id="bg-parrafo3">Nuestra oferta incluye una gran variedad de artículos para tu hogar, organizamos
+                  talleres de vino y cerámica y algunos otros eventos. Si deseas obtener mayores informes sobre algún
+                  artículo, cotizaciones de pedidos, acceso a algun taller o simplemente tienes dudas, escríbenos y nos
+                  pondremos en contacto contigo. ¡Gracias por estar aquí!</p>
+              </div>
+              <div class="col-lg-5 mx-auto">
+                <form action="enviar.php" method="POST" onsubmit="return validarFormulario()">
+                  <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required
+                      pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+">
+                  </div>
+                  <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" pattern="[0-9]+">
+                  </div>
+              </div>
+              <div class="col-lg-5 mx-auto">
+                <select class="form-select" aria-label="Motivo de Contacto">
+                  <option selected>Seleccione el motivo de contacto</option>
+                  <option value="1">Cotizaciones</option>
+                  <option value="2">Pedidos</option>
+                  <option value="3">Talleres y eventos</option>
+                  <option value="3">Dudas</option>
+                </select>
+                <br>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary float-end">Enviar</button>
+                </form>
+              </div>
             </div>
-          </div>
-          <br>
+            <br>
+        </div>
       </div>
     </div>
-  </div>
-
-  <br>
-
+    <br>
+  </section>
 
 
   <!--INICIA Footer-->
