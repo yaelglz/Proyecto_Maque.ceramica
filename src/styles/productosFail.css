@@ -1,0 +1,472 @@
+/*body {
+    font-family: 'IMB Plex Sans', sans-serif;
+}*/
+
+p {
+    font-family: maqueFont !important;
+}
+
+
+.barra-categorias {
+    background-color: #D9CDC1;
+    padding: 10px 20px;
+    margin: 20px 154px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 15px 0 15px;
+    overflow: hidden;
+    font-family: maqueFont;
+}
+
+.barra-categorias:before,
+.barra-categorias:after {
+    content: "";
+    display: table;
+    /* Para que el elemento se comporte como un elemento de bloque */
+}
+
+.barra-categorias:after {
+    clear: both;
+}
+
+.barra-categorias ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-categorias li {
+    margin-right: 20px;
+}
+
+.barra-categorias li:last-child {
+    margin-right: 0;
+}
+
+.barra-categorias ul li a {
+    color: #4e3a2d;
+    /* Para hacer el texto negro */
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* .barra-categorias ul li:first-child a {
+    font-size: 40px;
+    font-weight: 600;
+} */
+
+.barra-categorias ul li a {
+    padding: 10px 20px;
+    /* Relleno interno de cada elemento de la lista */
+    transition: background-color 0.3s ease;
+    /* Agregar una transición suave al color de fondo */
+}
+
+.barra-categorias {
+    overflow: hidden;
+    /* Ocultar cualquier contenido que se desborde de la barra */
+}
+
+.barra-categorias ul {
+    display: flex;
+    /* Hacer que la lista sea un contenedor flexible */
+    justify-content: space-between;
+    /* Distribuir los elementos con espacio entre ellos */
+    align-items: center;
+    /* Centrar verticalmente los elementos en la barra */
+    margin: 8 154px;
+    /* Margen a izquierda y derecha */
+}
+
+/* .barra-categorias ul li:first-child a {
+    font-size: 20px;
+    font-weight: 600;
+} */
+
+.barra-categorias .categoria-productos ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Relleno interno de cada elemento de la lista */
+    transition: background-color 0.3s ease;
+    /* Agregar una transición suave al color de fondo */
+}
+
+.barra-categorias ul li a:hover {
+    background-color: #eee;
+    /* Cambiar el color de fondo cuando el usuario pasa el cursor sobre el elemento */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 950px) {
+    .barra-categorias {
+        margin: 20px 20px;
+        font-family: maqueFont;
+        /* Reducir el margen a izquierda y derecha a 20px */
+    }
+
+    .barra-categorias ul {
+        flex-wrap: wrap;
+        /* Permitir que los elementos de la lista se envuelvan en varias filas */
+    }
+
+    .barra-categorias ul li {
+        width: 80%;
+        /* Hacer que los elementos de la lista ocupen todo el ancho de la barra */
+        margin-bottom: 10px;
+        /* Agregar un margen inferior de 10px para separar las filas */
+        margin: 0%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .barra-categorias ul {
+        display: none;
+        /* Ocultar los elementos de la lista en dispositivos móviles */
+    }
+
+    .barra-categorias .menu-hamburguesa {
+        display: block;
+        /* Mostrar el icono de la hamburguesa en dispositivos móviles */
+    }
+
+    .barra-categorias .menu-hamburguesa i {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .barra-categorias ul {
+        display: none;
+        /* Ocultar los elementos de la lista en dispositivos móviles */
+    }
+
+    .barra-categorias .menu-hamburguesa {
+        display: block;
+        /* Mostrar el icono de la hamburguesa en dispositivos móviles */
+    }
+
+    .barra-categorias .menu-hamburguesa i {
+        font-size: 24px;
+        color: #000;
+    }
+}
+
+@media (min-width: 950px) {
+    .barra-categorias .menu-hamburguesa {
+        display: none;
+    }
+
+}
+
+.barra-categorias .categoria-productos a {
+    font-size: 29px;
+    /* Cambiar el valor del tamaño de fuente según sea necesario */
+    font-weight: 501;
+    text-decoration: none;
+    color: #4e3a2d;
+}
+
+@media only screen and (max-width: 950px) {
+    .barra-categorias {
+        padding: 10px;
+    }
+
+    .barra-categorias .icono-menu {
+        display: block;
+    }
+
+    .barra-categorias .categoria-productos {
+        display: none;
+    }
+}
+
+/* Mostrar la lista de categorías cuando se hace clic en el botón de hamburguesa */
+.barra-categorias ul.mostrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+select {
+    /* margin: 0 20px; */
+    background-color: #f2f2f2;
+}
+
+.view-mode {
+    text-align: right;
+}
+
+.btn-toggle {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-toggle.active {
+    background-color: #333;
+    color: #f2f2f2f2;
+}
+
+.btn-toggle i {
+    font-size: 20px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+    .view-mode {
+        display: none;
+    }
+}
+
+.custom-margin-right {
+    margin-right: 200px;
+}
+
+
+@media (max-width: 390px) {
+    .justify-content-between {
+        justify-content: center !important;
+    }
+}
+
+.sidebar {
+    background-color: #f2f2f2;
+    border-radius: 0%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+    font-family: maqueFont;
+}
+
+.categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+}
+
+.subcategory {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.card-title-cate {
+    font-size: 2vw;
+}
+
+.categories {
+    list-style: none;
+    margin-left: 0;
+}
+
+.category {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 0;
+}
+
+.subcategory {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    list-style: disc;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+}
+
+.custom-card {
+    margin-left: 57px;
+    width: 77%;
+    font-family: maqueFont;
+}
+
+.card-img {
+    height: 100%;
+}
+
+.precio {
+    font-size: 24px;
+}
+
+.producto {
+    background-color: #f2f2f2;
+    font-family: maqueFont;
+}
+
+/*Boton Carrito*/
+.add-to-cart {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    /* background-color: #7a6852; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #fff; */
+    /* font-size: 25px; */
+    cursor: pointer;
+    /* margin-top: 10px; */
+    position: relative;
+}
+
+/*toolbar navegacion*/
+#toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toolbar button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#toolbar button.active {
+    background-color: #ddd;
+}
+
+#toolbar button i {
+    font-size: 20px;
+}
+
+@media (max-width: 950px) {
+    .menu-hamburguesa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .menu-hamburguesa i {
+        order: 2;
+        float: right;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-hamburguesa span {
+        order: 1;
+        text-align: right;
+    }
+
+    span {
+        font-size: 29px;
+        font-weight: bolder;
+    }
+
+}
+
+.menu-lista {
+    text-align: center;
+}
+
+.menu-lista li {
+    display: block;
+}
+
+.menu-hamburguesa {
+    display: flex;
+    align-items: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.style-card {
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    border-radius: 0%;
+    height: 90%;
+    object-fit: cover;
+    font-family: maqueFont;
+}
+
+.card-body {
+    height: 50%;
+}
+
+.card-img-top {
+    height: 100%;
+    border-radius: 0%;
+}
+
+.carrito-card {
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    text-align: right;
+    z-index: 1;
+}
+
+.fotter-card {
+    /*Centrar sus elementos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Tamaño*/
+    height: 10%;
+}
+
+.producto p {
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.producto h5 {
+    margin-top: 50px;
+}
+
+.producto h6 {
+    margin-top: 10px;
+}
+
+.navbar {
+    font-family: maqueFont;
+}
