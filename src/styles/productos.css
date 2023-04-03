@@ -1,0 +1,235 @@
+/* Estilos para la página de productos */
+.left-column {
+  background-color: #ebe4e0;
+  padding: 20px;
+  height: auto;
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.left-column .sticky-container {
+  position: sticky;
+  top: 20px;
+  padding-top: 100px;
+}
+
+.left-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.left-column ul {
+  list-style: none;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.left-column li {
+  margin-bottom: 10px;
+}
+
+.left-column a {
+  text-decoration: none;
+  color: #000;
+}
+
+.custom-container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  /* .left-column {
+        margin: 20px 20px;
+    } */
+
+  .left-column {
+    width: 100%;
+    /* Hacer que los elementos de la lista ocupen todo el ancho de la barra */
+    text-align: left;
+  }
+
+  .list-container {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .left-column {
+    display: block;
+  }
+}
+
+.menu-hamburguesa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-hamburguesa i {
+  font-size: 1.5em;
+  /* Aumenta el tamaño de la fuente en un 50% */
+}
+
+/* Ocultar el icono de la hamburguesa en el menú de escritorio */
+@media screen and (min-width: 950px) {
+  .menu-hamburguesa a {
+    display: block;
+  }
+
+  /* Ocultar el icono de la hamburguesa en el menú de escritorio */
+  .menu-hamburguesa i {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*Eliminar el salto de línea en el menú de hamburguesa*/
+@media screen and (max-width: 950px) {
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  /* Selecciona el contenedor de la lista y aplica reglas cuando se muestra */
+  .list-container.show {
+    /* Cambia el valor de la propiedad display a flex para que los elementos de la lista se muestren en línea */
+    display: flex;
+    /* Alinea los elementos de la lista a la izquierda */
+    justify-content: left;
+  }
+}
+
+/*******Estilos para cards de productos****************/
+.card-row {
+  margin-left: 50px;
+  /*Compensa el margen izquierdo de Bootstrap */
+  /* margin-right: -80px;
+    Compensa el margen derecho de Bootstrap */
+}
+
+@media screen and (max-width: 950px) {
+  .card-custom {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+}
+
+.card-custom {
+  background-color: #f3efec;
+}
+
+.card-img-top {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.card {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 0px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  margin-right: 75px;
+  margin-bottom: 13px;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(218, 217, 217, 0.5);
+  color: #f3efec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: opacity 0.25s ease;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.btn-style {
+  background-color: #d6ccc2;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 0.9em;
+  width: 160px;
+}
+
+.menu-container {
+  margin-right: 10px;
+  float: right;
+  margin-top: 10px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+#menu {
+  background-color: #f3efec;
+  border: none;
+  padding: 8px;
+  color: #000;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 950px) {
+  .image_overlay {
+    font-size: 0.7rem;
+  }
+
+  .btn-style {
+    width: 100px;
+  }
+}
+
+.modal-content {
+  background-color: #F3EFEC;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: none;
+  border-bottom-right-radius: none;
+}
+
+.btn-canasta{
+  background-color: #d6ccc2;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 0.9em;
+  width: 160px;
+}
