@@ -16,6 +16,8 @@ body {
 
 .navbar-custom {
     background-color: #ae9e8f !important;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .nav-font {
