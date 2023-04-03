@@ -121,17 +121,32 @@
                 </div>
             </div>
             <div class="col-md-9 right-column">
-                <div class="row mt-5 card-row">
+                <div class="row mt-5 card-row" id="div_Productos">
+
                     <!--INICIA ORDENAMIENTO-->
                     <div class="menu-container col-md-12 col-sm-3">
-                        <select id="menu">
-                            <option value="opcion1">Mas vendidos</option>
-                            <option value="opcion2">Mayor a menor precio</option>
-                            <option value="opcion3">Menor a mayor precio</option>
+                        <select id="menu" onchange="handleSortChange()">
+                            <option value="0">Mas vendidos</option>
+                            <option value="1">Mayor a menor precio</option>
+                            <option value="2">Menor a mayor precio</option>
                         </select>
                     </div>
                     <!--TERMINA ORDENAMIENTO-->
-                    <div class="col-md-4 mb-4 mx-auto">
+                    <!-- <div class="col-md-4 mb-4 mx-auto">
+                        <div class="card card-custom">
+                            <img src="../img/Inventario/" class="card-img-top img-fluid" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nombre del producto</h5>
+                                <p class="card-text text-center">Precio del producto</p>
+                            </div>
+                            <div class="image_overlay">
+                                <div class="image__title">
+                                    <button class="btn-style">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-md-4 mb-4">
                         <div class="card card-custom">
                             <img src="../img/Florero.png" class="card-img-top img-fluid" alt="..." />
                             <div class="card-body">
@@ -175,20 +190,6 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card card-custom">
-                            <img src="../img/Florero.png" class="card-img-top img-fluid" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Nombre del producto</h5>
-                                <p class="card-text text-center">Precio del producto</p>
-                            </div>
-                            <div class="image_overlay">
-                                <div class="image__title">
-                                    <button class="btn-style">Ver más</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card card-custom">
                             <img src="../img/Florero.png" class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title text-center">Nombre del producto</h5>
@@ -256,7 +257,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Repetir esta estructura de col-md-4 para agregar más cards -->
                 </div>
             </div>

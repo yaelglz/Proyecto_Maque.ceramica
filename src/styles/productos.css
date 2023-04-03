@@ -215,3 +215,21 @@
     width: 100px;
   }
 }
+
+.modal-content {
+  background-color: #F3EFEC;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: none;
+  border-bottom-right-radius: none;
+}
+
+.btn-canasta{
+  background-color: #d6ccc2;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 0.9em;
+  width: 160px;
+}
