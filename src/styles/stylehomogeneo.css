@@ -180,3 +180,6 @@ footer p {
     }
 }
 
+footer .hover a:hover {
+    border: 1px solid #000000;
+}
