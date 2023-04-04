@@ -1,38 +1,40 @@
-p{
+p {
     font-family: maqueFont;
 }
 
-#carritoBold{
-    
-    font-weight:600
+#carritoBold {
+
+    font-weight: 600
 }
 
 
 /*Productos del Carrito*/
-#product-container{
+#product-container {
     font-family: maqueFont;
     background-color: #EFECEA;
     padding-left: 35px;
     padding-right: 35px;
 }
-.cart-page{
-    
+
+.cart-page {
+
     margin: auto;
-    
+
 
 }
 
-table{
+/*Tabla general*/
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.cart-info{
+.cart-info {
     display: flex;
     flex-wrap: wrap;
 }
 
-th{
+th {
     text-align: left;
     padding-left: 15px;
     padding-top: 15px;
@@ -43,61 +45,63 @@ th{
     font-weight: bold;
 }
 
-td{
-    
+td {
+
     padding: 25px;
 
-   
+
 }
 
-.product-content{
+.product-content {
     border-bottom: 3px solid #EFECEA;
     background-color: rgb(255, 255, 255);
-    
+
 }
 
 
-td input{
+td input {
     width: 40px;
     height: 30px;
     padding: 4px;
 }
 
-td a{
+td a {
     color: rgb(117, 81, 57);
     font-size: small;
 }
-td img{
+
+td img {
     width: 90px;
     height: 90px;
     margin-right: 10px;
 }
 
-#total-price-separation{
+#total-price-separation {
     padding: 5px;
 }
 
-.total-price{
+.total-price {
     font-family: 'IMB Plex Sans', sans-serif;
     display: flex;
     justify-content: flex-end;
 }
 
-.total-price table{
-   
+.total-price table {
+
     width: 100%;
     max-width: 380px;
-    
+
 }
 
-td:last-child{
-    text-align: right;
-}
-th:last-child{
+td:last-child {
     text-align: right;
 }
 
-#proceder-pago{
+th:last-child {
+    text-align: right;
+}
+
+#proceder-pago {
 
     color: #ffffff;
     border: none;
@@ -109,8 +113,13 @@ th:last-child{
 
 /*---Media query styles---*/
 @media only screen and (max-width: 600px) {
-     .cart-info p{
+    .cart-info p {
         display: none;
+    }
+    #product-container {
+        
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

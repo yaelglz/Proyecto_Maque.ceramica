@@ -1,0 +1,140 @@
+{
+"query1":{
+        "nombre": "Florero Dona Arriba"",
+        "descripcion": "Florero o vasija en forma de dona, con el orificio arriba, color café, esmalte transparente brillante en el interior, 17cm de alto x 17 de ancho.",
+        "precio": 300,
+        "uRL_Imagen": "FloreroDonaArriba.png"
+},
+"query2":{
+        "nombre": "Florero Dona Lado",
+        "descripcion": "Florero o vasija en forma de dona, con el orificio en un lado, color café, esmalte transparente brillante en el interior, 17cm de alto x 17 de ancho.",
+        "precio": 300,
+        "uRL_Imagen": "FloreroDonaLado.png"
+},
+"query3":{
+        "nombre": "Florero Rayado",
+        "descripcion": ""Florero o vasija acabado mate, blanco con rayas café, esmalte transparente brillante en el interior, 18cm de alto x 13cm de ancho.",
+        "precio": 400,
+        "uRL_Imagen": "FloreroRayado.png"
+},
+"query4":{
+        "nombre": "Mini Florero Alto",
+        "descripcion": "Florero o vasija color café, esmalte transparente brillante en el interior, 15.5cm de alto x 9cm de ancho.",
+        "precio": 250,
+        "uRL_Imagen": "MiniFloreroAlto.png"
+},
+"query5":{
+        "nombre": "Plato Plano",
+        "descripcion": "Plato amarillo por arriba, café por abajo, 26cm de diámetro.",
+        "precio": 400,
+        "uRL_Imagen": "PlatoPlano.png"
+},
+"query6":{
+        "nombre": "Combo Salseras",
+        "descripcion": "Par de salseras con plato, color café mate por fuera, esmalte transparente brillante por dentro, salseras: 6cm de alto x 8.5cm de ancho; plato: 20cm de largo, 11cm de ancho, 3cm de alto.",
+        "precio": 450,
+        "uRL_Imagen": "ComboSalseras.png"
+},
+"query7":{
+        "nombre": "Taza Filtro Para Té",
+        "descripcion": ""Taza personalizable con filtro para té.",
+        "precio": 450,
+        "uRL_Imagen": "TazaFiltroParaTe.png"
+},
+"query8":{
+        "nombre": ""Taza Sencilla",
+        "descripcion": "Taza de 200ml color azul.",
+        "precio": 250,
+        "uRL_Imagen": "TazaSencilla.png"
+},
+"query9":{
+        "nombre": "Taza Sencilla",
+        "descripcion": "Taza de 200ml color rosa.",
+        "precio": 250,
+        "uRL_Imagen": "TazaSencilla.png"
+},
+"query10":{
+        "nombre": "Taza Gota",
+        "descripcion": "Taza de 150ml con plato color azul.",
+        "precio": 250,
+        "uRL_Imagen": "TazaGota.png"
+},
+"query11":{
+        "nombre": "Taza Gota",
+        "descripcion": "Taza de 150ml con plato color amarillo.",
+        "precio": 250,
+        "uRL_Imagen": "TazaGota.png""
+},
+"query12":{
+   "nombre": "Tacita Espresso",
+   "descripcion": "Taza para espresso con plato, color morado.",
+   "precio": 200.00,
+   "uRL_Imagen": "TacitaEspresso.png"
+},
+"query13":{
+   "nombre": "Tacita Espresso",
+   "descripcion": "Taza para espresso con plato, color verde.",
+   "precio": 200.00,
+   "uRL_Imagen": "TacitaEspresso.png"
+},
+"query14":{
+   "nombre": "Tacita Espresso",
+   "descripcion": "Taza para espresso con plato, color amarillo.",
+   "precio": 200.00,
+   "uRL_Imagen": "TacitaEspresso.png""
+},
+"query15":{
+   "nombre": "Tarro 'café' ",
+   "descripcion": "Tarro con tapa color amarillo, con letrero de café, 13cm de alto x 10.5cm de ancho.",
+   "precio": 500.00,
+   "uRL_Imagen": "TarroConTapa.png"
+},
+"query16":{
+   "nombre": "Tarro 'sugar' ",
+   "descripcion": "Tarro con tapa color azul, con letrero de sugar, 12cm de alto x 11cm de ancho.",
+   "precio": 500.00,
+   "uRL_Imagen": "TarroConTapa.png"
+},
+"query17":{
+   "nombre": "Cuenquito",
+   "descripcion": "Cuenquito color café mate por fuera, rosa por dentro, 5.5cm de alto x 10 de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "CuenquitoCafeMate.png"
+},
+"query18":{
+   "nombre": "Cuenquito",
+   "descripcion": "Cuenquito color café mate por fuera, morado por dentro, 5.5cm de alto x 10 de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "CuenquitoCafeMate.png"
+},
+"query19":{
+   "nombre": "Cuenquito",
+   "descripcion": ""Cuenquito color café mate por fuera, azul por dentro, 5.5cm de alto x 10 de ancho."",
+   "precio": 100.00,
+   "uRL_Imagen": "CuenquitoCafeMate.png"
+},
+"query20":{
+   "nombre": "Plato Alto Azul",
+   "descripcion": "Plato con paredes altas, azul por dentro, 6.5cm de alto x 11cm de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "PlatoAltoAzul.png"
+},
+"query21":{
+   "nombre": "Plato Alto Verde",
+   "descripcion": "Plato con paredes altas, verde por dentro, 8cm de alto x 12cm de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "PlatoAltoVerde.png"
+},
+"query22":{
+   "nombre": "Plato Alto Morado",
+   "descripcion": "Plato con paredes altas, morado por dentro, 6cm de alto x 15cm de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "PlatoAltoMorado.png"
+},
+"query23":{
+   "nombre": "Plato Alto Amarillo",
+   "descripcion": "Plato con paredes altas, amarillo por dentro, 6.5cm de alto x 21cm de ancho.",
+   "precio": 100.00,
+   "uRL_Imagen": "PlatoAltoAmarillo.png"
+}
+}
