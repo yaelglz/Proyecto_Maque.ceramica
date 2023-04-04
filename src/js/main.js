@@ -5,8 +5,8 @@ const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
 
 document.addEventListener("DOMContentLoaded", () => {
-  carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  mostrarCarrito();
+    carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    mostrarCarrito();
 });
 
 let productos;
@@ -14,15 +14,15 @@ let productos;
 const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; //URL a donde se hace la petición
 function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
 
-  fetch(URL_MAIN, {
-    method: 'get' //tipo de método
-  }).then(function (response) {//response es la respuesta del servidor
-    response.json().then(function (json) { //json es el objeto que se obtiene del servicio
-      console.log(json); //imprime el json
-      console.log(json.length); //imprime el tamaño del json
-      productos = json; //se guarda el json en la variable productos
-      Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
-        div_Productos.innerHTML += `
+    fetch(URL_MAIN, {
+        method: 'get' //tipo de método
+    }).then(function (response) {//response es la respuesta del servidor
+        response.json().then(function (json) { //json es el objeto que se obtiene del servicio
+            console.log(json); //imprime el json
+            console.log(json.length); //imprime el tamaño del json
+            productos = json; //se guarda el json en la variable productos
+            Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
+                div_Productos.innerHTML += `
           <div class="col-md-4 mb-4 mx-auto">
             <div class="card card-custom">
               <img src="../img/Inventario/${p.uRL_Imagen}" class="card-img-top img-fluid" alt="..." />
@@ -56,67 +56,68 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
             </div>
           </div>
         `;
-      }); // foreach para agregar los productos al div del HTML
+            }); // foreach para agregar los productos al div del HTML
 
 
 
-      Array.from(document.getElementsByClassName("add-to-cart")).forEach((btn, index) => {
-        btn.addEventListener("click", () => {
-          document.getElementById(`modal-${index}`).style.display = "none";
-          document.getElementById(`modal-${index}`).classList.remove("show");
-        });
-      });
+            Array.from(document.getElementsByClassName("add-to-cart")).forEach((btn, index) => {
+                btn.addEventListener("click", () => {
+                    document.getElementById(`modal-${index}`).style.display = "none";
+                    document.getElementById(`modal-${index}`).classList.remove("show");
+                });
+            });
 
-      Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
-        btn.addEventListener("click", () => {
-          document.getElementById(`modal-${index}`).style.display = "block";
-          document.getElementById(`modal-${index}`).classList.add("show");
-        });
-      });
+            Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
+                btn.addEventListener("click", () => {
+                    document.getElementById(`modal-${index}`).style.display = "block";
+                    document.getElementById(`modal-${index}`).classList.add("show");
+                });
+            });
 
-      Array.from(document.getElementsByClassName("modal")).forEach((modal) => {
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.style.display = "none";
-          }
-        });
-      });
+            Array.from(document.getElementsByClassName("modal")).forEach((modal) => {
+                modal.addEventListener("click", (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
 
-      
-    });//then
-  }).catch(function (err) { //si hay un error
-    console.log(err); //imprime el error
-  });
-  console.log(document.getElementById("div_Productos")); //imprime el div donde se va a agregar los productos
+
+        });//then
+    }).catch(function (err) { //si hay un error
+        console.log(err); //imprime el error
+    });
+    console.log(document.getElementById("div_Productos")); //imprime el div donde se va a agregar los productos
 }// addItems
 
 
-function agregarProducto(id){
+function agregarProducto(id) {
 
-  const existe = carrito.some((item) => item.id === id);
-  if (existe) {
-    const productos = carrito.map((item) => {
-      if (item.id === id) {
-        item.cantidad++;
-        return item;
-      } });
+    const existe = carrito.some((item) => item.id === id);
+    if (existe) {
+        const productos = carrito.map((item) => {
+            if (item.id === id) {
+                item.cantidad++;
+                return item;
+            }
+        });
     } else {
-      const item = productos.find((item) => item.id === id);
-  carrito.push(item);
-  }
+        const item = productos.find((item) => item.id === id);
+        carrito.push(item);
+    }
 
 
 
-  
-  mostrarCarrito();
+
+    mostrarCarrito();
 }
 
 const mostrarCarrito = () => {
-  const modalBody = document.querySelector(".modal .modal-body-carrito");
-  modalBody.innerHTML = "";
-  carrito.forEach((prod) => {
-    const { id, nombre, precio, uRL_Imagen, descripcion, cantidad } = prod;
-    modalBody.innerHTML += `
+    const modalBody = document.querySelector(".modal .modal-body-carrito");
+    modalBody.innerHTML = "";
+    carrito.forEach((prod) => {
+        const { id, nombre, precio, uRL_Imagen, descripcion, cantidad } = prod;
+        modalBody.innerHTML += `
     <div class="modal-contenedor">
       <div>
         <img src="../img/Inventario/${uRL_Imagen}" class="img-fluid img-carrito">
@@ -131,36 +132,36 @@ const mostrarCarrito = () => {
       </div>
     </div>
     `;
-  });
-  if (carrito.length === 0) {
-    modalBody.innerHTML = `
+    });
+    if (carrito.length === 0) {
+        modalBody.innerHTML = `
     <p class="text-center text-primary parrafo" style="color: black !important;">¡Aun no agregaste nada!</p>
     `
-  } 
-  
-  carritoContenedor.textContent = carrito.length;
+    }
 
-  precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0 );
-  
-  guardarStorage();
+    carritoContenedor.textContent = carrito.length;
+
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0);
+
+    guardarStorage();
 }
 
-function eliminarProducto(id){
-  const itemid = id;
-  carrito = carrito.filter((item) => item.id !== itemid);
-  mostrarCarrito();
+function eliminarProducto(id) {
+    const itemid = id;
+    carrito = carrito.filter((item) => item.id !== itemid);
+    mostrarCarrito();
 }
 
-function guardarStorage(){
-  localStorage.setItem("carrito", JSON.stringify(carrito));
+function guardarStorage() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 vaciarCarrito.addEventListener("click", () => {
-  carrito.length = [];
-  mostrarCarrito();
+    carrito.length = [];
+    mostrarCarrito();
 });
 
 window.addEventListener("load", function () { //cuando se cargue la página
-  let div = document.getElementById("div_Productos"); //div donde se va a agregar los productos
-  addItems(div); //se llama a la función addItems
+    let div = document.getElementById("div_Productos"); //div donde se va a agregar los productos
+    addItems(div); //se llama a la función addItems
 });
