@@ -233,3 +233,11 @@
   font-size: 0.9em;
   width: 160px;
 }
+
+.card-custom .ver-mas:hover {
+  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+}
+
+.btn-canasta:hover {
+  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+}
