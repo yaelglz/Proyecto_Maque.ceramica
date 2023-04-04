@@ -217,7 +217,7 @@
 }
 
 .modal-content {
-  background-color: #F3EFEC;
+  background-color: #cfd2c6;
   border: none;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -226,7 +226,7 @@
 }
 
 .btn-canasta{
-  background-color: #d6ccc2;
+  background-color: #ffffff;
   border: none;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -235,9 +235,9 @@
 }
 
 .card-custom .ver-mas:hover {
-  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+  background-color: #cfd2c6; /* el mismo color de fondo que la tarjeta */
 }
 
 .btn-canasta:hover {
-  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+  background-color: #FFFFFF; /* el mismo color de fondo que la tarjeta */
 }

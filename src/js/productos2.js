@@ -47,7 +47,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
               <img src="../img/Inventario/${p.uRL_Imagen}" class="card-img-top img-fluid" alt="..." />
               <div class="card-body">
                 <h5 class="card-title text-center">${p.nombre}</h5>
-                <p class="card-text text-center">${p.precio}</p>
+                <p class="card-text text-center">$ ${p.precio} MXN</p>
               </div>
               <div class="image_overlay">
                 <div class="image__title">
@@ -65,7 +65,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
                 <div class="modal-body">
                   <img src="../img/Inventario/${p.uRL_Imagen}" class="img-fluid mb-3" alt="...">
                   <p>${p.descripcion}</p>
-                  <p class="font-weight-bold mb-0">Precio: ${p.precio}</p>
+                  <p class="font-weight-bold mb-0">$ ${p.precio} MXN.</p>
                   <div style="text-align: right;">
                     <button type="button" class="btn btn-canasta">Agregar a la canasta</button>
                   </div>
