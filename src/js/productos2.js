@@ -30,7 +30,7 @@ menuIcon.addEventListener("click", function () {
 
 let productos;
 // Aquí se debe cambiar el URL del servicio en el BackEnd
-const URL_MAIN = 'http://localhost:8080/maque_ceramica/productos/'; //URL a donde se hace la petición
+const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; //URL a donde se hace la petición
 function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
 
   fetch(URL_MAIN, {
@@ -61,30 +61,28 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="modal-${index}-label">${p.nombre}</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
                 </div>
                 <div class="modal-body">
                   <img src="../img/Inventario/${p.uRL_Imagen}" class="img-fluid mb-3" alt="...">
                   <p>${p.descripcion}</p>
-                  <p class="font-weight-bold mb-0">Precio:</p>
-                  <p>${p.precio}</p>
-                  <button type="button" class="btn btn-canasta">Agregar a la canasta</button>
+                  <p class="font-weight-bold mb-0">Precio: ${p.precio}</p>
+                  <div style="text-align: right;">
+                    <button type="button" class="btn btn-canasta">Agregar a la canasta</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         `;
       }); // foreach para agregar los productos al div del HTML
-      
+
       Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
         btn.addEventListener("click", () => {
           document.getElementById(`modal-${index}`).style.display = "block";
           document.getElementById(`modal-${index}`).classList.add("show");
         });
       });
-      
+
       Array.from(document.getElementsByClassName("modal")).forEach((modal) => {
         modal.addEventListener("click", (e) => {
           if (e.target === modal) {
