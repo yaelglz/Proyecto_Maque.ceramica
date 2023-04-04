@@ -249,3 +249,18 @@ body {
 .card-title{
   font-size: 17px;
 }
+
+.modal-contenedor{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-carrito{
+  width: 200px;
+  padding: 20px;
+}
+
+.parrafo{
+  font-weight: 700;
+}
