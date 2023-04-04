@@ -30,7 +30,8 @@ menuIcon.addEventListener("click", function () {
 
 
 
-const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; 
+// const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; 
+
 
 /*
 const data =
