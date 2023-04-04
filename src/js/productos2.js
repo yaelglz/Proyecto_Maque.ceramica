@@ -67,7 +67,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
                   <p>${p.descripcion}</p>
                   <p class="font-weight-bold mb-0">$ ${p.precio} MXN.</p>
                   <div style="text-align: right;">
-                    <button type="button" class="btn btn-canasta">Agregar a la canasta</button>
+                    <button type="button" class="btn btn-canasta add-to-cart">Agregar a la canasta</button>
                   </div>
                 </div>
               </div>
@@ -75,6 +75,14 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
           </div>
         `;
       }); // foreach para agregar los productos al div del HTML
+
+      Array.from(document.getElementsByClassName("add-to-cart")).forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          document.getElementById(`modal-${index}`).style.display = "none";
+          document.getElementById(`modal-${index}`).classList.remove("show");
+          document.getElementById("cart-count").textContent = parseInt(document.getElementById("cart-count").textContent) + 1;
+        });
+      });
 
       Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
         btn.addEventListener("click", () => {
@@ -108,7 +116,7 @@ window.addEventListener("load", function () { //cuando se cargue la página
 
 
 /*
-const data =     
+const data =
     {nombre: "Sopa Maruchan de Res",
     descripcion: "Sopa Maruchan sabor Res de 150 grs",
     precio: 17.0,
@@ -116,20 +124,20 @@ const data =
 };
 
 */
-fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
-  method: 'POST', // or 'PUT' 
-  headers: { // se agrega el header
-    'Content-Type': 'application/json', //tipo de contenido
-  },
-  body: JSON.stringify(data), //se agrega el cuerpo del POST
-})
-  .then(response => response.json()) //se obtiene la respuesta del servidor
-  .then(data => { //se obtiene el json
-    console.log('Success:', data); //se imprime el json
-  })
-  .catch((error) => { //si hay un error
-    console.error('Error:', error); //se imprime el error
-  });
+// fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
+//   method: 'POST', // or 'PUT'
+//   headers: { // se agrega el header
+//     'Content-Type': 'application/json', //tipo de contenido
+//   },
+//   body: JSON.stringify(data), //se agrega el cuerpo del POST
+// })
+//   .then(response => response.json()) //se obtiene la respuesta del servidor
+//   .then(data => { //se obtiene el json
+//     console.log('Success:', data); //se imprime el json
+//   })
+//   .catch((error) => { //si hay un error
+//     console.error('Error:', error); //se imprime el error
+//   });
 
 
 //MetodoGET
@@ -137,6 +145,4 @@ fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
 //MetodoPUT
 //MetodoDELETE
 
-
-
-//Ordenamiento 
+// Crear la nueva tarje
