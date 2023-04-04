@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../../styles/styles.css">
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
     <title>Inicio</title>
 </head>
 
@@ -19,9 +21,9 @@
         <!-- NAVBAR -->
         <!-- Navbar content -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom" id="navbar">
-            <div class="container-fluid">
+            <div class="logo container-fluid">
                 <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                        src="../img/logos/LOGO MAQUE BLANCO PNG.png">
+                    src="../img/logos/LOGO MAQUE BLANCO PNG.png">
                 </a>
             </div>
         </nav>
@@ -31,68 +33,69 @@
 
     <section>
 
-        <div class="container" id="container">
-    
-        <div class="form-container register-container">
-            <form action="#">
-                <h1>Registra tu cuenta</h1>
-                <input type="text" placeholder="Nombre(s)">
-                <input type="text" placeholder="Apellidos">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrar</button>
-                <br>
-                <span>O ingresa con tu cuenta</span>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-                    <a href="#" class="social"><i class="lni lni-google"></i></a>
-                </div>
-            </form>
-        </div>
-    
-        <div class="form-container login-container">
-            <form id="form-login" action="#">
-                <h1>Ingresa a tu cuenta</h1>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <div class="content">
-                    <div class="checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox">
-                        <label class="label">Recordar</label>
+            <div class="container" id="container">
+        
+            <div class="form-container register-container">
+                <form action="#">
+                    <h1>Registra tu cuenta</h1>
+                    <input type="text" placeholder="Nombre(s)">
+                    <input type="text" placeholder="Apellidos">
+                    <input type="number" placeholder="Teléfono">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrar</button>
+                    <br>
+                    <span>O ingresa con tu cuenta</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="#" class="social"><i class="lni lni-google"></i></a>
                     </div>
-                    <div class="pass-link">
-                        <a href="#" id="r-password">Recuperar contraseña</a>
+                </form>
+            </div>
+        
+            <div class="form-container login-container">
+                <form id="form-login" action="#">
+                    <h1>Ingresa a tu cuenta</h1>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Contraseña">
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label class="label">Recordar</label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#" id="r-password">Recuperar contraseña</a>
+                        </div>
                     </div>
-                </div>
-                <button>Ingresar</button>
-                <br>
-                <span>O ingresa con tu cuenta</span>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-                    <a href="#" class="social"><i class="lni lni-google"></i></a>
-                </div>
-            </form>
-        </div>
-    
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1 class="title">Hola</h1>
-                    <p>Estoy seguro que tienes una cuenta con nosotros</p>
-                    <button class="ghost" id="login">Ingresa
-                        <i class="lni lni-arrow-left login"></i>
-                    </button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1 class="title">¿Todavía no disfrutas los productos de Maque?</h1>
-                    <p>Regístrate ahora y conoce todo lo que tenemos para ti</p>
-                    <button class="ghost" id="register">Registrar
-                        <i class="lni lni-arrow-right register"></i>
-                    </button>
+                    <button>Ingresar</button>
+                    <br>
+                    <span>O ingresa con tu cuenta</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="#" class="social"><i class="lni lni-google"></i></a>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="title">Hola</h1>
+                        <p>Estoy seguro que tienes una cuenta con nosotros</p>
+                        <button class="ghost" id="login">Ingresa
+                            <i class="lni lni-arrow-left login"></i>
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title">¿Todavía no disfrutas los productos de Maque?</h1>
+                        <p>Regístrate ahora y conoce todo lo que tenemos para ti</p>
+                        <button class="ghost" id="register">Registrar
+                            <i class="lni lni-arrow-right register"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
   <!--INICIA Footer-->
@@ -108,7 +111,7 @@
   <!--TERMINA Footer-->
 
 <!-- Link JS -->
-<script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../js/login.js"></script>
 
 </body>

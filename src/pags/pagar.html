@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link css-->
-    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
     <!--Link css pagar-->
     <link rel="stylesheet" href="../styles/pagar.css">
@@ -15,63 +16,88 @@
 </head>
 
 <body>
-   <!-- INICIA HEADER -->
-   <header>
-    <!-- NAVBAR -->
-    <!-- Navbar content -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                    src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown nav-font">
-                        <a class="nav-link dropdown-toggle" href="productos2.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            PRODUCTOS
+    <!-- INICIA HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
+                        src="../img/logos/LOGO MAQUE BLANCO PNG.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown nav-font">
+                            <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu dropdown-item-custom">
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Apartado Acerca de -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
+                        </li>
+                        <!--Apartado Noticias -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
+                        </li>
+                    </ul>
+                    <!--Apartado Carrito -->
+                    <ul class="navbar-nav pull-right">
+                        <a class="navbar-brand" href="Carrito-checkout.html">
+                            <div class="cart-icon align-content-end">
+                                <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
+                                <span id="cart-count" class="badge badge-danger">0</span>
+                            </div>
                         </a>
-                        <ul class="dropdown-menu dropdown-item-custom">
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a></li>
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a></li>
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajilas</a></li>
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a></li>
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a></li>
-                            <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item nav-font">
-                        <a class="nav-link" href="acercade.html">ACERCA DE</a>
-                    </li>
-                    <li class="nav-item nav-font">
-                        <a class="nav-link" href="login.html">MI CUENTA</a>
-                    </li>
-                    <li class="nav-item nav-font">
-                        <a class="nav-link" href="Noticias_eventos.html">NOTICIAS</a>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="Carrito-checkout.html">
-                    <div class="cart-icon">
-                        <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="30" height="30">
-                        <span id="cart-count" class="badge badge-danger">0</span>
-                    </div>
-                </a>
-                <!--Buscador de la Navbar -->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 form-custom" type="search" placeholder="Buscar"
-                        aria-label="Buscar">
-                    <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
-                </form>
+                        <!--Buscador de la Navbar -->
+                        <form class="d-flex pull-right" role="search">
+                            <input class="form-control me-2 form-custom" type="search" placeholder="Buscar"
+                                aria-label="Buscar" />
+                            <button class="btn btn-outline-light btn-search" type="submit">
+                                <span><img src="../icons/search.png" width="22" height="22" /></span>
+                            </button>
+                        </form>
+                        <!--Apartado Mi cuenta -->
+                        <div class="nav-profile">
+                            <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
+                        </div>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- </nav> -->
-</header>
-<!-- TERMINA HEADER -->
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <!-- TERMINA HEADER -->
 
 
 
@@ -92,39 +118,47 @@
         <div class="row">
             <div class="col-xs-12 col-md-7">
                 <h4>Información de contacto</h4>
-                <form id="formulario-info">
+                <form id="formulario-info" onsubmit="return validar()">
                     <!--linea 1 Nombre y Apellidos-->
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6" id="form-nombre-create">
                             <label class="" for="Nombre">Nombres</label>
-                            <input type="text" id="nombre-pago" class="form-control">
-
+                            <input type="text" id="nombre-pago" class="form-control" name="nombre">
+                            <p class="form-login-error" id="mensaje-valido">
+                                Ingresa un nombre válido
+                            </p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6" id="form-apellido-create">
                             <label class="" for="Apellidos">Apellidos</label>
-                            <input type="text" id="apellido-pago" class="form-control">
+                            <input type="text" id="apellido-pago" class="form-control" name="apellidos">
+                            <p class="form-login-error" id="mensaje-valido">
+                                Ingresa un apellido válido
+                            </p>
                         </div>
+                        <br>
                         <!--linea 2 Correo electronico-->
-                        <div class="col-12">
+                        <div class="col-12" id="form-email-create">
                             <label class="" for="email">Correo electrónico</label>
                             <input type="email" id="email-pago" class="form-control">
-
+                            <p class="form-login-error" id="mensaje-valido">
+                                Ingresa un correo electrónico válido
+                            </p>
                         </div>
                         <!--linea 3 Direccion-->
-                        <div class="col-12">
-                            <label class="form-label" for="username">Dirección</label>
+                        <div class="col-12" id="form-direccion-create">
+                            <label class="form-label" for="direccion">Dirección</label>
                             <input type="text" class="form-control" id="direccion-pago">
                         </div>
-                        <!--linea 4 Colonia -->
-                        <div class="col-12">
+                        <!-------linea 4 Colonia ------->
+                        <div class="col-12" id="form-colonia-create">
                             <label class="" for="direccion">Colonia</label>
                             <input type="text" id="colonia-pago" class="form-control">
                         </div>
-                        <!--linea 5  Estado y CP-->
+                        <!-------linea 5  Estado y CP------->
                         <div class="col-6">
                             <label class="form-label" for="estado">Estado</label>
-                            <select class="form-select" name="estados-pago" id="estado">
-                                <option>Guadalajara</option>
+                            <select class="form-select" name="estados-pago" id="estado-pago">
+                                <option>Guadalajara</option>0
                                 <option>CDMX</option>
                                 <option>Monterrey</option>
                             </select>
@@ -217,74 +251,71 @@
                 </div>
 
                 <!-----Nombre del tarjetahabiente------>
-                <div class="col-12">
-                    <label class="" for="nombre-tarjeta">Nombre del tarjetahabiente</label>
-                    <input type="text" id="nombre-tarjeta" class="form-control">
-                    <small class="text-muted small-text">Introduce el nombre como aparece en la tarjeta</small>
-                </div>
-                <!--------------info de tarjeta mes año y ccv------------->
-                <div class="row">
-                    <div class="col-4">
-                        <label class="form-label" for="mes">Més</label>
-                        <select class="form-select" name="mes" id="estados-pago">
-                            <option>Elige una opción</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                    </div>
+                <form onsubmit="validarFormularioTarjeta()">
 
-                    <div class="col-4">
-                        <label class="form-label" for="mes">Año</label>
-                        <select class="form-select" name="mes" id="estados-pago">
-                            <option>Elige una opción</option>
-                            <option>2023</option>
-                            <option>2024</option>
-                            <option>2025</option>
-                            <option>2026</option>
-                            <option>2027</option>
-                            <option>2028</option>
-                            <option>2029</option>
-                            <option>2030</option>
+                    <div class="col-12">
+                        <label class="" for="nombre-tarjeta">Nombre del tarjetahabiente</label>
+                        <input type="text" id="nombre-tarjeta" class="form-control">
+                        <small class="text-muted small-text">Introduce el nombre como aparece en la tarjeta</small>
+                    </div>
+                    <!--------------info de tarjeta mes año y ccv------------->
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="mes">Més</label>
+                            <select class="form-select" name="mes" id="mes-caducidad">
+                                <option>Elige una opción</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
 
-                        </select>
+                        <div class="col-4">
+                            <label class="form-label" for="mes">Año</label>
+                            <select class="form-select" name="mes" id="anio-caducidad">
+                                <option>Elige una opción</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                                <option>2030</option>
+
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="cvc-pago">CVC</label>
+                            <input type="text" id="cvc-pago" class="form-control" maxlength="3">
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <label class="form-label" for="cvc-pago">CVC</label>
-                        <input type="text" id="cvc-pago" class="form-control" maxlength="3">
+                    <br>
+                    <!----------------BOTON PAGAR---------------->
+                    <div>
+                        <div class="text-center">
+                            <button class="boton mx-auto" type="submit" id="proceder-pago">PAGAR</button>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <!----------------bOTON PAGAR---------------->
-                <div>
-                    <div class="text-center">
-                        <button class="boton mx-auto" type="submit" id="proceder-pago">PAGAR</button>
-                    </div>
-                </div>
+                </form>
             </div>
-
-
-
-
-
         </div>
-
     </div>
     <br>
     <br>
 
 
 
-    <!--------------------------------------->
+    <!----------------footer----------------------->
     <footer>
         <div class="container">
             <div class="row">
@@ -336,7 +367,7 @@
 
 
     <!-- Link JS -->
-    <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/pagar.js"></script>
 
 

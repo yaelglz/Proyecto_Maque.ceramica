@@ -4,8 +4,6 @@
     src:url(../assets/fonts/Gotham_Book_Font.otf)
 }
 
-@media only screen and (min-device-width: 768px) {
-
 * {
     box-sizing: border-box;
 }
@@ -13,6 +11,10 @@
 #navbar {
     height: 85px;
     margin-bottom: 5em;
+}
+
+.logo{
+    position: absolute !important;
 }
 
 #footer {
@@ -39,8 +41,8 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 80em;
-    min-height: 500px;
+    width: auto;
+    height: 56em;
 }
 
 form {
@@ -129,7 +131,7 @@ button {
     font-size: 15px;
     font-weight: 700;
     margin: 10px;
-    padding: 12px 80px;
+    padding: 12px 40px;
     letter-spacing: 1px;
     text-transform: capitalize;
     transition: 0.3s ease-in-out;
@@ -165,16 +167,6 @@ button.ghost i.register{
 
 button.ghost i.login{
     left: 70px;
-}
-
-button.ghost:hover i.register{
-    right: 40px;
-    opacity: 1;
-}
-
-button.ghost:hover i.login{
-    left: 40px;
-    opacity: 1;
 }
 
 input {
@@ -337,7 +329,7 @@ input {
     width: 400px;
 }
 
-}
+/*
 
 @media only screen and (max-device-width: 767px) {
 
@@ -457,6 +449,8 @@ input {
 }
 
 }
+
+*/
 
 /*
 

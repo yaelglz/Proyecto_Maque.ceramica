@@ -47,3 +47,22 @@
   padding: 30px;
 }
 
+/***********Estilos para validacion ************/
+.form-valid{
+  color: #108d21;
+  opacity: 1;
+}
+
+.form-invalid{
+  color: #bb2929;
+  opacity: 1;
+}
+
+.form-login-error{
+  display: none;
+  font-size: small;
+}
+
+.form-login-error-activo{
+  display:block;
+}
