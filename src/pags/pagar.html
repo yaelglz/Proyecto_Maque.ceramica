@@ -18,9 +18,7 @@
 <body>
     <!-- INICIA HEADER -->
     <header>
-        <!-- NAVBAR -->
-        <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar"
                         src="../img/logos/LOGO MAQUE BLANCO PNG.png" /></a>
@@ -71,10 +69,10 @@
                     </ul>
                     <!--Apartado Carrito -->
                     <ul class="navbar-nav pull-right">
-                        <a class="navbar-brand" href="Carrito-checkout.html">
+                        <a class="navbar-brand" data-bs-toggle="modal" data-bs-target="#modal-carrito">
                             <div class="cart-icon align-content-end">
                                 <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
-                                <span id="cart-count" class="badge badge-danger">0</span>
+                                <span id="cartCount" class="badge badge-danger">0</span>
                             </div>
                         </a>
                         <!--Buscador de la Navbar -->
@@ -93,24 +91,23 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <!-- TERMINA HEADER -->
+</header>
+<!-- TERMINA HEADER -->
+
 
 
 
     <!--Carrito > Pagar > Pedidos-->
     <section id="carrito-pagar-link">
         <div class="container">
-            <div class="row align-items-start">
-                <div class="col">
-                    <br>
-                    <span id="carritoBold">Pagar > </span> <span>Pedidos</span> </p><br>
+            <div class="row">
+                    <div class="col-6">
+                        <br>
+                        <span id="carritoBold">Pagar > </span> <span>Pedidos</span> </p><br>
 
-                </div>
-            </div>
+                    </div>             
+            </div>            
+        </div>
     </section>
 
     <!--Fromulario de informacion-->
@@ -123,22 +120,14 @@
                     <div class="row">
                         <div class="col-6" id="form-nombre-create">
                             <label class="" for="Nombre">Nombres</label>
-                            <input 
-                            type="text" 
-                            id="nombre-pago" 
-                            class="form-control" 
-                            name="nombre">
+                            <input type="text" id="nombre-pago" class="form-control" name="nombre">
                             <p class="form-login-error" id="mensaje-valido">
                                 Ingresa un nombre válido
                             </p>
                         </div>
                         <div class="col-6" id="form-apellido-create">
                             <label class="" for="Apellidos">Apellidos</label>
-                            <input 
-                            type="text" 
-                            id="apellido-pago" 
-                            class="form-control" 
-                            name="apellidos">
+                            <input type="text" id="apellido-pago" class="form-control" name="apellidos">
                             <p class="form-login-error" id="mensaje-valido">
                                 Ingresa un apellido válido
                             </p>
@@ -147,10 +136,7 @@
                         <!--linea 2 Correo electronico-->
                         <div class="col-12" id="form-email-create">
                             <label class="" for="email">Correo electrónico</label>
-                            <input 
-                            type="email" 
-                            id="email-pago" 
-                            class="form-control">
+                            <input type="email" id="email-pago" class="form-control">
                             <p class="form-login-error" id="mensaje-valido">
                                 Ingresa un correo electrónico válido
                             </p>
@@ -158,48 +144,32 @@
                         <!--linea 3 Direccion-->
                         <div class="col-12" id="form-direccion-create">
                             <label class="form-label" for="direccion">Dirección</label>
-                            <input 
-                            type="text" 
-                            class="form-control" 
-                            id="direccion-pago">
+                            <input type="text" class="form-control" id="direccion-pago">
                         </div>
                         <!-------linea 4 Colonia ------->
                         <div class="col-12" id="form-colonia-create">
                             <label class="" for="direccion">Colonia</label>
-                            <input 
-                            type="text" 
-                            id="colonia-pago" 
-                            class="form-control">
+                            <input type="text" id="colonia-pago" class="form-control">
                         </div>
                         <!--linea 3 num interior y telefono-->
                         <div class="col-6">
-                            <label class="form-label" for="num-interior">Numero Interior <Span style="font-size: 10px;">(Opcional)</Span></label>
-                            <input 
-                            type="text" 
-                            class="form-control" 
-                            id="numint-pago">
+                            <label class="form-label" for="num-interior">Numero Interior <Span
+                                    style="font-size: 10px;">(Opcional)</Span></label>
+                            <input type="text" class="form-control" id="numint-pago">
                         </div>
                         <div class="col-6">
                             <label class="form-label" for="telefono">Teléfono</label>
-                            <input 
-                            type="text" 
-                            class="form-control" 
-                            id="telefono-pago">
+                            <input type="text" class="form-control" id="telefono-pago">
                         </div>
-                        
+
                         <div class="col-12" id="form-entre-create">
-                            <label class="" for="direccion">Entre calles <Span style="font-size: 10px;">(Opcional)</Span></label>
-                            <input 
-                            type="text" 
-                            id="entre-pago" 
-                            class="form-control">
+                            <label class="" for="direccion">Entre calles <Span
+                                    style="font-size: 10px;">(Opcional)</Span></label>
+                            <input type="text" id="entre-pago" class="form-control">
                         </div>
                         <div class="col-12" id="form-ciudad-create">
                             <label class="" for="direccion">Ciudad</label>
-                            <input 
-                            type="text" 
-                            id="ciudad-pago" 
-                            class="form-control">
+                            <input type="text" id="ciudad-pago" class="form-control">
                         </div>
                         <!-------linea 5  Estado y CP------->
                         <div class="col-6">
@@ -213,10 +183,7 @@
                         <!--CP-->
                         <div class="col-6">
                             <label class="form-label" for="cp-pago">CP</label>
-                            <input 
-                            type="text" 
-                            id="cp-pago" 
-                            class="form-control">
+                            <input type="text" id="cp-pago" class="form-control">
                         </div>
 
                     </div>
@@ -228,22 +195,21 @@
                     </div>
                     <hr>
                     <div class="col-12 text-center">
-                        
-                        <h6>Una ves que confirmes la compra se te enviará un correo con los datos de cuenta y contacto para que se realice el pago.</h6>
-                        <p style="font-size: 12px;">Tienes un día habil para realizar la transferencia o el producto volverá al inventario</p>
-                        
-                    
+
+                        <h6>Una vez que confirmes la compra se te enviará un correo con los datos de cuenta y contacto
+                            para que se realice el pago.</h6>
+                        <p style="font-size: 12px;">Tienes un día hábil para realizar la transferencia o el producto
+                            volverá al inventario</p>
+
+
                     </div>
                     <!----------------boton guardar info--------------->
                     <div>
                         <div class="text-center col-12">
-                            <button 
-                            class="boton mx-auto" 
-                            type="submit" 
-                            id="guardar-info">CONFIRMAR COMPRA</button>
+                            <button class="boton mx-auto" type="submit" id="guardar-info">CONFIRMAR COMPRA</button>
                         </div>
                     </div>
-                    
+
                 </form>
                 <br>
             </div>
@@ -253,11 +219,35 @@
 
             <!-----------------Resumen de carrito----------->
             <div id="cont-resumen" class="col-xs-12 col-md-5">
+
                 <h4 class="d-flex justify-content-between aling-item-center">
                     <span class="text-muted">Tu Carrito</span>
-                    <span class="text-muted">3</span>
-
                 </h4>
+                <button id="activarFuncion" class="btn d-flex" style="text-decoration: underline;">Desplegar carrito</button>
+                <div id="carrito" class="form-group table-responsive">
+                    <table class="table" id="lista-compra">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">SubTotal</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                        <tr>
+                            <th colspan="4" scope="col" class="text-right">TOTAL
+                                <p id="totalProceso"> </p>
+                            </th>
+                            <!-- <th scope="col"></th> -->
+                        </tr>
+
+                    </table>
+                </div>
+                <!--
                 <ul id="resumen-carrito" class="list-group">
                     <li class="list-group-item d-flex justify-content-between">
                         <div>
@@ -294,13 +284,14 @@
                         <span>$650.00</span>
                     </li>
                 </ul>
-                <br> 
+                -->
+                <br>
                 <div class="d-none" id="spinner">
                     <div class="spinner">
                         <div class="cube1"></div>
                         <div class="cube2"></div>
-                    </div>     
-                </div> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -364,6 +355,7 @@
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/pagar.js"></script>
     <script src="../js/envio-checkout.js"></script>
+    <script src="../js/main.js"></script>
 
 
 </body>
