@@ -4,12 +4,21 @@ const carritoContenedor = document.querySelector("#cartCount");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
 const procesarCompra = document.querySelector("#procesarCompra");
+const activarFuncion = document.querySelector("#activarFuncion");
+
+
+if (activarFuncion) {
+  activarFuncion.addEventListener("click", procesarPedido);
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   mostrarCarrito();
-});
 
+});
+/************* CARDS***************/
 let productos;
 // Aquí se debe cambiar el URL del servicio en el BackEnd
 const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; //URL a donde se hace la petición
@@ -91,7 +100,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
   console.log(document.getElementById("div_Productos")); //imprime el div donde se va a agregar los productos
 }// addItems
 
-
+/********************VIDEO **********************/
 function agregarProducto(id) {
 
   const existe = carrito.some((item) => item.id === id);
@@ -112,6 +121,7 @@ function agregarProducto(id) {
 
 const mostrarCarrito = () => {
   const modalBody = document.querySelector(".modal .modal-body-carrito");
+  if(modalBody){
   modalBody.innerHTML = "";
   carrito.forEach((prod) => {
     const { id, nombre, precio, uRL_Imagen, descripcion, cantidad} = prod;
@@ -130,7 +140,8 @@ const mostrarCarrito = () => {
       </div>
     </div>
     `;
-  });
+  })
+};
   if (carrito.length === 0) {
     modalBody.innerHTML = `
     <p class="text-center text-primary parrafo" style="color: black !important;">¡Aun no agregaste nada!</p>
@@ -139,8 +150,9 @@ const mostrarCarrito = () => {
 
   carritoContenedor.textContent = carrito.length;
 
+  if(precioTotal){
   precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0);
-
+  }
   guardarStorage();
 }
 
@@ -154,11 +166,14 @@ function guardarStorage() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
+if(vaciarCarrito){
 vaciarCarrito.addEventListener("click", () => {
   carrito.length = [];
   mostrarCarrito();
 });
+}
 
+if(procesarCompra){
 procesarCompra.addEventListener("click", () => {
   if (carrito.length === 0) {
     Swal.fire({
@@ -169,13 +184,42 @@ procesarCompra.addEventListener("click", () => {
     })
   } else {
     location.href = "pagar.html";
+    
   }
 });
+}
 
+/*****PROCESAR COMPRA CODIGO DIANA***/
+
+function procesarPedido() {
+  carrito.forEach((prod) => {
+    const listaCompra = document.querySelector("#lista-compra tbody");
+    const { id, nombre, precio, img, cantidad } = prod;
+    if (listaCompra) {
+      const row = document.createElement("tr");
+      row.innerHTML += `
+              
+              <td>${nombre}</td>
+            <td>$ ${precio}</td>
+            <td>${cantidad}</td>
+            <td>$ ${precio * cantidad}</td>
+            `;
+      listaCompra.appendChild(row);
+    }
+  });
+  totalProceso.innerText = carrito.reduce(
+    (acc, prod) => acc + prod.cantidad * prod.precio,
+    0
+  );
+}
+
+/************* */
 window.addEventListener("load", function () { //cuando se cargue la página
   let div = document.getElementById("div_Productos"); //div donde se va a agregar los productos
   addItems(div); //se llama a la función addItems
 });
+
+
 
   // // Hacer la petición POST al servidor con los datos del carrito
   // fetch("https://backmaque-production.up.railway.app/maque_ceramica/carrito/", {
