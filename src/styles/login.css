@@ -329,6 +329,11 @@ input {
     width: 400px;
 }
 
+.btn-a{
+    font-size: 18px; 
+    color: #ffffff;
+}
+
 /*
 
 @media only screen and (max-device-width: 767px) {
