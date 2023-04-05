@@ -1,13 +1,13 @@
 /***Desaparecer boton */
 const miBoton = document.getElementById("activarFuncion");
-miBoton.addEventListener("click", function() {
-  miBoton.classList.remove("d-flex");
-  miBoton.classList.add("d-none");
+miBoton.addEventListener("click", function () {
+    miBoton.classList.remove("d-flex");
+    miBoton.classList.add("d-none");
 });
 
-const formulario = document.getElementById('formulario-info');
-const inputs = document.querySelectorAll('#formulario-info input');
-
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('#form input');
+const btn = document.getElementById('button');
 
 const expresiones = {
     usuario: /^[A-Z0-9 _]*[A-Z0-9][A-Z0-9 _]*$/, // Letras, numeros, guion y guion_bajo
@@ -19,7 +19,7 @@ const expresiones = {
 //le especificas el input con el nombre del input
 const validarFromulario = (e) => {
     switch (e.target.id) {
-        case "nombre-pago":
+        case "persona":
             if (expresiones.nombre.test(e.target.value)) {//e.target.value accedemos al valor del input
                 document.getElementById("form-nombre-create").classList.remove("form-invalid")
                 document.getElementById("form-nombre-create").classList.add("form-valid")
@@ -44,7 +44,7 @@ const validarFromulario = (e) => {
 
             break;
 
-        case "email-pago":
+        case "email.id":
             if (expresiones.correo.test(e.target.value)) {//e.target.value accedemos al valor del input
                 document.getElementById("form-email-create").classList.remove("form-invalid")
                 document.getElementById("form-email-create").classList.add("form-valid")
@@ -69,7 +69,7 @@ inputs.forEach((input) => {
 
 
 //evita que se mande el formulario si está incompleto
-formulario.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 });
 
@@ -102,25 +102,49 @@ function validar() {
     } else if (isNaN(cp) || cp.length != 5) {
         alert("Por favor, introduce un código postal válido de 5 dígitos.");
         return false;
-    } else if (validar){
+    } else if (validar) {
+
+       
+/***********Spinner******** */
         const spinner = document.querySelector('#spinner');
         spinner.classList.add('d-flex')
         spinner.classList.remove('d-none')
+
         setTimeout(() => {
             spinner.classList.remove('d-flex')
             spinner.classList.add('d-none')
-            formulario.reset()
+            form.reset()
         }, 3000);
-       
-  
+
+
         setTimeout(() => {
             alert("Compra realizada con exito.");
-          }, 3000);
-        
+        }, 3000);
+
     }
-    
+
 }
 
+
+/***********enviar correo de validacion******/
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+            btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_oug57zp';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    }); 
+            });
 
 
 
