@@ -7,7 +7,7 @@ $motivo = $_POST['motivo'];
 $mensaje = $_POST['mensaje'];
 
 // Destinatario del correo electrónico
-$para = 'admin@ejemplo.com';
+$para = 'deleonavalosa@gmail.com.com';
 
 // Asunto del correo electrónico
 $asunto = 'Nuevo mensaje de contacto';
