@@ -201,6 +201,7 @@ const validarPassword = () => {
 
 }
 
+const URL_POST = "https://backmaque-production.up.railway.app/maque_ceramica/usuario/"
 const form = document.querySelector('#form-crear-usuario');
 
 form.addEventListener('submit', (event) => {
@@ -220,7 +221,7 @@ form.addEventListener('submit', (event) => {
     password
   };
 
-  fetch('https://backmaque-production.up.railway.app/maque_ceramica/usuario/', {
+  fetch(URL_POST, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -254,7 +255,7 @@ formLogin.addEventListener('submit', (event) => {
     password: passwordLogin
   };
 
-  fetch('http://localhost:8080/maque_ceramica/login', {
+  fetch('', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -270,7 +271,7 @@ formLogin.addEventListener('submit', (event) => {
   .then(data => {
     console.log('Success:', data);
     // Si las credenciales son válidas, se redirige al usuario a la página principal
-    window.location.href = 'http://localhost:8080/maque_ceramica/micuenta.html';
+    window.location.href = '';
   })
   .catch(error => {
     console.error('Error:', error);
