@@ -1,12 +1,14 @@
+const formulario = document.getElementById("form"); // Aquí debes reemplazar "mi-formulario" con el ID de tu formulario
 
+formulario.addEventListener("submit", guardarInfo);
   
   // Definir la función para manejar la llamada al endpoint en la API
   function guardarInfo(e) {
     e.preventDefault(); // Evitar que se recargue la página al hacer clic en el botón
   
-    let nombre = document.getElementById("nombre-pago");
+    let nombre = document.getElementById("persona");
     let apellido = document.getElementById("apellido-pago");
-    let correo = document.getElementById("email-pago");
+    let correo = document.getElementById("email.id");
     let direccion = document.getElementById("direccion-pago");
     let colonia = document.getElementById("colonia-pago");
     let numInt = document.getElementById("numint-pago");
@@ -45,7 +47,7 @@
     };
   
     // Hago un fetch a mi API, con la finalidad de postear productos nuevos.
-    fetch('https://backmaque-production.up.railway.app/maque_ceramica/productos/', {
+    fetch('https://backmaque-production.up.railway.app/maque_ceramica/direccion/', {
       method: "POST", // metodo a implementar
       headers: {
         "Content-Type": "application/json",

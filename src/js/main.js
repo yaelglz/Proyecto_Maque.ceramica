@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let productos;
 // Aquí se debe cambiar el URL del servicio en el BackEnd
 const URL_MAIN = 'https://backmaque-production.up.railway.app/maque_ceramica/productos/'; //URL a donde se hace la petición
+
 function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
 
   fetch(URL_MAIN, {

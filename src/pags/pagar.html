@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
     <!--Link css pagar-->
     <link rel="stylesheet" href="../styles/pagar.css">
+    
+    <!--Script para enviar correo de compra-->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('-3l3ZRg3CD-Vw0Mq0')
+</script>
 
     <title>Document</title>
 </head>
@@ -115,12 +123,12 @@
         <div class="row">
             <div class="col-xs-12 col-md-7">
                 <h4>Información de contacto</h4>
-                <form id="formulario-info" onsubmit="return validar()">
+                <form id="form" onsubmit="return validar()">
                     <!--linea 1 Nombre y Apellidos-->
                     <div class="row">
                         <div class="col-6" id="form-nombre-create">
                             <label class="" for="Nombre">Nombres</label>
-                            <input type="text" id="nombre-pago" class="form-control" name="nombre">
+                            <input type="text" id="persona" class="form-control" name="persona">
                             <p class="form-login-error" id="mensaje-valido">
                                 Ingresa un nombre válido
                             </p>
@@ -136,8 +144,8 @@
                         <!--linea 2 Correo electronico-->
                         <div class="col-12" id="form-email-create">
                             <label class="" for="email">Correo electrónico</label>
-                            <input type="email" id="email-pago" class="form-control">
-                            <p class="form-login-error" id="mensaje-valido">
+                            <input type="email" id="email.id" class="form-control" name="email.id">
+                            <p class="form-login-error" id="mensaje-valido" >
                                 Ingresa un correo electrónico válido
                             </p>
                         </div>
@@ -153,7 +161,7 @@
                         </div>
                         <!--linea 3 num interior y telefono-->
                         <div class="col-6">
-                            <label class="form-label" for="num-interior">Numero Interior <Span
+                            <label class="form-label" for="num-interior">Num. Interior <Span
                                     style="font-size: 10px;">(Opcional)</Span></label>
                             <input type="text" class="form-control" id="numint-pago">
                         </div>
@@ -178,6 +186,7 @@
                                 <option>Guadalajara</option>0
                                 <option>CDMX</option>
                                 <option>Nuevo León</option>
+                                <option>Estado de México</option>
                             </select>
                         </div>
                         <!--CP-->
@@ -206,7 +215,7 @@
                     <!----------------boton guardar info--------------->
                     <div>
                         <div class="text-center col-12">
-                            <button class="boton mx-auto" type="submit" id="guardar-info">CONFIRMAR COMPRA</button>
+                            <button class="boton mx-auto" type="submit" id="button">CONFIRMAR COMPRA</button>
                         </div>
                     </div>
 
@@ -352,9 +361,9 @@
 
 
     <!-- Link JS -->
+    <script src="../js/envio-checkout.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/pagar.js"></script>
-    <script src="../js/envio-checkout.js"></script>
     <script src="../js/main.js"></script>
 
 
