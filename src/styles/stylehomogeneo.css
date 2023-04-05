@@ -210,3 +210,12 @@ footer .hover a:hover {
     border-top-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+
+.btn {
+    background-color: #95826f;
+    color: #F2F2F2;
+    border: none;
+    padding: 10px 20px;
+    border-end-end-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
