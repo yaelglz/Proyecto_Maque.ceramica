@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Link CSS -->
-    <!-- <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/> -->
     <link rel="stylesheet" href="./src/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/styles/stylehomogeneo.css"/>
     <link rel="stylesheet" href="./src/styles/inicio.css"/>
@@ -64,7 +63,8 @@
             </ul>
             <!--Apartado Carrito -->
             <ul class="navbar-nav pull-right">
-              <a class="navbar-brand" href="./src/pags/Carrito-checkout.html">
+              <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#modal-carrito">
                 <div class="cart-icon align-content-end">
                   <img src="./src/icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
                   <span id="cart-count" class="badge badge-danger">0</span>
@@ -253,7 +253,32 @@
       </div>
     </section>
     <!-- TERMINA SECCIÓN TRES -->
-
+    <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Carrito</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body-carrito"></div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                      Vaciar carrito
+                  </button>
+                  <button type="button" id="procesarCompra" class="btn btn-primary">
+                      Continuar compra
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Cerrar
+                  </button>
+                  <span>Precio total:</span>
+                  <p class="text-center" id="precioTotal"></p>
+              </div>
+          </div>
+      </div>
+  </div>
     <!--INICIA Footer-->
     <br/>
     <footer>
@@ -320,7 +345,7 @@
     </footer>
     <!--TERMINA Footer-->
     <!-- Link JS -->
-    <!-- <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="./src/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
