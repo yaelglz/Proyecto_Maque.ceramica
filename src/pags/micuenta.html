@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Mi Cuenta</title>
 
@@ -18,25 +18,20 @@
 
     <!-- Link íconos -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-
+    
 </head>
 
 <body>
 
-
-<!-- Inicio Header -->
-<header>
-    <!-- Inicio NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar"
-                src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <!-- INICIA HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -105,177 +100,100 @@
 
     <section>
 
-    <div class="container" id="container">
-        <div class="container" id="col-account">
-            <h1 id="title">Mi Cuenta</h1>
-            <div class="row">
-                <div class="col">
-                    <h1 id="title">Nombre(s)</h1>
-                </div>
-                <div class="col">
-                    <h1 id="title">Apellidos</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" id="col-account-box">
-                    <h1 id="account-data">Nombre(s)</h1>
-                </div>
-                <div class="col" id="col-account-box">
-                    <h1 id="account-data">Apellidos</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1 id="title">Direcciones Registradas</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" id="col-account-box">
-                    <table>
-                        <tr id="account-data">
-                            <td>Dirección 1</td>
-                        </tr>
-                        <tr id="account-data">
-                            <td>Dirección 2</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1 id="title">Email</h1>
-                </div>
-                <div class="col">
-                    <h1 id="title">Teléfono</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" id="col-account-box">
-                    <h1 id="account-data">Email</h1>
-                </div>
-                <div class="col" id="col-account-box">
-                    <h1 id="account-data">Teléfono</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1 id="title">Métodos de Pago</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col" id="col-account-box">
-                    <table>
-                        <tr id="account-data">
-                            <td>Método 1</td>
-                        </tr>
-                        <tr id="account-data">
-                            <td>Método 2</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <div class="container container-body">
 
-        <div class="container" id="container">
-            <div class="container" id="col-account">
-                <h1 id="title">Historial de Pedidos</h1>
-                <div class="table-responsive" id="table-main">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Numero de Pedido</th>
-                                <th>Estátus del Pedido</th>
-                                <th>Descripción del pedido</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-secondary">
-                                <td>Pedido 1</td>
-                                <td>En Proceso</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Artículo 1
-                                        </li>
-                                        <li>
-                                            Artículo 2
-                                        </li>
-                                        <li>
-                                            Artículo 3
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td>Pedido 2</td>
-                                <td>Enviado</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Artículo 1
-                                        </li>
-                                        <li>
-                                            Artículo 2
-                                        </li>
-                                        <li>
-                                            Artículo 3
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td>Pedido 3</td>
-                                <td>Entregado</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Artículo 1
-                                        </li>
-                                        <li>
-                                            Artículo 2
-                                        </li>
-                                        <li>
-                                            Artículo 3
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="container container-body container-mi-cuenta">
+
+                <h1>Mi Cuenta</h1>
+
+                <div class="row">
+
+                    <div class="col-6 container-info">
+
+                        <h1>Nombre</h1>
+
+                        <div class="container json">
+
+                            <ul>
+                                <li><div id="div_NombreUsuario"></div></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 container-info">
+
+                        <h1>Email</h1>
+
+                        <div class="container json">
+
+                            <ul>
+                                <li><div id="div_CorreoUsuario"></div></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
+                <div class="row">
+
+                    <div class="col-12 container-info">
+
+                        <h1>Direcciones Registradas</h1>
+
+                        <div class="container json">
+
+                            <ul>
+                                <li><div id="div_DireccionUsuario"></div></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+<!--
+                <div class="row">
+
+                    <div class="col-12 container-info">
+
+                        <h1>Métodos de Pago Registrados</h1>
+
+                    </div>
+
+                </div>
+-->
+
             </div>
+
+            <div class="container container-body container-mi-cuenta">
+
+                <h1>Historial de Pedidos</h1>
+
+                <div class="row">
+
+                    <div class="col-6 container-info">
+
+                        <h1>Número de Pedido</h1>
+
+                    </div>
+
+                    <div class="col-6 container-info">
+
+                        <h1>Contenido</h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
-
-    <!-- INICIA Modal -->
-    <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Carrito</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body-carrito"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" id="vaciarCarrito">
-                        Vaciar carrito
-                    </button>
-                    <button type="button" id="procesarCompra" class="btn btn-primary">
-                        Continuar compra
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                    <span>Precio total:</span>
-                    <p class="text-center" id="precioTotal"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- TERMINA Modal -->
 
     <!--INICIA Footer-->
     <br/>
@@ -283,16 +201,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-2 hide-on-mobile">
-
-                    <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar"
-                            src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%;" /></a>
+                    <a class="navbar-brand" href="../../index.html">
+                        <img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%"/>
+                    </a>
                 </div>
                 <div class="hover col-sm-12 col-md-5 texto-img hide-on-mobile">
                     <div class="row">
-
-                        <div class="col-sm-6 col-md-5"><a href="../../index.html">Inicio</a></div>
-                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
-
+                        <div class="col-sm-6 col-md-5">
+                            <a href="../../index.html">Inicio</a>
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <a href="./acercade.html">Preguntas Frecuentes</a>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-md-5">
@@ -341,10 +261,12 @@
     </footer>
     <!--TERMINA Footer-->
 
-    <!-- Link JS Bootstrap -->
+    <!-- Link JS -->
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!--Link JS para carrito y productos-->
     <script src="../js/main.js"></script> 
+
+    <script src="../js/micuenta.js"></script>
 
 </body>
 </html>
