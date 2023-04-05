@@ -3,6 +3,7 @@ let carrito = [];
 const carritoContenedor = document.querySelector("#cartCount");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
+const procesarCompra = document.querySelector("#procesarCompra");
 
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -82,7 +83,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
         });
       });
 
-      
+
     });//then
   }).catch(function (err) { //si hay un error
     console.log(err); //imprime el error
@@ -91,7 +92,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
 }// addItems
 
 
-function agregarProducto(id){
+function agregarProducto(id) {
 
   const existe = carrito.some((item) => item.id === id);
   if (existe) {
@@ -99,15 +100,13 @@ function agregarProducto(id){
       if (item.id === id) {
         item.cantidad++;
         return item;
-      } });
-    } else {
-      const item = productos.find((item) => item.id === id);
-  carrito.push(item);
+      }
+    });
+  } else {
+    const item = productos.find((item) => item.id === id);
+    carrito.push(item);
   }
 
-
-
-  
   mostrarCarrito();
 }
 
@@ -115,7 +114,7 @@ const mostrarCarrito = () => {
   const modalBody = document.querySelector(".modal .modal-body-carrito");
   modalBody.innerHTML = "";
   carrito.forEach((prod) => {
-    const { id, nombre, precio, uRL_Imagen, descripcion, cantidad } = prod;
+    const { id, nombre, precio, uRL_Imagen, descripcion, cantidad} = prod;
     modalBody.innerHTML += `
     <div class="modal-contenedor">
       <div>
@@ -136,22 +135,22 @@ const mostrarCarrito = () => {
     modalBody.innerHTML = `
     <p class="text-center text-primary parrafo" style="color: black !important;">¡Aun no agregaste nada!</p>
     `
-  } 
-  
+  }
+
   carritoContenedor.textContent = carrito.length;
 
-  precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0 );
-  
+  precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0);
+
   guardarStorage();
 }
 
-function eliminarProducto(id){
+function eliminarProducto(id) {
   const itemid = id;
   carrito = carrito.filter((item) => item.id !== itemid);
   mostrarCarrito();
 }
 
-function guardarStorage(){
+function guardarStorage() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
@@ -160,7 +159,46 @@ vaciarCarrito.addEventListener("click", () => {
   mostrarCarrito();
 });
 
+procesarCompra.addEventListener("click", () => {
+  if (carrito.length === 0) {
+    Swal.fire({
+      title: "¡Aun no agregaste nada!",
+      text: "¡Agrega productos a tu canasta!",
+      icon: "error",
+      button: "Aceptar",
+    })
+  } else {
+    location.href = "pagar.html";
+  }
+});
+
 window.addEventListener("load", function () { //cuando se cargue la página
   let div = document.getElementById("div_Productos"); //div donde se va a agregar los productos
   addItems(div); //se llama a la función addItems
 });
+
+  // // Hacer la petición POST al servidor con los datos del carrito
+  // fetch("https://backmaque-production.up.railway.app/maque_ceramica/carrito/", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(carrito),
+  // })
+  //   .then((response) => {
+  //     if (response.ok) {
+  //       // Si la respuesta del servidor es OK (200), entonces la compra se procesó correctamente
+  //       // y puedes vaciar el carrito
+  //       vaciarCarrito();
+  //       mostrarCarrito();
+  //       alert("La compra se ha procesado correctamente");
+  //     } else {
+  //       // Si la respuesta del servidor no es OK, entonces hubo un error al procesar la compra
+  //       alert("Ha ocurrido un error al procesar la compra");
+  //     }
+  //   })
+  //   .catch((error) => {
+  //     // Si hubo un error al hacer la petición al servidor, entonces muestra un mensaje de error
+  //     alert("Ha ocurrido un error al procesar la compra");
+  //     console.error(error);
+  //   });
