@@ -201,6 +201,83 @@ const validarPassword = () => {
 
 }
 
+const form = document.querySelector('#form-crear-usuario');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+
+  const nombre = document.querySelector('#nombre').value;
+  const apellido = document.querySelector('#apellido').value;
+  const telefono = document.querySelector('#telefono').value;
+  const correo = document.querySelector('#correo').value;
+  const password = document.querySelector('#password').value;
+
+  const data = {
+    nombre,
+    apellido,
+    telefono,
+    correo,
+    password
+  };
+
+  fetch('http://localhost:8080/maque_ceramica/usuario/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
+
+const formLogin = document.querySelector('#form-login');
+
+formLogin.addEventListener('submit', (event) => {
+  event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+
+  const correoLogin = document.querySelector('#correoLogin').value;
+  const passwordLogin = document.querySelector('#passwordLogin').value;
+
+  const data = {
+    correo: correoLogin,
+    password: passwordLogin
+  };
+
+  fetch('http://localhost:8080/maque_ceramica/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Success:', data);
+    // Si las credenciales son válidas, se redirige al usuario a la página principal
+    window.location.href = 'http://localhost:8080/maque_ceramica/micuenta.html';
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
+
+
 /* Validación con Bootstrap
 
 // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos

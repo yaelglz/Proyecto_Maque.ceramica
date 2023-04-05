@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título -->
     <title>Mi Cuenta</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/login.css">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- CSS Bootstrap Local -->
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <!-- CSS Estándar -->
-    <link rel="stylesheet" href="../styles/stylehomogeneo.css">
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../styles/micuenta.css">
+
+    <!-- Links CSS Estándar-->
+    <link rel="stylesheet" href="../styles/stylehomogeneo.css"/>
+
+    <!-- Link íconos -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
 </head>
 
 <body>
+
 
 <!-- Inicio Header -->
 <header>
@@ -35,67 +38,70 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Dropdown -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown nav-font">
-                            <a class="nav-link dropdown-toggle" href="productos2.html" 
-                            role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            PRODUCTOS
+                            <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
                             </a>
                             <ul class="dropdown-menu dropdown-item-custom">
-                                <li><a class="dropdown-item dropdown-item-custom" 
-                                    href="productos2.html">Tazas</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" 
-                                    href="productos2.html">Platos</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" 
-                                    href="productos2.html">Vajilas</a></li>
-                                <li><a class="dropdown-item 
-                                    dropdown-item-custom" href="productos2.
-                                    html">Floreros</a></li>
-                                <li><a class="dropdown-item 
-                                    dropdown-item-custom" 
-                                    href="productos2.html">Cocina</a></li>
-                                <li><a class="dropdown-item 
-                                    dropdown-item-custom" 
-                                    href="productos2.html">Otros</a><li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
+                                </li>
                             </ul>
                         </li>
-                        <!-- Categorías NavBar -->
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                        <!--Apartado Acerca de -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
                         </li>
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="login.html">MI CUENTA</a>
-                        </li>
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="Noticias_eventos.html">NOTICIAS</a>
+                        <!--Apartado Noticias -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
                         </li>
                     </ul>
-                    <a class="navbar-brand" href="Carrito-checkout.html">
-                        <div class="cart-icon">
-                            <img src="../icons/shopping cart 80.svg" alt="Bootstrap" 
-                            width="30" height="30">
-                            <span id="cart-count" class="badge badge-danger">0</span>
+                    <!--Apartado Carrito -->
+                    <ul class="navbar-nav pull-right">
+                        <a class="navbar-brand" href="Carrito-checkout.html">
+                            <div class="cart-icon align-content-end">
+                                <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
+                                <span id="cart-count" class="badge badge-danger">0</span>
+                            </div>
+                        </a>
+                        <!--Buscador de la Navbar -->
+                        <form class="d-flex pull-right" role="search">
+                            <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                            <button class="btn btn-outline-light btn-search" type="submit">
+                                <span><img src="../icons/search.png" width="22" height="22"/></span>
+                            </button>
+                        </form>
+                        <!--Apartado Mi cuenta -->
+                        <div class="nav-profile">
+                            <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
                         </div>
-                    </a>
-                    <!--Buscador Navbar -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 form-custom" type="search" 
-                        placeholder="Buscar"
-                        aria-label="Buscar">
-                        <button class="btn btn-outline-light btn-custom" 
-                        type="submit">Buscar</button>
-                    </form>
-                <!-- Cierre Div Categorías -->
+                    </ul>
                 </div>
-        <!-- Cierre Div NavBar -->
-        </div>
-    <!-- Cierre NavBar -->
-    </nav>
-<!-- Cierre Header -->
-</header>
+            </div>
+        </nav>
+    </header>
+    <!-- TERMINA HEADER -->
 
     <section>
 
@@ -242,51 +248,93 @@
 
     </section>
 
+    <!-- INICIA Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body-carrito"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                        Vaciar carrito
+                    </button>
+                    <button type="button" id="procesarCompra" class="btn btn-primary">
+                        Continuar compra
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                    <span>Precio total:</span>
+                    <p class="text-center" id="precioTotal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TERMINA Modal -->
+
     <!--INICIA Footer-->
-    <br>
+    <br/>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-2 hide-on-mobile">
+
                     <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar"
                             src="../img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%;" /></a>
                 </div>
-                <div class="col-sm-12 col-md-5 texto-img hide-on-mobile">
+                <div class="hover col-sm-12 col-md-5 texto-img hide-on-mobile">
                     <div class="row">
+
                         <div class="col-sm-6 col-md-5"><a href="../../index.html">Inicio</a></div>
                         <div class="col-sm-6 col-md-5"><a href="./acercade.html">Preguntas Frecuentes</a></div>
+
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-5"><a href="./productos2.html">Catalogo</a></div>
-                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Piezas Personalizadas</a></div>
+                        <div class="col-sm-6 col-md-5">
+                            <a href="./productos2.html">Catalogo</a>
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <a href="./acercade.html">Piezas Personalizadas</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-5 texto-img">
                     <div class="row">
-                        <div class="col-sm-6 col-md-5"><a href="./acercade.html">Contacto</a></div>
+                        <div class="hover col-sm-6 col-md-5">
+                            <a href="./acercade.html">Contacto</a>
+                        </div>
                         <div class="col-sm-6 col-md-5 hide-on-mobile">Siguenos</div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-5 hide-on-mobile"><a href="">Términos y Condiciones</a></div>
+                        <div class="hover col-sm-6 col-md-5 hide-on-mobile">
+                            <a href="">Términos y Condiciones</a>
+                        </div>
                         <div class="col-sm-6 col-md-5 social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank"><img
-                                    src="../icons/face blanco 1.png" alt=""></a>
-                            <a href="https://www.instagram.com/maque.ceramica/" target="_blank"><img
-                                    src="../icons/instagram blanco.png" alt=""></a>
-                            <a href="https://www.tiktok.com/@maque.ceramica" target="_blank"><img
-                                    src="../icons/tiktok blanco.png" alt=""></a>
-                            <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0"
-                                target="_blank"><img src="../icons/whatsapp blanco.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=100071090893243" target="_blank">
+                                <img src="../icons/face blanco 1.png" alt=""/></a>
+                                <a href="https://www.instagram.com/maque.ceramica/" target="_blank">
+                                    <img src="../icons/instagram blanco.png" alt=""/></a>
+                                    <a href="https://www.tiktok.com/@maque.ceramica" target="_blank">
+                                        <img src="../icons/tiktok blanco.png" alt=""/></a>
+                                        <a href="https://api.whatsapp.com/message/CQHYEMUJEOB7L1?autoload=1&app_absent=0" target="_blank">
+                                            <img src="../icons/whatsapp blanco.png" alt=""/></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
+        <br/>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-12">
-                    <p class="text-center">© 2023 Maque Cerámica. Todos los derechos reservados.</p>
+                    <p class="text-center">
+                        © 2023 Maque Cerámica. Todos los derechos reservados.
+                    </p>
                 </div>
             </div>
         </div>
@@ -294,9 +342,9 @@
     <!--TERMINA Footer-->
 
     <!-- Link JS Bootstrap -->
-    <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="../js/login.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Link JS para carrito y productos-->
+    <script src="../js/main.js"></script> 
 
 </body>
 </html>
