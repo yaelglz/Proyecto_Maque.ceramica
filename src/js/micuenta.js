@@ -1,7 +1,7 @@
 let nombreUsuario, correoUsuario;
 
 function addItems(div_NombreUsuario, div_CorreoUsuario) {    
-    const userId = 10; // Id del usuario que se quiere obtener el nombre, en este caso es 1
+    const userId = 11; // Id del usuario que se quiere obtener el nombre, en este caso es 1
     
     fetch('https://backmaque-production.up.railway.app/maque_ceramica/usuario/' + userId, {
         method: 'get' //tipo de método
