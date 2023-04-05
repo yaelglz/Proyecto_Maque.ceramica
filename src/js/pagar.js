@@ -1,3 +1,10 @@
+/***Desaparecer boton */
+const miBoton = document.getElementById("activarFuncion");
+miBoton.addEventListener("click", function() {
+  miBoton.classList.remove("d-flex");
+  miBoton.classList.add("d-none");
+});
+
 const formulario = document.getElementById('formulario-info');
 const inputs = document.querySelectorAll('#formulario-info input');
 
@@ -95,13 +102,29 @@ function validar() {
     } else if (isNaN(cp) || cp.length != 5) {
         alert("Por favor, introduce un código postal válido de 5 dígitos.");
         return false;
+    } else if (validar){
+        const spinner = document.querySelector('#spinner');
+        spinner.classList.add('d-flex')
+        spinner.classList.remove('d-none')
+        setTimeout(() => {
+            spinner.classList.remove('d-flex')
+            spinner.classList.add('d-none')
+            formulario.reset()
+        }, 3000);
+       
+  
+        setTimeout(() => {
+            alert("Compra realizada con exito.");
+          }, 3000);
+        
     }
-
-    return true;
+    
 }
 
 
-/********** validacion tarjeta ***********/
+
+
+/********** validacion tarjeta ********
 
 
 function validarNumeroTarjeta(numeroTarjeta) {
@@ -156,4 +179,4 @@ function validarFormularioTarjeta() {
 
     // Formulario válido
     return true;
-}
+}***/
