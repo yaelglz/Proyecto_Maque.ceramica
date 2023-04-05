@@ -1,7 +1,7 @@
 let nombreUsuario, correoUsuario;
 
 function addItems(div_NombreUsuario, div_CorreoUsuario) {    
-    const userId = 11; // Id del usuario que se quiere obtener el nombre, en este caso es 1
+    const userId = 12; // Id del usuario que se quiere obtener el nombre, en este caso es 1
     
     fetch('https://backmaque-production.up.railway.app/maque_ceramica/usuario/' + userId, {
         method: 'get' //tipo de método
@@ -39,7 +39,7 @@ window.addEventListener("load", function (){
 let calle_numero, colonia, cp, ciudad, estado;
 
 function addItemsDireccion(div_CalleNumero, div_Colonia, div_CP, div_Ciudad, div_Estado) {    
-    const userIdDireccion = 1; // Id del usuario que se quiere obtener el nombre, en este caso es 4
+    const userIdDireccion = 3; // Id del usuario que se quiere obtener el nombre, en este caso es 4
     
     fetch('https://backmaque-production.up.railway.app/maque_ceramica/direccion/' + userIdDireccion, {
         method: 'get' //tipo de método
