@@ -16,9 +16,11 @@
 
 <body>
 
-  <header>
+    <!-- INICIA HEADER -->
+    <header>
       <!-- NAVBAR -->
       <!-- Navbar content -->
+
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"/></a>
@@ -83,15 +85,13 @@
               <div class="nav-profile">
                 <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
               </div>
-            </ul>
           </div>
-        </div>
       </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <!-- TERMINA HEADER -->
+      <br>
+      <br>
+      <br>
+  </header>
+  <!-- TERMINA HEADER -->
 
   <!--SECCION ACERCA DE -->
   <br>
@@ -210,6 +210,7 @@
     <br>
   </section>
 
+  <form action="enviar_Mensaje.php" method="POST">
 
   <!--INICIA Footer-->
   <br />
@@ -277,11 +278,43 @@
   </footer>
   <!--TERMINA Footer-->
 
-  <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  
   <!-- Link JS -->
+  <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
   <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/contacto.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
+
+    <!-- INICA Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Carrito</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body-carrito"></div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                      Vaciar carrito
+                  </button>
+                  <button type="button" id="procesarCompra" class="btn btn-primary">
+                      Continuar compra
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Cerrar
+                  </button>
+                  <span>Precio total:</span>
+                  <p class="text-center" id="precioTotal"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- TERMINA Modal -->
 
 </html>
