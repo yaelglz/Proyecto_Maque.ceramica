@@ -100,6 +100,187 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
   console.log(document.getElementById("div_Productos")); //imprime el div donde se va a agregar los productos
 }// addItems
 
+function handleSortChange() {
+  const selectElem = document.getElementById("menu");
+  const selectedValue = selectElem.value;
+  let sortedProducts;
+
+  switch (selectedValue) {
+    case "1":
+      // Ordenar por precio de mayor a menor
+      sortedProducts = productos.sort((a, b) => b.precio - a.precio);
+      break;
+    case "2":
+      // Ordenar por precio de menor a mayor
+      sortedProducts = productos.sort((a, b) => a.precio - b.precio);
+      break;
+    default:
+      sortedProducts = productos;
+  }
+
+  // Limpiar el div de productos antes de agregar los productos ordenados
+  const div_Productos = document.getElementById("div_Productos");
+  div_Productos.innerHTML = "";
+
+  // Agregar los productos ordenados al div de productos
+  sortedProducts.forEach((p, index) => {
+    div_Productos.innerHTML += `
+    <div class="col-md-4 mb-4 mx-auto">
+      <div class="card card-custom">
+        <img src="../img/Inventario/${p.uRL_Imagen}" class="card-img-top img-fluid" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title text-center">${p.nombre}</h5>
+          <p class="card-text text-center">$ ${p.precio} MXN</p>
+        </div>
+        <div class="image_overlay">
+          <div class="image__title">
+            <button class="btn btn-primary ver-mas btn-style" data-toggle="modal" data-target="#modal-${index}">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-${index}" tabindex="-1" role="dialog" aria-labelledby="modal-${index}-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-${index}-label">${p.nombre}</h5>
+          </div>
+          <div class="modal-body">
+            <img src="../img/Inventario/${p.uRL_Imagen}" class="img-fluid mb-3" alt="...">
+            <p>${p.descripcion}</p>
+            <p>${p.cantidad} disponibles</p>
+            <p class="font-weight-bold mb-0">$ ${p.precio} MXN.</p>
+            <div style="text-align: right;">
+              <button onclick= "agregarProducto(${p.id})" type="button" class="btn btn-canasta add-to-cart">Agregar a la canasta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+    // foreach para agregar los productos al div del HTML
+
+    Array.from(document.getElementsByClassName("add-to-cart")).forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        document.getElementById(`modal-${index}`).style.display = "none";
+        document.getElementById(`modal-${index}`).classList.remove("show");
+      });
+    });
+    
+    Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        document.getElementById(`modal-${index}`).style.display = "block";
+        document.getElementById(`modal-${index}`).classList.add("show");
+      });
+    });
+
+    Array.from(document.getElementsByClassName("modal")).forEach((modal) => {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
+  });
+}
+
+// // función para filtrar productos por categoría
+// function filtrarProductos(idCategoria) {
+//   fetch(URL_MAIN + '?id_categoria=' + idCategoria, {
+//     method: 'get' //tipo de método
+//   }).then(function (response) {//response es la respuesta del servidor
+//     response.json().then(function (json) { //json es el objeto que se obtiene del servicio
+//       console.log(json); //imprime el json
+//       console.log(json.length); //imprime el tamaño del json
+//       productos = json; //se guarda el json en la variable productos
+//       Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
+//         div_Productos.innerHTML += `
+//           <div class="col-md-4 mb-4 mx-auto">
+//             <div class="card card-custom">
+//               <img src="../img/Inventario/${p.uRL_Imagen}" class="card-img-top img-fluid" alt="..." />
+//               <div class="card-body">
+//                 <h5 class="card-title text-center">${p.nombre}</h5>
+//                 <p class="card-text text-center">$ ${p.precio} MXN</p>
+//               </div>
+//               <div class="image_overlay">
+//                 <div class="image__title">
+//                   <button class="btn btn-primary ver-mas btn-style" data-toggle="modal" data-target="#modal-${index}">Ver más</button>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div class="modal fade" id="modal-${index}" tabindex="-1" role="dialog" aria-labelledby="modal-${index}-label" aria-hidden="true">
+//             <div class="modal-dialog modal-dialog-centered" role="document">
+//               <div class="modal-content">
+//                 <div class="modal-header">
+//                   <h5 class="modal-title" id="modal-${index}-label">${p.nombre}</h5>
+//                 </div>
+//                 <div class="modal-body">
+//                   <img src="../img/Inventario/${p.uRL_Imagen}" class="img-fluid mb-3" alt="...">
+//                   <p>${p.descripcion}</p>
+//                   <p>${p.cantidad} disponibles</p>
+//                   <p class="font-weight-bold mb-0">$ ${p.precio} MXN.</p>
+//                   <div style="text-align: right;">
+//                     <button onclick= "agregarProducto(${p.id})" type="button" class="btn btn-canasta add-to-cart">Agregar a la canasta</button>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         `;
+//       }); // foreach para agregar los productos al div del HTML
+
+
+
+//       Array.from(document.getElementsByClassName("add-to-cart")).forEach((btn, index) => {
+//         btn.addEventListener("click", () => {
+//           document.getElementById(`modal-${index}`).style.display = "none";
+//           document.getElementById(`modal-${index}`).classList.remove("show");
+//         });
+//       });
+
+//       Array.from(document.getElementsByClassName("ver-mas")).forEach((btn, index) => {
+//         btn.addEventListener("click", () => {
+//           document.getElementById(`modal-${index}`).style.display = "block";
+//           document.getElementById(`modal-${index}`).classList.add("show");
+//         });
+//       });
+
+//       Array.from(document.getElementsByClassName("modal")).forEach((modal) => {
+//         modal.addEventListener("click", (e) => {
+//           if (e.target === modal) {
+//             modal.style.display = "none";
+//           }
+//         });
+//       });
+//     });
+//   }).catch(function (err) { //si hay un error
+//     console.log(err); //imprime el error
+//   });
+// }
+
+// // agrega evento click a cada elemento de la lista de categorías
+// document.getElementById('categoria-todo').addEventListener('click', function() {
+//   filtrarProductos('');
+// });
+
+// document.getElementById('categoria-tazas').addEventListener('click', function() {
+//   filtrarProductos('1');
+// });
+
+// document.getElementById('categoria-vajillas').addEventListener('click', function() {
+//   filtrarProductos('2');
+// });
+
+// document.getElementById('categoria-decoracion').addEventListener('click', function() {
+//   filtrarProductos('3');
+// });
+
+// document.getElementById('categoria-utensilios').addEventListener('click', function() {
+//   filtrarProductos('4');
+// });
+
+
 /********************VIDEO **********************/
 function agregarProducto(id) {
 
@@ -121,11 +302,11 @@ function agregarProducto(id) {
 
 const mostrarCarrito = () => {
   const modalBody = document.querySelector(".modal .modal-body-carrito");
-  if(modalBody){
-  modalBody.innerHTML = "";
-  carrito.forEach((prod) => {
-    const { id, nombre, precio, uRL_Imagen, descripcion, cantidad} = prod;
-    modalBody.innerHTML += `
+  if (modalBody) {
+    modalBody.innerHTML = "";
+    carrito.forEach((prod) => {
+      const { id, nombre, precio, uRL_Imagen, descripcion, cantidad } = prod;
+      modalBody.innerHTML += `
     <div class="modal-contenedor">
       <div>
         <img src="../img/Inventario/${uRL_Imagen}" class="img-fluid img-carrito">
@@ -140,8 +321,8 @@ const mostrarCarrito = () => {
       </div>
     </div>
     `;
-  })
-};
+    })
+  };
   if (carrito.length === 0) {
     modalBody.innerHTML = `
     <p class="text-center text-primary parrafo" style="color: black !important;">¡Aun no agregaste nada!</p>
@@ -150,8 +331,8 @@ const mostrarCarrito = () => {
 
   carritoContenedor.textContent = carrito.length;
 
-  if(precioTotal){
-  precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0);
+  if (precioTotal) {
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0);
   }
   guardarStorage();
 }
@@ -166,27 +347,27 @@ function guardarStorage() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
-if(vaciarCarrito){
-vaciarCarrito.addEventListener("click", () => {
-  carrito.length = [];
-  mostrarCarrito();
-});
+if (vaciarCarrito) {
+  vaciarCarrito.addEventListener("click", () => {
+    carrito.length = [];
+    mostrarCarrito();
+  });
 }
 
-if(procesarCompra){
-procesarCompra.addEventListener("click", () => {
-  if (carrito.length === 0) {
-    Swal.fire({
-      title: "¡Aun no agregaste nada!",
-      text: "¡Agrega productos a tu canasta!",
-      icon: "error",
-      button: "Aceptar",
-    })
-  } else {
-    location.href = "pagar.html";
-    
-  }
-});
+if (procesarCompra) {
+  procesarCompra.addEventListener("click", () => {
+    if (carrito.length === 0) {
+      Swal.fire({
+        title: "¡Aun no agregaste nada!",
+        text: "¡Agrega productos a tu canasta!",
+        icon: "error",
+        button: "Aceptar",
+      })
+    } else {
+      location.href = "pagar.html";
+
+    }
+  });
 }
 
 /*****PROCESAR COMPRA CODIGO DIANA***/
