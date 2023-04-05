@@ -7,7 +7,7 @@ $motivo = $_POST['motivo'];
 $mensaje = $_POST['mensaje'];
 
 // Destinatario del correo electrónico
-$para = 'admin@ejemplo.com';
+$para = 'deleonavalosa@gmail.com.com';
 
 // Asunto del correo electrónico
 $asunto = 'Nuevo mensaje de contacto';
@@ -34,3 +34,4 @@ if (mail($para, $asunto, $mensaje_correo, $cabeceras)) {
     echo "Hubo un error al enviar tu mensaje. Por favor intenta de nuevo más tarde.";
 }
 ?>
+

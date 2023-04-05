@@ -72,10 +72,6 @@ form {
 
 }
 
-button {
-  border-radius: 0;
-}
-
 .bg-body-tertiary {
   background-color: #D9CCC1;
 }
@@ -187,7 +183,7 @@ option,
   }
 }
 
-.btn {
+#boton-inicio {
   background-color: #95826f;
   color: #F2F2F2;
   border: none;
@@ -195,3 +191,12 @@ option,
   border-end-end-radius: 0 !important;
   border-top-left-radius: 0 !important;
 }
+
+#boton-inicio:hover {
+  background-color: #cfd2c6;
+}
+
+#contacto button:hover {
+  background-color: #eddee0; 
+}
+
