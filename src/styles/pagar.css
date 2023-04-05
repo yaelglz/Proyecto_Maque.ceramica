@@ -18,20 +18,14 @@
   border-radius: 0%;
 }
 
-
+#boton-inicio{
+  border-radius: 0px 15px 0px 15px;
+}
 
 .form-control{
-  border-radius: 0%;
+  border-radius: 0px 15px 0px 15px;
 }
-.boton{
 
-  color: #ffffff;
-  border: none;
-  background-color: #7A6852;
-  height: 40px;
-  width: 100%;
-  max-width: 350px;
-}
 .boton{
 
   color: #ffffff;
