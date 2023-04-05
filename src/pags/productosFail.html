@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/productos1.css">
     <link rel="stylesheet" href="../styles/stylehomogeneo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,10 +19,10 @@
         <!-- NAVBAR -->
         <!--<nav class="navbar" style="background-color: #e3f2fd;"></nav> -->
         <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                        src="../img/logos/LOGO MAQUE BLANCO PNG.png"></a>
+                        src="../img/logos/LOGO MAQUE BLANCO PNG.png" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,41 +31,65 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown nav-font">
-                            <a class="nav-link dropdown-toggle" href="productos2.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 PRODUCTOS
                             </a>
                             <ul class="dropdown-menu dropdown-item-custom">
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajilas</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a></li>
-                                <li><a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a></li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+                        <!--Apartado Acerca de -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
                         </li>
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="login.html">MI CUENTA</a>
-                        </li>
-                        <li class="nav-item nav-font">
-                            <a class="nav-link" href="Noticias_eventos.html">NOTICIAS</a>
+                        <!--Apartado Noticias -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
                         </li>
                     </ul>
-                    <a class="navbar-brand" href="Carrito-checkout.html">
-                        <div class="cart-icon">
-                            <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="30" height="30">
-                            <span id="cart-count" class="badge badge-danger">0</span>
+                    <!--Apartado Carrito -->
+                    <ul class="navbar-nav pull-right">
+                        <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#modal-carrito">
+                            <div class="cart-icon align-content-end">
+                                <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
+                                <span id="cartCount" class="badge badge-danger">0</span>
+                            </div>
+                        </a>
+                        <!--Buscador de la Navbar -->
+                        <form class="d-flex pull-right" role="search">
+                            <input class="form-control me-2 form-custom" type="search" placeholder="Buscar"
+                                aria-label="Buscar" />
+                            <button class="btn btn-outline-light btn-search" type="submit">
+                                <span><img src="../icons/search.png" width="22" height="22" /></span>
+                            </button>
+                        </form>
+                        <!--Apartado Mi cuenta -->
+                        <div class="nav-profile">
+                            <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
                         </div>
-                    </a>
-                    <!--Buscador de la Navbar -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 form-custom" type="search" placeholder="Buscar"
-                            aria-label="Buscar">
-                        <button class="btn btn-outline-light btn-custom" type="submit">Buscar</button>
-                    </form>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -539,12 +563,37 @@
     <!--TERMINA Footer-->
     <!--INICIA Scripts-->
     <script src="../js/main.js"></script>
-    <script src="..//assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/productos.js"></script>
-    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
     <!--TERMINA Scripts-->
 </body>
+<div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Carrito</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body-carrito"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="btn btn-primary">
+                    Continuar compra
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </html>

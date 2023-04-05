@@ -1,7 +1,7 @@
 /*Integraciónn de fuente personalizada*/
-@font-face{
+@font-face {
     font-family: maqueFont;
-    src:url(../assets/fonts/Gotham_Book_Font.otf)
+    src: url(../assets/fonts/Gotham_Book_Font.otf)
 }
 
 /*Body*/
@@ -22,7 +22,7 @@ body {
 
 .nav-font {
     position: relative;
-    text-decoration: none; 
+    text-decoration: none;
     font-family: maqueFont;
     color: #2F261D;
     font-style: normal;
@@ -47,7 +47,7 @@ body {
 }
 
 
-.dropdown-item-custom{
+.dropdown-item-custom {
     font-style: normal;
     color: #463f3a;
     font-family: maqueFont;
@@ -66,14 +66,14 @@ body {
     font-family: maqueFont;
 }
 
-.btn-search{
-    background: #2F261D; 
-    border-width: 0;   
-    border-radius: 15px;    
-    align-items: center; 
+.btn-search {
+    background: #2F261D;
+    border-width: 0;
+    border-radius: 15px;
+    align-items: center;
 }
 
-.nav-profile{
+.nav-profile {
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -165,6 +165,7 @@ footer p {
 }
 
 @media only screen and (max-width: 767px) {
+
     /* Ocultar elementos con la clase .hide-on-mobile en la vista móvil */
     .hide-on-mobile {
         display: none;
@@ -184,4 +185,28 @@ footer p {
 
 footer .hover a:hover {
     border: 1px solid #000000;
+}
+
+.modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-carrito {
+    width: 200px;
+    padding: 20px;
+}
+
+.parrafo {
+    font-weight: 700;
+}
+
+.modal-content {
+    background-color: #cfd2c6;
+    border: none;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }

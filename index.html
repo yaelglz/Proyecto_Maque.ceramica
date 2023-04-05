@@ -19,7 +19,7 @@
       <!-- Navbar content -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar" src="./src/img/logos/LOGO MAQUE BLANCO PNG.png"/></a>
+          <a class="navbar-brand" href="index.html"><img id="Logo-navbar" src="./src/img/logos/LOGO MAQUE BLANCO PNG.png"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,16 +55,17 @@
               </li>
               <!--Apartado Acerca de -->
               <li class="nav-item">
-                <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
+                <a class="nav-link nav-font" href="./src/pags/acercade.html">ACERCA DE</a>
               </li>
               <!--Apartado Noticias -->
               <li class="nav-item">
-                <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
+                <a class="nav-link nav-font" href="./src/pags/Noticias_eventos.html">NOTICIAS</a>
               </li>
             </ul>
             <!--Apartado Carrito -->
             <ul class="navbar-nav pull-right">
-              <a class="navbar-brand" href="Carrito-checkout.html">
+              <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#modal-carrito">
                 <div class="cart-icon align-content-end">
                   <img src="./src/icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
                   <span id="cart-count" class="badge badge-danger">0</span>
@@ -79,7 +80,7 @@
               </form>
               <!--Apartado Mi cuenta -->
               <div class="nav-profile">
-                <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
+                <a class="nav-link nav-font pull-right align-middle" href="./src/pags/login.html">MI CUENTA</a>
               </div>
             </ul>
           </div>
@@ -158,7 +159,7 @@
                 esmaltado. Este proyecto lo encabeza, Miriam, que está
                 apasionada por la cerámica y la artesanía.
                 <br />
-                <a href="acercade.html">
+                <a href="./src/pags/acercade.html">
                   <button type="button" class="btn btn-light float-end btn-custom">Acerca de nosotros</button>
                 </a>
               </div>
@@ -171,13 +172,13 @@
     <br/>
     <!-- INICA SECCION TRES: PRODUCTOS -->
     <section>
-      <div class="container text-center custom-containers3">
+      <div class="container text-center custom-containers3  r-p">
         <div class="row g-3">
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="./src/pags/productos2.html">
                 <div class="image-h">
-                  <img src="./src/img/Inicio/_0tazasinicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                  <img src="./src/img/Inicio/0tazasinicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                   <div class="image-overlay">
                     <div class="image--title">Tazas</div>
                   </div>
@@ -186,11 +187,11 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="./src/pags/productos2.html">
                 <div class="image-h">
-                  <img src="./src/img/Inicio/_0platosinicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                  <img src="./src/img/Inicio/0platosinicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                   <div class="image-overlay">
                     <div class="image--title">Platos</div>
                   </div>
@@ -199,11 +200,11 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="./src/pags/productos2.html">
                 <div class="image-h">
-                  <img src="./src/img/Inicio/_0vajilla.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                  <img src="./src/img/Inicio/0vajilla.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                   <div class="image-overlay">
                     <div class="image--title">Vajillas</div>
                   </div>
@@ -212,10 +213,10 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <div class="image-h">
-                <img src="./src/img/Inicio/_0floreros.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                <img src="./src/img/Inicio/0floreros.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                 <div class="image-overlay">
                   <div class="image--title">Floreros</div>
                 </div>
@@ -223,11 +224,11 @@
               <!-- FN class="image-h" -->
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="./src/pags/productos2.html">
                 <div class="image-h">
-                  <img src="./src/img/Inicio/_0cocinainicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                  <img src="./src/img/Inicio/0cocinainicio.jpg" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                   <div class="image-overlay">
                     <div class="image--title">Cocina</div>
                   </div>
@@ -236,11 +237,11 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="./src/pags/productos2.html">
                 <div class="image-h">
-                  <img src="./src/img/Inicio/_0otros.png" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
+                  <img src="./src/img/Inicio/0otros.png" class="rounded-0 border image--img" href="./src/pags/productos2.html" alt=""/>
                   <div class="image-overlay">
                     <div class="image--title">Otros</div>
                   </div>
@@ -253,24 +254,49 @@
       </div>
     </section>
     <!-- TERMINA SECCIÓN TRES -->
-
+    <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Carrito</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body-carrito"></div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                      Vaciar carrito
+                  </button>
+                  <button type="button" id="procesarCompra" class="btn btn-primary">
+                      Continuar compra
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Cerrar
+                  </button>
+                  <span>Precio total:</span>
+                  <p class="text-center" id="precioTotal"></p>
+              </div>
+          </div>
+      </div>
+  </div>
     <!--INICIA Footer-->
     <br/>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-2 hide-on-mobile">
-            <a class="navbar-brand" href="Inicio.html">
+            <a class="navbar-brand" href="index.html">
               <img id="Logo-navbar" src="./src/img/logos/LOGO MAQUE BLANCO PNG.png" style="width: 100%"/>
             </a>
           </div>
           <div class="col-sm-12 col-md-5 texto-img hide-on-mobile">
             <div class="row">
               <div class="col-sm-6 col-md-5">
-                <a href="./Inicio.html">Inicio</a>
+                <a href="index.html">Inicio</a>
               </div>
               <div class="col-sm-6 col-md-5">
-                <a href="./acercade.html">Preguntas Frecuentes</a>
+                <a href="./src/pags/acercade.html">Preguntas Frecuentes</a>
               </div>
             </div>
             <div class="row">
@@ -278,14 +304,14 @@
                 <a href="./src/pags/productos2.html">Catalogo</a>
               </div>
               <div class="col-sm-6 col-md-5">
-                <a href="./acercade.html">Piezas Personalizadas</a>
+                <a href="./src/pags/acercade.html">Piezas Personalizadas</a>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 texto-img">
             <div class="row">
               <div class="col-sm-6 col-md-5">
-                <a href="./acercade.html">Contacto</a>
+                <a href="./src/pags/acercade.html">Contacto</a>
               </div>
               <div class="col-sm-6 col-md-5 hide-on-mobile">Siguenos</div>
             </div>
@@ -322,5 +348,6 @@
     <!-- Link JS -->
     <!-- <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="./src/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
