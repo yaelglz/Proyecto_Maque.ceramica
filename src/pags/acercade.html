@@ -20,77 +20,70 @@
     <header>
       <!-- NAVBAR -->
       <!-- Navbar content -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark navbar-custom">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
-                      src="../img/logos/LOGO MAQUE BLANCO PNG.png" /></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item dropdown nav-font">
-                          <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown"
-                              aria-expanded="false">
-                              PRODUCTOS
-                          </a>
-                          <ul class="dropdown-menu dropdown-item-custom">
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
-                              </li>
-                          </ul>
-                      </li>
-                      <!--Apartado Acerca de -->
-                      <li class="nav-item">
-                          <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
-                      </li>
-                      <!--Apartado Noticias -->
-                      <li class="nav-item">
-                          <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
-                      </li>
-                  </ul>
-                  <!--Apartado Carrito -->
-                  <ul class="navbar-nav pull-right">
-                      <a class="navbar-brand" data-bs-toggle="modal"
-                      data-bs-target="#modal-carrito">
-                          <div class="cart-icon align-content-end">
-                              <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
-                              <span id="cartCount" class="badge badge-danger">0</span>
-                          </div>
-                      </a>
-                      <!--Buscador de la Navbar -->
-                      <form class="d-flex pull-right" role="search">
-                          <input class="form-control me-2 form-custom" type="search" placeholder="Buscar"
-                              aria-label="Buscar" />
-                          <button class="btn btn-outline-light btn-search" type="submit">
-                              <span><img src="../icons/search.png" width="22" height="22" /></span>
-                          </button>
-                      </form>
-                      <!--Apartado Mi cuenta -->
-                      <div class="nav-profile">
-                          <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
-                      </div>
-                  </ul>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img id="Logo-navbar" src="../img/logos/LOGO MAQUE BLANCO PNG.png"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown nav-font">
+                <a class="nav-link nav-font" href="productos2.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu dropdown-item-custom">
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Ver todo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Tazas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Platos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Vajillas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Floreros</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Cocina</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-custom" href="productos2.html">Otros</a>
+                  </li>
+                </ul>
+              </li>
+              <!--Apartado Acerca de -->
+              <li class="nav-item">
+                <a class="nav-link nav-font" href="acercade.html">ACERCA DE</a>
+              </li>
+              <!--Apartado Noticias -->
+              <li class="nav-item">
+                <a class="nav-link nav-font" href="Noticias_eventos.html">NOTICIAS</a>
+              </li>
+            </ul>
+            <!--Apartado Carrito -->
+            <ul class="navbar-nav pull-right">
+              <a class="navbar-brand" href="Carrito-checkout.html">
+                <div class="cart-icon align-content-end">
+                  <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
+                  <span id="cart-count" class="badge badge-danger">0</span>
+                </div>
+              </a>
+              <!--Buscador de la Navbar -->
+              <form class="d-flex pull-right" role="search">
+                <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                <button class="btn btn-outline-light btn-search" type="submit">
+                  <span><img src="../icons/search.png" width="22" height="22"/></span>
+                </button>
+              </form>
+              <!--Apartado Mi cuenta -->
+              <div class="nav-profile">
+                <a class="nav-link nav-font pull-right align-middle" href="login.html">MI CUENTA</a>
               </div>
           </div>
       </nav>
