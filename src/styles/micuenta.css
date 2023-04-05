@@ -9,12 +9,7 @@
 
 .container-mi-cuenta{
     border-radius: 25px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background: linear-gradient(
-        to top,
-        #d9ccc198 25%,
-        #7A6852
-        );
+    background-color: #d9ccc198;
 }
 
 .row{
@@ -23,8 +18,7 @@
 
 .container-info{
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color: #cccccc;
+    background-color: #dfdfdf;
 }
 
 h1{

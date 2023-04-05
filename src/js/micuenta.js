@@ -1,9 +1,9 @@
 let nombreUsuario, correoUsuario, direccionUsuario;
 
 function addItems(div_NombreUsuario, div_CorreoUsuario, div_DireccionUsuario) {    
-    const userId = 6; // Id del usuario que se quiere obtener el nombre, en este caso es 1
+    const userId = 1; // Id del usuario que se quiere obtener el nombre, en este caso es 1
     
-    fetch('http://localhost:8080/maque_ceramica/usuario/' + userId, {
+    fetch('https://backmaque-production.up.railway.app/maque_ceramica/usuario/' + userId, {
         method: 'get' //tipo de método
     }).then(function(response) {//response es la respuesta del servidor
         response.json().then(function (json) { //json es el objeto que se obtiene del servicio

@@ -220,7 +220,7 @@ form.addEventListener('submit', (event) => {
     password
   };
 
-  fetch('http://localhost:8080/maque_ceramica/usuario/', {
+  fetch('https://backmaque-production.up.railway.app/maque_ceramica/usuario/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
