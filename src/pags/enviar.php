@@ -34,3 +34,4 @@ if (mail($para, $asunto, $mensaje_correo, $cabeceras)) {
     echo "Hubo un error al enviar tu mensaje. Por favor intenta de nuevo más tarde.";
 }
 ?>
+
