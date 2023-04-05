@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca De</title>
   <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../../styles/styles.css">
-  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/styleAcercaDe.css">
   <link rel="stylesheet" href="../styles/stylehomogeneo.css">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -68,12 +70,12 @@
             </ul>
             <!--Apartado Carrito -->
             <ul class="navbar-nav pull-right">
-              <a class="navbar-brand" href="Carrito-checkout.html">
+              <a class="navbar-brand" data-bs-toggle="modal" data-bs-target="#modal-carrito">
                 <div class="cart-icon align-content-end">
-                  <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
-                  <span id="cart-count" class="badge badge-danger">0</span>
+                    <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
+                    <span id="cartCount" class="badge badge-danger">0</span>
                 </div>
-              </a>
+            </a>
               <!--Buscador de la Navbar -->
               <form class="d-flex pull-right" role="search">
                 <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar"/>
