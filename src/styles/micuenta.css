@@ -1,0 +1,60 @@
+.container-body{
+    font-family: maqueFont;;
+    margin-top: 50px;
+    padding: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-mi-cuenta{
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(
+        to top,
+        #d9ccc198 25%,
+        #7A6852
+        );
+}
+
+.row{
+    margin: 25px;
+}
+
+.container-info{
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: #cccccc;
+}
+
+h1{
+    font-size: 22px;
+}
+
+.a{
+    color: black;
+}
+
+.a:hover {
+    border: 1px solid #7A6852;
+}
+
+.btn-custom {
+    font-size: 18px;
+    border-radius: 0px 15px 0px 15px;
+    background-color: #d9ccc198;
+    height: 40px;
+    width: 250px !important;
+    max-width: 350px;
+}
+
+.btn-custom:hover {
+    border: 4px solid #7A6852;
+}
+
+.json{
+    margin: 20px;
+    text-align: justify;
+    font-size: 20px;
+    font-style:italic;
+}

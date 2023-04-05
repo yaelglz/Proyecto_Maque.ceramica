@@ -22,7 +22,7 @@
         <!-- Navbar content -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom" id="navbar">
             <div class="logo container-fluid">
-                <a class="navbar-brand" href="Inicio.html"><img id="Logo-navbar"
+                <a class="navbar-brand" href="../../index.html"><img id="Logo-navbar"
                     src="../img/logos/LOGO MAQUE BLANCO PNG.png">
                 </a>
             </div>
@@ -36,14 +36,14 @@
             <div class="container" id="container">
         
             <div class="form-container register-container">
-                <form action="#">
+                <form id="form-crear-usuario" action="#">
                     <h1>Registra tu cuenta</h1>
-                    <input type="text" placeholder="Nombre(s)">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="number" placeholder="Teléfono">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Registrar</button>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre(s)" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+                    <input type="number" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    <input type="email" id="correo" name="correo" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Registrar</button>
                     <br>
                     <span>O ingresa con tu cuenta</span>
                     <div class="social-container">
@@ -56,8 +56,8 @@
             <div class="form-container login-container">
                 <form id="form-login" action="#">
                     <h1>Ingresa a tu cuenta</h1>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="email" id="correoLogin" name="correoLogin" placeholder="Email" required>
+                    <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Contraseña" required>
                     <div class="content">
                         <div class="checkbox">
                             <input type="checkbox" name="checkbox" id="checkbox">
@@ -67,7 +67,7 @@
                             <a href="#" id="r-password">Recuperar contraseña</a>
                         </div>
                     </div>
-                    <button>Ingresar</button>
+                    <button type="submit">Ingresar</button>
                     <br>
                     <span>O ingresa con tu cuenta</span>
                     <div class="social-container">

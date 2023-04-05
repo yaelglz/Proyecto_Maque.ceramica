@@ -186,3 +186,12 @@ option,
     border-width: 0px;
   }
 }
+
+.btn {
+  background-color: #95826f;
+  color: #F2F2F2;
+  border: none;
+  padding: 10px 20px;
+  border-end-end-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
