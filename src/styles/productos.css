@@ -1,3 +1,8 @@
+body {
+  font-family: maqueFont;
+}
+
+
 /* Estilos para la página de productos */
 .left-column {
   background-color: #ebe4e0;
@@ -124,8 +129,8 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center;  
   }
 
   .col-md-4 {
@@ -216,28 +221,22 @@
   }
 }
 
-.modal-content {
-  background-color: #F3EFEC;
-  border: none;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: none;
-  border-bottom-right-radius: none;
-}
-
 .btn-canasta{
-  background-color: #d6ccc2;
+  background-color: #ffffff;
   border: none;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   font-size: 0.9em;
-  width: 160px;
 }
 
 .card-custom .ver-mas:hover {
-  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+  background-color: #cfd2c6; /* el mismo color de fondo que la tarjeta */
 }
 
 .btn-canasta:hover {
-  background-color: #d6ccc2; /* el mismo color de fondo que la tarjeta */
+  background-color: #FFFFFF; /* el mismo color de fondo que la tarjeta */
+}
+
+.card-title{
+  font-size: 17px;
 }

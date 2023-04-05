@@ -63,12 +63,13 @@
             </ul>
             <!--Apartado Carrito -->
             <ul class="navbar-nav pull-right">
-              <a class="navbar-brand" href="Carrito-checkout.html">
-                <div class="cart-icon align-content-end">
-                  <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30"/>
-                  <span id="cart-count" class="badge badge-danger">0</span>
-                </div>
-              </a>
+              <a class="navbar-brand" data-bs-toggle="modal"
+                        data-bs-target="#modal-carrito">
+                            <div class="cart-icon align-content-end">
+                                <img src="../icons/shopping cart 80.svg" alt="Bootstrap" width="28" height="30" />
+                                <span id="cartCount" class="badge badge-danger">0</span>
+                            </div>
+                        </a>
               <!--Buscador de la Navbar -->
               <form class="d-flex pull-right" role="search">
                 <input class="form-control me-2 form-custom" type="search" placeholder="Buscar" aria-label="Buscar"/>
@@ -170,9 +171,9 @@
     <br/>
     <!-- INICA SECCION TRES: PRODUCTOS -->
     <section>
-      <div class="container text-center custom-containers3">
+      <div class="container text-center custom-containers3 r-p">
         <div class="row g-3">
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="productos2.html">
                 <div class="image-h">
@@ -185,7 +186,7 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="productos2.html">
                 <div class="image-h">
@@ -198,7 +199,7 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-t">
             <div class="p-1">
               <a href="productos2.html">
                 <div class="image-h">
@@ -211,7 +212,7 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-b">
             <div class="p-1">
               <div class="image-h">
                 <img src="../img/Inicio/_0floreros.jpg" class="rounded-0 border image--img" href="productos2.html" alt=""/>
@@ -222,7 +223,7 @@
               <!-- FN class="image-h" -->
             </div>
           </div>
-          <div class="col-4 padding">
+          <div class="col-4 padding-b">
             <div class="p-1">
               <a href="productos2.html">
                 <div class="image-h">
@@ -235,7 +236,7 @@
               </a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 padding-b">
             <div class="p-1">
               <a href="productos2.html">
                 <div class="image-h">
@@ -252,7 +253,34 @@
       </div>
     </section>
     <!-- TERMINA SECCIÓN TRES -->
-
+        <!-- INICA Modal -->
+        <div class="modal" tabindex="-1" role="dialog" id="modal-carrito">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Carrito</h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body-carrito"></div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                          Vaciar carrito
+                      </button>
+                      <button type="button" id="procesarCompra" class="btn btn-primary">
+                          Continuar compra
+                      </button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                          Cerrar
+                      </button>
+                      <span>Precio total:</span>
+                      <p class="text-center" id="precioTotal"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- TERMINA Modal -->
     <!--INICIA Footer-->
     <br/>
     <footer>
@@ -320,5 +348,6 @@
     <!--TERMINA Footer-->
     <!-- Link JS -->
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script> <!--JS para carrito y productos-->
   </body>
 </html>
