@@ -24,7 +24,7 @@ function validarFormulario() {
         alert("Por favor, ingresa un número de teléfono válido.");
         return false;
     }
-
+    form.reset();
     // Si todos los campos son válidos, enviar formulario
     return true;
 }
