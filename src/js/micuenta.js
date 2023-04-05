@@ -39,7 +39,7 @@ window.addEventListener("load", function (){
 let calle_numero, colonia, cp, ciudad, estado;
 
 function addItemsDireccion(div_CalleNumero, div_Colonia, div_CP, div_Ciudad, div_Estado) {    
-    const userIdDireccion = 3; // Id del usuario que se quiere obtener el nombre, en este caso es 4
+    const userIdDireccion = 4; // Id del usuario que se quiere obtener el nombre, en este caso es 4
     
     fetch('https://backmaque-production.up.railway.app/maque_ceramica/direccion/' + userIdDireccion, {
         method: 'get' //tipo de método
