@@ -240,3 +240,28 @@ body {
 .card-title{
   font-size: 17px;
 }
+
+.boton-categoria {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.boton-categoria:hover,
+.boton-categoria:focus,
+.boton-categoria:active {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
